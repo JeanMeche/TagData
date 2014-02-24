@@ -9,7 +9,7 @@ cacheDataFilePath = "cacheData"
 if isfile(cacheDataFilePath) : 
 	file = open(cacheDataFilePath,"r")
 	s = file.read()
-	cacheData = json.load(s)
+	cacheData = json.loads(s)
 else : 
 	cacheData = dict()
 
@@ -34,20 +34,19 @@ def getPage(url):
 	else:
 		print("Loading page",url, "from the web")
 		u = urlopen(url)
-
 		s = u.read().decode('utf-8')
 
 		file = open(filename, "w")
 		file.write(s)
 		file.close()
-		
+		setUpdateTime(url)
 		return s
 	return # never reached
 	
 	
 def setUpdateTime(url): 
 	hash = urlHash(url)
-	cacheData[hash] = datetime.now()
+	cacheData[hash] = str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 	
 	# Saving the data 
 	jsonData = json.dumps(cacheData,indent=2,sort_keys=True)
@@ -58,7 +57,7 @@ def setUpdateTime(url):
 def updateTime(url):
 	hash = urlHash(url)
 	if hash in cacheData:
-		return cacheData[hash]
+		return datetime.strptime(cacheData[hash],"%Y-%m-%d %H:%M:%S")
 	else:
 		return None
 

@@ -237,4 +237,6 @@ def doTheStuff(osmLine,MbtLineId) :
         
         
 if __name__ == "__main__": 
-            main(sys.argv[1:])
+	main(sys.argv[1:])
+	if os.name == "nt":
+		input() #Not closing the term on windows
