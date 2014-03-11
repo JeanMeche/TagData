@@ -1,6 +1,6 @@
 #!/usr/bin/python 
 
-import os
+import os, getopt, sys
 import json
 import localPageCache
 from urllib.request import urlopen
@@ -9,10 +9,23 @@ from bs4 import BeautifulSoup
 import difflib
 
 
+try:
+    opts, args = getopt.getopt(sys.argv[1:],"v",["print"])
+except getopt.GetoptError:
+    print ('getopt error in mobitrans.py')
+    sys.exit(2)
+    
+verbose = False
+for opt, arg in opts:
+    if opt == '-v':
+        verbose = True
+
+
 """
-    Returns the mobitrans line ID for a given name
+    Returns the mobitrans line ID for a given line name
 """
 def idForLine(lineName) :
+
    res = [x for x in _lineIds if x["name"] == lineName]
    if res :
       return res[0]["lineID"]
@@ -22,14 +35,14 @@ def idForLine(lineName) :
       names = [x["name"] for x in _lineIds]
 
       res = difflib.get_close_matches(lineName, names)
-      if res :
+      if res and len(res[0]) > 1: # Avoiding false positive with digit line numbers
          return [x for x in _lineIds if x["name"] == res[0]][0]["lineID"]
          
       res = difflib.get_close_matches(alternateName(lineName), names)
-      if res :
+      if res and len(res[0]) > 1:  # Avoiding false positive with digit line numbers
          return [x for x in _lineIds if x["name"] == res[0]][0]["lineID"]
 
-         # At this point we are desperate and return None found :(
+      # At this point we are desperate and return None found :(
       return None    
 
 
@@ -57,7 +70,7 @@ def alternateName(aLineName) :
    if aLineName in altNames :
       return altNames[aLineName]
    else :
-      return None
+      return list()
        
 
 
@@ -65,7 +78,7 @@ def alternateName(aLineName) :
     Find the line id on the mobitrans site
     Returns list of dict {MobitransId, name}
 """
-def findLineIds(doPrint): 
+def findLineIds(): 
     url = "http://tag.mobitrans.fr/horaires/index.asp?rub_code=23&keywords=e"
     f = urlopen(url)
     s = f.read()
@@ -92,17 +105,16 @@ def findLineIds(doPrint):
             aLine['lineID'] = int(parsed["lign_id"][0])
             lines.append(aLine)
     
-    if(doPrint):
+    if(verbose):
        print(json.dumps(lines,indent=4,sort_keys=True))
        
     return lines
     
 """
-    For a stationName (for exemple provided by OSM)
-    It queries Mobitrans to find a matching name and returns it's id for the given direction
+    For a stationName (for example provided by OSM)
+    It queries Mobitrans to find a matching name and returns its Id for the given direction
 """    
 def stationIdForLine(name, lineId, sens)   :
-    
     stations = stationsForLine(lineId, sens)
     stationNameList = [x["name"] for x in stations]
     
@@ -110,13 +122,15 @@ def stationIdForLine(name, lineId, sens)   :
     if not result : 
         result = [s for s in stationNameList if s in name]
     if not result :
-        print(name, "id:",lineId, "sens:",sens," - No match found while calculating directions")
-        return
+        # Assuming the station is not available on Mobitrans for that direction 
+        # Keeping the ouput to remind to correct OSM. 
+        print(name, "id:",lineId, "sens:",sens," - Station not available on Mobitrans for that direction")
+        return None
     theStation = [x for x in stations if x["name"] == result[0]]
     if len(theStation) > 0 :
         return theStation[0]['stationID']
     else:
-        print("-------------------------------------------------")
+        print("Can't find the station return by the difflib")
         return None
     
 """
@@ -127,11 +141,12 @@ def stationsForLine(lineID, sens):
     # Caching the webpages to only retrieve them once from the web 
     if str(lineID) in _mbtStations and "sens"+str(sens) in _mbtStations[str(lineID)] :
         return _mbtStations[str(lineID)]["sens"+str(sens)]
+        
     else : 
         url = "http://tag.mobitrans.fr/horaires/index.asp?rub_code=23&typeSearch=line&lign_id="+str(lineID)+"&sens="+str(sens)
         
         s = localPageCache.getPage(url)       
-
+        
         #Using BeautifulSoup to parse the DOM
         soup = BeautifulSoup(s)
         rubDiv = soup.find("div", class_="rub_content")
@@ -156,9 +171,10 @@ def stationsForLine(lineID, sens):
             _mbtStations[str(lineID)] = dict()
             
         _mbtStations[str(lineID)]["sens"+str(sens)] = lineStops
+        
         return lineStops
 
-_lineIds = findLineIds(False)
+_lineIds = findLineIds()
 _mbtStations  = dict() 
     
 if __name__ == '__main__':

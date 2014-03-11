@@ -2,25 +2,37 @@
 import sys, os, console
 from urllib.request import urlopen
 import xml.dom.minidom
-import itertools
-import pprint
-import json
+import itertools, pprint, json, getopt
 from bs4 import BeautifulSoup
 
 import OsmTagStations as ots
+import localPageCache
+
+try:
+    opts, args = getopt.getopt(sys.argv[1:],"v",["print"])
+except getopt.GetoptError:
+    print ('getopt error in osmAPI.py')
+    sys.exit(2)
+    
+verbose = False
+for opt, arg in opts:
+    if opt == '-v':
+        verbose = True
+
 
 def main() :
-    parseOsmTAGRelation(True)
+    parseOsmTAGRelation()
 
 '''
 OSM has a list of lines for the TAG network. 
 Data can be retrieved using the Overpass API. 
 '''
-def parseOsmTAGRelation(doPrint) :
+def parseOsmTAGRelation() :
     url = "http://overpass-api.de/api/interpreter?data=relation%283300434%29%3Brel%28r%29%3Bout%20body%3B%0A"
-    f = urlopen(url)
-    s = f.read()
-
+    #f = urlopen(url)
+    #s = f.read()
+    s = localPageCache.getPage(url)
+    
     #Parsing the Overpass API result of TAG relation 3300434
     soup = BeautifulSoup(s)
     lineRelations = soup.findAll("relation")
@@ -44,7 +56,7 @@ def parseOsmTAGRelation(doPrint) :
 
     jsonOutput = json.dumps(lines,indent=4,sort_keys=True, cls=OsmLineEncoder)
     
-    if doPrint : 
+    if verbose : 
         print(jsonOutput)
     
     return jsonOutput
@@ -72,6 +84,8 @@ class OsmLine :
         index = 0
         while not self.dispatchDirections(index): #While It can't dispatch, 
             index = index+1;
+            
+        
         
     def __repr__(self):
         return "OsmLine()"
@@ -79,38 +93,49 @@ class OsmLine :
 
     def __str__(self):
         return str(self.relationId) + " - ligne : " + self.name + " - " + str(len(self.directions)) + " directions"    
+
+
         
+    
     # Splitting the directions in 2 categories 
     # Station at Index must be a station shared by each subDirection
     # Returns false if it could not disptach the station with the index
     def dispatchDirections(self, index) :
-                        
-        # Using the first direction for the base of the comparaison.         
+        
+        # Using the first direction for the base of the comparison.         
         baseStations = self.directions[0].stations() 
         
         # First direction is sensA by default
-        aId =  baseStations[index]
+        if index < len(baseStations):
+            aId =  baseStations[index]
+        else :
+            print ("   ", len(baseStations), self.name)
+            quit()
         
         # Related stations are all the stations at location (== same name)
         relatedStations = ots.relatedStations(aId)
-        
+
         # Search for a station present in every direction 
         for aDirection in self.directions[1:] :         #Since index 0 is the base for this, skipping it every time.
-            if not set.intersection(set(aDirection.stations()),set(relatedStations)) :
-                return False
+            if ots.isSoloStation(aId) :
+                if aId not in aDirection.stations():
+                    return 
+            else:
+                if not set.intersection(set(aDirection.stations()),set(relatedStations)) :
+                    return False
          
         # Skipping the station if its present multiple times on a track (ex: dead-end loop in middle of the line)
-        if ots.hasDuplicateName(baseStations.stations(), index) :
+        if ots.hasDuplicateName(baseStations, index) :
             return False
 
-        # Skipping when previous and next station == previous station (occures in dead-end loop like above)
+        # Skipping when previous and next station == previous station (occurs in dead-end loop like above)
         if index-1 >= 0 and index+1 < len(self.directions[0].stations()) :  # bounds checking 
             if ots.stationName(baseStations[index-1]) == ots.stationName(baseStations[index+1]) : 
                 return False
         
         # At this point we have to station we need 
         # now comparing the next or the previous station        
-                            
+        
         nextStationId = baseStations[index+1] 
 
         if(index > 0) :
@@ -121,13 +146,16 @@ class OsmLine :
         sensA = [self.directions[0]] #Already adding stations of the first direction 
         sensB = list() 
         
-        # Actally dispatching the directions
+        # Actually dispatching the directions
         for aDirection in self.directions[1:] : #skipping index 0 
 
             # Index of the sharedStation for this direction 
             # The intersection should return only one item. 
             # If not there is a problem in selecting the station
-            sharedStation = set.intersection(set(aDirection.stations()),set(relatedStations))
+            if ots.isSoloStation(aId) :
+                sharedStation = [aId]
+            else : 
+                sharedStation = set.intersection(set(aDirection.stations()),set(relatedStations))
 
             if len(sharedStation) == 1 : 
                 # Index of the station for this direction 
@@ -136,14 +164,15 @@ class OsmLine :
                 # The next Station is the same than for the 1st sub-direction 
                 if stationIndex < len(aDirection.stations())-1 and ots.isSameStation(nextStationId, aDirection[stationIndex+1]) :
                     sensA.append(aDirection)
-                    
-                # The previous Station is the same than for the 1st sub-direction     
+
+                    # The previous Station is the same than for the 1st sub-direction     
                 elif index > 0 and ots.isSameStation(previousStationId, aDirection[stationIndex-1]) : 
                     sensA.append(aDirection)
-                    
+
                 # Every other case : It's the opposite direction of 1st sub-direction 
                 else :
-                    sensB.append(aDirection)                         
+                    sensB.append(aDirection)
+
             else :
                 print("ERROR IN SHARED STATION")    
                 
@@ -161,8 +190,9 @@ class OsmLine :
         resultSet = set()  
         for aDirection in directionSet:
             url = "http://api.openstreetmap.org/api/0.6/relation/"+str(aDirection.id)
-            f = urlopen(url)
-            s = f.read()        
+            #f = urlopen(url)
+            #s = f.read()
+            s = localPageCache.getPage(url)
             soup = BeautifulSoup(s)
             orderedStations = soup.findAll(member_role_stop)
         
@@ -215,8 +245,9 @@ class OsmDirection(object) :
         
         # Overpass doesn't provide a ordered detailled list, so it uses the base OSM API. 
         url = "http://api.openstreetmap.org/api/0.6/relation/" + str(self.id)
-        f = urlopen(url)
-        s = f.read()        
+        #f = urlopen(url)
+        #s = f.read()
+        s = localPageCache.getPage(url)
         soup = BeautifulSoup(s)
         orderedStations = soup.findAll(member_role_stop)
         
@@ -233,6 +264,9 @@ class OsmDirection(object) :
 def member_role_stop(tag):
         return tag.name == "member" and tag['role'] == "stop" 
 
+"""
+    Return a list with unique elements and with the same order as the one given in parameters
+"""            
 def unique( seq ):
     seen = set()
     for item in seq:
@@ -243,6 +277,9 @@ def unique( seq ):
 def printXML(xmlStr): 
     xml2 = xml.dom.minidom.parseString(xmlStr)
     print(xml2.toprettyxml())
+
+    
+    
 
 if __name__ == '__main__' :
     main()

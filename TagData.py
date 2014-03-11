@@ -1,11 +1,11 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 '''
 
 Merging Data retrieved from Mobitrans and OSM 
 
 '''
-import sys, os, time, json, difflib, pprint, getopt
+import sys, os, time, json, difflib, pprint, getopt, getopt
 
 import console
 import osmAPI
@@ -13,43 +13,51 @@ import mobitrans as mbt
 import OsmTagStations as ots 
 from lxml import etree as ET
 
+verbose = False 
+
 def main(argv) :
     
     # If the json file does not exist, we create it 
-    
+        
     try:
-        opts, args = getopt.getopt(argv,"hpm",["print"])
+        opts, args = getopt.getopt(argv,"hmrv",["print"])
     except getopt.GetoptError:
-        print ('TagData.py')
+        print ('TagData.py -hmv')
         sys.exit(2)
     
-    doPrint = False
+    global verbose 
     doMerge = False
     for opt, arg in opts:
+        print("mm", opt)
         if opt == '-h':
             print ('TagData.py')
-            print ('-p to print output')
+            print ('-v for a verbose output')
+            print ('-r to refresh the file cache')
+            quit()
         if opt == '-m' :   
             doMerge = True
-        if opt == '-p':
-            doPrint = True
+        if opt == '-v':
+            verbose = True
     
-    if doMerge :
-        linesDict = mergingData(doPrint)
+    if doMerge or not os.path.isfile('MergedData.json') :
+        linesDict = mergingData()
     else :
         file = open("MergedData.json", "r")
         s = file.read()
         linesDict = json.loads(s)
         
-    associateOppositeStations(linesDict,doPrint)
+    associateOppositeStations(linesDict)
+    
+    print("\n\n -- Processing successful !")
 #END_DEF
 
 
-def associateOppositeStations(linesDict, doPrint):
+def associateOppositeStations(linesDict):
 
     resultList = list()
     
-    for aLine in linesDict: 
+    for aLine in linesDict:     
+    
         if "MbtId" not in aLine:
             continue 
         
@@ -66,29 +74,48 @@ def associateOppositeStations(linesDict, doPrint):
         aLineDict["sens1"] = list()
         aLineDict["sens2"] = list()
         
-        
         for osmStationId in aLine["sens1"]:
             aDict = dict()
             aDict["name"] = ots.stationName(osmStationId)
             aDict["osmId"] = osmStationId
             aDict["mbtId"] = mbt.stationIdForLine(aDict["name"], lineId, 1)
+            
+            # If there is no mobitrans id for this station on the line with sens1, not adding it 
+            # /!\ Data should probably be changed on OSM to match with the one from Mobitrans
+            if aDict["mbtId"] is None :
+                continue 
+            
             aLineDict["sens1"].append(aDict)
-            #print(osmStationId,mbt.stationIdForLine(name, lineId, 1))
+
         for osmStationId in aLine["sens2"]:
             aDict = dict()
             aDict["name"] = ots.stationName(osmStationId)
             aDict["osmId"] = osmStationId
             aDict["mbtId"] = mbt.stationIdForLine(aDict["name"], lineId, 2)
+            
+            # If there is no mobitrans id for this station on the line with sens2, not adding it 
+            # /!\ Data should probably be changed on OSM to match with the one from Mobitrans
+            if aDict["mbtId"] is None :
+                continue 
+            
             aLineDict["sens2"].append(aDict)
             #print(osmStationId,mbt.stationIdForLine(name, lineId, 2))
         resultList.append(aLineDict)
     
-    if doPrint:        
+    if verbose:        
         (termWidth, height) = console.getTerminalSize()
         pprint.pprint(resultList, width=termWidth)
     
     jsonData = json.dumps(resultList,indent=2,sort_keys=True)
-    
+    # text_file = open("OsmMbtData.json", "w")
+    # text_file.write(jsonData)
+    # text_file.close()
+
+    exportToXml(resultList)
+    return linesDict
+
+
+def exportToXml (resultList): 
     
     # Data To XML 
     
@@ -119,20 +146,17 @@ def associateOppositeStations(linesDict, doPrint):
             stationField.set("mbtId", str(aDict["mbtId"]))
 
     tree = ET.ElementTree(root)
-    tree.write("OsmMbtData.xml", pretty_print=True)
     
+    # Writing to file XML a valid XML encoded in UTF-8 (because Unicode FTW) 
+    tree.write("OsmMbtData.xml", pretty_print=True, encoding="utf-8", xml_declaration=True)
     
-    text_file = open("OsmMbtData.json", "w")
-    text_file.write(jsonData)
-    text_file.close()
-    return linesDict
 
 
 
-def mergingData(doPrint) :       
+def mergingData() :       
     if not os.path.isfile('osmDirections.json'):
         print("Recreating OSM relations file")
-        OSMjson = osmAPI.parseOsmTAGRelation(False)
+        OSMjson = osmAPI.parseOsmTAGRelation()
         text_file = open("osmDirections.json", "w")
         text_file.write(OSMjson)
         text_file.close()
@@ -148,21 +172,23 @@ def mergingData(doPrint) :
     index=0
     print ("Merging the data...")
     for osmLine in linesDict:
-        
+
+        if not verbose : 
         # Progressbar stuff
-        index = index+1 
-        percentage = index/total
-        sys.stdout.write("\r")
-        for i in range(int(termWidth*percentage)):
-            sys.stdout.write("-")
-            sys.stdout.flush()
+            index = index+1 
+            percentage = index/total
+            sys.stdout.write("\r")
+            for i in range(int(termWidth*percentage)):
+                sys.stdout.write("-")
+                sys.stdout.flush()
 
         # Assign directions retrived from from OSM to the direction in Mobitrans 
         
         # Testing if the line is available on Mobitrans
         MbtLineId = mbt.idForLine(osmLine["name"])
+        print("**", osmLine)
         if MbtLineId: 
-            sens = doTheStuff(osmLine, MbtLineId)
+            sens = matchingSens(osmLine)
             osmLine["MbtId"] = MbtLineId   
             if sens == 1 :
                 osmLine["sens1"] = osmLine["sensA"]
@@ -174,13 +200,15 @@ def mergingData(doPrint) :
                 osmLine["sens1"] = osmLine["sensB"]
                 osmLine.pop("sensA", None) 
                 osmLine.pop("sensB", None)
+            else : 
+                print(sens, "PROUT")
         
         #In case the line ain't present on Mobitrans
         else : 
             osmLine.pop("sensA", None) 
             osmLine.pop("sensB", None)
         
-    if doPrint:        
+    if verbose:        
         pprint.pprint(linesDict)
         
     
@@ -191,10 +219,13 @@ def mergingData(doPrint) :
     return linesDict
 #END_DEF    
         
+        
+        
 '''
-    The parameter if the MobitransID of the line
+    For a line dictionary it returns whether sensA correspond to Sens1 or Sens2 in Mobitrans
 '''      
-def doTheStuff(osmLine,MbtLineId) :    
+def matchingSens(osmLine) :
+
     stationsOfFirstDirection =  osmLine["sensA"]
     
     firstStationName = ots.stationName(osmLine["sensA"][0])
@@ -202,7 +233,7 @@ def doTheStuff(osmLine,MbtLineId) :
     
     if secondStationName == firstStationName:
         secondStationName = ots.stationName(osmLine["sensA"][2])
-    
+        
     lineId = mbt.idForLine(osmLine["name"])
     
     #ordered Stations list from mobitrans   
@@ -211,16 +242,16 @@ def doTheStuff(osmLine,MbtLineId) :
         
     result1 = difflib.get_close_matches(firstStationName, stationList)
     result2 = difflib.get_close_matches(secondStationName, stationList)
-   
-   #second change, looking for substrings : 
+
+    #second chance, looking for substrings : 
     if not result1 :
         result1 = [s for s in stationList if s in firstStationName]
     if not result2 :    
         result2 = [s for s in stationList if s in secondStationName]
         
     if not result1 or not result2 :     
-        print(firstStationName, secondStationName, stationList)
-        print("No match found while calculating directions")
+        #print(firstStationName, secondStationName, stationList)
+        print("*No match found while calculating directions for line", osmLine["name"], firstStationName, secondStationName, "")
         return 
    
     index1 = stationList.index(result1[0]);
@@ -230,13 +261,11 @@ def doTheStuff(osmLine,MbtLineId) :
         sens = 1
     else:
         sens = 2
-   
+        
     return sens
-    #print("For line "+ osmLine["name"] +" A is sens " + str(sens))
 #END_DEF        
         
         
 if __name__ == "__main__": 
 	main(sys.argv[1:])
-	if os.name == "nt":
-		input() #Not closing the term on windows
+    

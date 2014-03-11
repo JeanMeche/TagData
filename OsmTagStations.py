@@ -23,6 +23,7 @@ def loadAllNodes() :
         station["lat"] = float(aNode["lat"])
         station["lon"] = float(aNode["lon"])
         station["name"] = aNode.find(k="name")["v"]
+
         aList.append(station)
     print ("Loaded",len(aList),"stations")
     return aList
@@ -42,17 +43,18 @@ This function will return the list of related stations of a station + the statio
 If there is none, if will return None
 """    
 def relatedStations(aId):
-    res = _relatedStations.get(aId)
-    if res is None :
-        return None
+    aId = str(aId)
+
+    if aId in _relatedStations :
+        return _relatedStations[aId]
     else :
-        return _relatedStations.get(aId).append(aID)
+        return None
         
 def isSameStation(id1, id2) :
     if id1 == id2 :
         return True 
     if not isSoloStation(id1) :  
-        return id2 in _relatedStations.get(id1)
+        return id2 in relatedStations(id1)
     else :
         return False
             
@@ -77,14 +79,18 @@ def parseStations():
     aList = loadAllNodes()
     for aStation in aList:
         found = [x for x in aList if x["name"] == aStation["name"]]
-        if(len(found) == 1 ): # this meens there is a unique coordinate for potentially multiple (near) stations  
+
+        if(len(found) == 1 ): # this means there is a unique coordinate for potentially multiple (near) stations  
             _soloStations.append(found[0]["id"])
         else : 
-            _relatedStations[aStation["id"]] =  [x["id"] for x in found if x["id"] != aStation["id"]]
-                
+            _relatedStations[str(aStation["id"])] =  [x["id"] for x in found if x["id"] != aStation["id"]]
+            
         _stations[str(aStation["id"])] = aStation
 
-
+        
+        
+        
+        
 from math import radians, cos, sin, asin, sqrt        
 def haversine(lon1, lat1, lon2, lat2):
     """
@@ -128,7 +134,10 @@ def closestStation() :
 
         
 print("Loading OSM stations")
-file = open("stations.xml", "r")
+
+# Reading as binary because of the encoding. (Need to test it on non Windows OS)
+file = open("stations.xml", "rb")
+
 _s = file.read()
 _xml = BeautifulSoup(_s)
 _stations=dict()
