@@ -186,7 +186,7 @@ def mergingData() :
         
         # Testing if the line is available on Mobitrans
         MbtLineId = mbt.idForLine(osmLine["name"])
-        print("**", osmLine)
+
         if MbtLineId: 
             sens = matchingSens(osmLine)
             osmLine["MbtId"] = MbtLineId   

@@ -26,7 +26,7 @@ verbose = False
 for opt, arg in opts:
     if opt == '-v':
         verbose = True
-    if opt == '-r'
+    if opt == '-r':
         timelimit = timedelta (days = 0)
 
 
