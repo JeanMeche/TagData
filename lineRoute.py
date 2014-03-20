@@ -2,6 +2,7 @@
 
 # ToDo mettre bout a bout les ways
 
+
 import sys, getopt
 from bs4 import BeautifulSoup
 import localPageCache
