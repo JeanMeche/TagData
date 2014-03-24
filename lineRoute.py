@@ -47,7 +47,20 @@ def main(argv) :
             continue
             
         wayId = aWay["id"] # Is an number but stored as string
-        nodesDict[wayId] = OsmWay(aWay)
+        waysDict[wayId] = OsmWay(aWay)
+        
+                
+    # finding the head of the global way :
+    for (key, aWay) in waysDict.items() :
+        head = aWay.head()
+
+        for anotherWay in list(waysDict.values()) : 
+            if anotherWay.tail() == head : 
+                break
+        else :
+            print(key)
+            
+    
 
 class OsmNode : 
     def __init__(self,nodeNode):
@@ -56,12 +69,22 @@ class OsmNode :
 
 class OsmWay : 
     def __init__(self, wayNode) :
-        self.__nodesList = list()
+        self.__nodesList = list() # A sorted list of node id 
         ndNodes = wayNode.findAll("nd")
 
         for aNdNode in ndNodes : 
             self.__nodesList.append(aNdNode["ref"])
         print(len(self.__nodesList), "nodes for relation", wayNode['id']) 
         
+    def head(self) : 
+        return self.__nodesList[0]
+        
+    def tail(self) : 
+        return self.__nodesList[-1]
+    
+    # def __repr__() : 
+    #     return  self.__nodesList.__repr__()
+            
+            
 if __name__ == '__main__' : 
     main(sys.argv[1:])

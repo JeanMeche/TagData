@@ -6,7 +6,7 @@ File comesfrom : http://overpass-api.de/api/interpreter?data=relation%283300434%
 '''
 
 from bs4 import BeautifulSoup
-import pprint
+import pprint, sys
 
          
 def hasStation(intId):
@@ -15,7 +15,7 @@ def hasStation(intId):
 def stationById(id):
     return _stations.get(id)                        
 
-def loadAllNodes() :
+def _loadAllNodes() :
     aList = list()
     for aNode in _xml.findAll("node"):
         station = dict()
@@ -76,7 +76,7 @@ def distanceBetween(id1, id2):
     return(haversine(station1["lon"], station1["lat"], station2["lon"], station2["lat"]))
         
 def parseStations():
-    aList = loadAllNodes()
+    aList = _loadAllNodes()
     for aStation in aList:
         found = [x for x in aList if x["name"] == aStation["name"]]
 
@@ -87,8 +87,28 @@ def parseStations():
             
         _stations[str(aStation["id"])] = aStation
 
-        
-        
+
+def stationsCloserThan(distance) :
+    #Iterating over iDs 
+    maxdist = 0;
+    maxstation = ""
+    for aStation in _stations : 
+        for anotherStation in _stations :
+            if aStation is not anotherStation : 
+                dist = distanceBetween(aStation, anotherStation)
+                if dist < distance :
+                    print(dist, "m", stationName(aStation), stationName(anotherStation));
+                    if dist > maxdist:
+                        maxdist = dist
+                        maxstation = aStation
+    print ("-------", maxdist, stationName(maxstation), maxstation)
+                
+def lowestStationId(): 
+    minId = sys.maxsize
+    for aStation in _stations :
+        if int(aStation) < int(minId) :
+            minId = aStation
+    print("min id :", minId)
         
         
 from math import radians, cos, sin, asin, sqrt        
