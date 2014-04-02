@@ -1,4 +1,22 @@
 #!/usr/bin/python
+"""
+Basicly what this script does : 
+
+
+* First it retrieve from the Overpass API every line of the TAG network (id 3300434)
+
+* Each line has 2 to 6 directions (also known as mutliple banches). 
+
+* Each direction has a sorted list of station. Some of them are shared (main trunk)
+
+* By comparing each directions there are merged into 2. 
+
+* Returns a list of each lines with osmID, line Nane, list of stations for each direction. 
+
+"""
+
+
+
 import sys, os, console
 from urllib.request import urlopen
 import xml.dom.minidom
@@ -29,8 +47,6 @@ Data can be retrieved using the Overpass API.
 '''
 def parseOsmTAGRelation() :
     url = "http://overpass-api.de/api/interpreter?data=relation%283300434%29%3Brel%28r%29%3Bout%20body%3B%0A"
-    #f = urlopen(url)
-    #s = f.read()
     s = localPageCache.getPage(url)
     
     #Parsing the Overpass API result of TAG relation 3300434
@@ -47,10 +63,10 @@ def parseOsmTAGRelation() :
     for aLine in lineRelations : #48 elements
         index = index+1 
         percentage = index/total
-        sys.stdout.write("\r")
-        for i in range(int(termWidth*percentage)):
-            sys.stdout.write("-")
-            sys.stdout.flush()
+        # sys.stdout.write("\r")
+        # for i in range(int(termWidth*percentage)):
+        #     sys.stdout.write("-")
+        #     sys.stdout.flush()
         myLine = OsmLine(aLine) # each objects parse the data related to its line 
         lines.append(myLine)
 
@@ -77,6 +93,8 @@ class OsmLine :
         self.directions = list()
         self.stationsSensA= list() # stationID for a given Sens
         self.stationsSensB= list() # stationID for a given Sens
+        self.terminusA = list() 
+        self.terminusB = list()
         
         for aDirection in directions:
             self.directions.append(OsmDirection(aDirection["ref"]))
@@ -145,10 +163,10 @@ class OsmLine :
         # Lists for where the station will be added 
         sensA = [self.directions[0]] #Already adding stations of the first direction 
         sensB = list() 
+        self.terminusA.append(self.directions[0][-1])
         
         # Actually dispatching the directions
         for aDirection in self.directions[1:] : #skipping index 0 
-
             # Index of the sharedStation for this direction 
             # The intersection should return only one item. 
             # If not there is a problem in selecting the station
@@ -164,17 +182,39 @@ class OsmLine :
                 # The next Station is the same than for the 1st sub-direction 
                 if stationIndex < len(aDirection.stations())-1 and ots.isSameStation(nextStationId, aDirection[stationIndex+1]) :
                     sensA.append(aDirection)
+                    self.terminusA.append(aDirection[-1])
 
                     # The previous Station is the same than for the 1st sub-direction     
                 elif index > 0 and ots.isSameStation(previousStationId, aDirection[stationIndex-1]) : 
                     sensA.append(aDirection)
+                    self.terminusA.append(aDirection[-1])
 
                 # Every other case : It's the opposite direction of 1st sub-direction 
                 else :
+                    self.terminusB.append(aDirection[-1])
                     sensB.append(aDirection)
 
             else :
                 print("ERROR IN SHARED STATION")    
+        
+        
+        mergedDirectionA = list(itertools.chain.from_iterable(sensA));
+        mergedDirectionB = list(itertools.chain.from_iterable(sensB));
+        
+        # Removing partial terminus, only keeping branch terminus & trunk terminus
+        for aTerminus in self.terminusA :
+            # sensA is a list of osmDirection objet, can't iterate directly therefore using itertools
+            if mergedDirectionA.count(aTerminus) > 1 :
+                if(aTerminus == 1804374990):
+                    print("coucou", mergedDirectionA.count(aTerminus))
+                self.terminusA.remove(aTerminus)
+                mergedDirectionA.remove(aTerminus)
+                
+        for aTerminus in self.terminusB :
+            # sensB is a list of osmDirection objet, can't iterate directly therefore using itertools
+            if mergedDirectionB.count(aTerminus) > 1 :
+                self.terminusB.remove(aTerminus)      
+                mergedDirectionB.remove(aTerminus)  
                 
         # Making a bigList of the stations for each direction. Always with unique values and ordered
         # Ordered is important for the first direction as it will be use to compare with Mobitrans
@@ -214,6 +254,8 @@ class OsmLineEncoder(json.JSONEncoder):
          aDict["OsmId"] = obj.relationId
          aDict["sensA"] = obj.stationsSensA
          aDict["sensB"] = obj.stationsSensB
+         aDict["terminusA"] = obj.terminusA
+         aDict["terminusB"] = obj.terminusB
          return aDict;
         
         

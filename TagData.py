@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
 
 '''
-
 Merging Data retrieved from Mobitrans and OSM 
 
+1. osmApi.py returns a list of all Lines with every station for 2 different directions 
+
+2. MergingData() Associated the osmDirection with the directions retrieved from Mobitrans
+
+
+
 '''
+
+
+
 import sys, os, time, json, difflib, pprint, getopt, getopt
 
 import console
@@ -52,6 +60,9 @@ def main(argv) :
 #END_DEF
 
 
+"""
+   ?????????? 
+"""
 def associateOppositeStations(linesDict):
 
     resultList = list()
@@ -79,6 +90,7 @@ def associateOppositeStations(linesDict):
             aDict["name"] = ots.stationName(osmStationId)
             aDict["osmId"] = osmStationId
             aDict["mbtId"] = mbt.stationIdForLine(aDict["name"], lineId, 1)
+            aDict["terminus"] = osmStationId in aLine["terminus1"] 
             
             # If there is no mobitrans id for this station on the line with sens1, not adding it 
             # /!\ Data should probably be changed on OSM to match with the one from Mobitrans
@@ -92,6 +104,7 @@ def associateOppositeStations(linesDict):
             aDict["name"] = ots.stationName(osmStationId)
             aDict["osmId"] = osmStationId
             aDict["mbtId"] = mbt.stationIdForLine(aDict["name"], lineId, 2)
+            aDict["terminus"] = osmStationId in aLine["terminus2"] 
             
             # If there is no mobitrans id for this station on the line with sens2, not adding it 
             # /!\ Data should probably be changed on OSM to match with the one from Mobitrans
@@ -99,7 +112,6 @@ def associateOppositeStations(linesDict):
                 continue 
             
             aLineDict["sens2"].append(aDict)
-            #print(osmStationId,mbt.stationIdForLine(name, lineId, 2))
         resultList.append(aLineDict)
     
     if verbose:        
@@ -107,12 +119,9 @@ def associateOppositeStations(linesDict):
         pprint.pprint(resultList, width=termWidth)
     
     jsonData = json.dumps(resultList,indent=2,sort_keys=True)
-    # text_file = open("OsmMbtData.json", "w")
-    # text_file.write(jsonData)
-    # text_file.close()
-
     exportToXml(resultList)
-    return linesDict
+
+    return resultList
 
 
 def exportToXml (resultList): 
@@ -139,19 +148,22 @@ def exportToXml (resultList):
             stationField.text = aDict["name"]
             stationField.set("osmId", str(aDict["osmId"]))
             stationField.set("mbtId", str(aDict["mbtId"]))
+            if(aDict["terminus"]) :
+                stationField.set("terminus", "true")
+            
         for aDict in aLine["sens2"]:
             stationField = ET.SubElement(sens2field, "station")
             stationField.text = aDict["name"]
             stationField.set("osmId", str(aDict["osmId"]))
             stationField.set("mbtId", str(aDict["mbtId"]))
+            if(aDict["terminus"]) :
+                stationField.set("terminus", "true")
 
     tree = ET.ElementTree(root)
     
     # Writing to file XML a valid XML encoded in UTF-8 (because Unicode FTW) 
     tree.write("OsmMbtData.xml", pretty_print=True, encoding="utf-8", xml_declaration=True)
     
-
-
 
 def mergingData() :       
     if not os.path.isfile('osmDirections.json'):
@@ -193,13 +205,21 @@ def mergingData() :
             if sens == 1 :
                 osmLine["sens1"] = osmLine["sensA"]
                 osmLine["sens2"] = osmLine["sensB"]
+                osmLine["terminus1"] = osmLine["terminusA"]
+                osmLine["terminus2"] = osmLine["terminusB"]
                 osmLine.pop("sensA", None) 
                 osmLine.pop("sensB", None) 
+                osmLine.pop("terminusA", None) 
+                osmLine.pop("terminusB", None)                 
             elif sens == 2 :
                 osmLine["sens2"] = osmLine["sensA"]
                 osmLine["sens1"] = osmLine["sensB"]
+                osmLine["terminus2"] = osmLine["terminusA"]
+                osmLine["terminus1"] = osmLine["terminusB"]
                 osmLine.pop("sensA", None) 
                 osmLine.pop("sensB", None)
+                osmLine.pop("terminusA", None) 
+                osmLine.pop("terminusB", None) 
             else : 
                 print(sens, "PROUT")
         
