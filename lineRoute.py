@@ -30,10 +30,6 @@ def main(argv) :
     for aRelationId in osmTramIds :         
         parse(str(aRelationId))
     
-    # jsonData = json.dumps(tramRoutes,indent=2,sort_keys=True)
-    # text_file = open("tramRoutes.json", "w")
-    # text_file.write(jsonData)
-    # text_file.close()
     exportToXml()
 
     
@@ -64,7 +60,7 @@ def parse(relationId) :
 
     members = soup.findAll("member")
     directionId = [x["ref"] for x in members]
-    print(directionId)
+    #print(directionId)
     
     query = """
     <osm-script>
@@ -89,7 +85,7 @@ def parse(relationId) :
         nodeId = aNode["id"] # Is an number but stored as string
         nodesDict[nodeId] = OsmNode(aNode)
     
-    print(len(nodesDict), "Nodes")
+    #print(len(nodesDict), "Nodes")
     
     
     # Parsing the ways 
@@ -124,17 +120,50 @@ def parse(relationId) :
 
     mergedWay = list()
     
+    maxDist = 0; 
+    
     for aNode in allWays[0] : 
         theOtherWay = allWays[1]
         
         nearestNode = min(theOtherWay, key=lambda p: nodeDistance(p, aNode))
-
+        
+        dist = haversine(nearestNode[1], nearestNode[0], aNode[1], aNode[0])
+        
+        if(maxDist < dist):
+            maxDist = dist
+        
+        #Problème en cas de terminus à 1 voie
+        
         lat = (nearestNode[0]+aNode[0])/2
         lon = (nearestNode[1]+aNode[1])/2
 
         mergedWay.append((lat, lon))
 
     tramRoutes.append(mergedWay)
+    print(maxDist, "m");
+
+
+
+
+from math import radians, cos, sin, asin, sqrt        
+def haversine(lon1, lat1, lon2, lat2):
+    """
+    Calculate the great circle distance between two points 
+    on the earth (specified in decimal degrees)
+    """
+    # convert decimal degrees to radians 
+    lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
+
+    # haversine formula 
+    dlon = lon2 - lon1 
+    dlat = lat2 - lat1 
+    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
+    c = 2 * asin(sqrt(a)) 
+
+    # 6367 km is the radius of the Earth
+    km = 6367 * c 
+    meters = "%.2f" % (km * 1000)
+    return float(meters)        
 
 
 
@@ -154,7 +183,7 @@ class OsmWay :
 
         for aNdNode in ndNodes : 
             self.nodesList.append(aNdNode["ref"])
-        print(len(self.nodesList), "nodes for relation", wayNode['id']) 
+        #print(len(self.nodesList), "nodes for relation", wayNode['id']) 
         
                 
     def head(self) : 
