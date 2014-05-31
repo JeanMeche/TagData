@@ -11,7 +11,7 @@ import json
 from lxml import etree as ET
 
 tramRoutes = list()
-osmTramIds = [2907314,2422329,2427813,2438215]
+osmTramIds = [2907314, 2422329, 2427813, 2438215, 3785739] # A,B,C,D,E
 lineName = 'A'
 
 def main(argv) : 
