@@ -16,7 +16,6 @@ Basicly what this script does :
 """
 
 
-
 import sys, os, console
 from urllib.request import urlopen
 import xml.dom.minidom
@@ -49,11 +48,11 @@ def parseOsmTAGRelation() :
     url = "http://overpass-api.de/api/interpreter?data=relation%283300434%29%3Brel%28r%29%3Bout%20body%3B%0A"
     s = localPageCache.getPage(url)
     
-    #Parsing the Overpass API result of TAG relation 3300434
+    # Parsing the Overpass API result of TAG relation 3300434
     soup = BeautifulSoup(s)
     lineRelations = soup.findAll("relation")
 
-    #Progress bar is a cool feature. 
+    # Progress bar is a cool feature. 
     (termWidth, height) = console.getTerminalSize()
     total = len(lineRelations)
     index=0

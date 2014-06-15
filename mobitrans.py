@@ -108,6 +108,8 @@ def findLineIds():
     if(verbose):
        print(json.dumps(lines,indent=4,sort_keys=True))
        
+
+
     return lines
     
 """
@@ -176,7 +178,4 @@ def stationsForLine(lineID, sens):
 
 _lineIds = findLineIds()
 _mbtStations  = dict() 
-    
-if __name__ == '__main__':
-    main()
 

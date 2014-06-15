@@ -47,6 +47,7 @@ def main(argv) :
         if opt == '-v':
             verbose = True
     
+
     if doMerge or not os.path.isfile('MergedData.json') :
         linesDict = mergingData()
     else :
@@ -57,7 +58,6 @@ def main(argv) :
     associateOppositeStations(linesDict)
     
     print("\n\n -- Processing successful !")
-#END_DEF
 
 
 """
@@ -237,7 +237,6 @@ def mergingData() :
     text_file.write(jsonData)
     text_file.close()
     return linesDict
-#END_DEF    
         
         
         

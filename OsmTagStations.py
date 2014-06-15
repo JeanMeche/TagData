@@ -1,14 +1,15 @@
 '''
 Module to read station information from a XML file
 
-File comesfrom : http://overpass-api.de/api/interpreter?data=relation%283300434%29%3Brel%28r%29%3Brel%28r%29%3Bnode%28r%29%3Bout%3B
+File comes from : http://overpass-api.de/api/interpreter?data=relation%283300434%29%3Brel%28r%29%3Brel%28r%29%3Bnode%28r%29%3Bout%3B
 
 '''
 
 from bs4 import BeautifulSoup
-import pprint, sys
+import pprint, sys, json
+import localPageCache
+from lxml import etree as ET
 
-         
 def hasStation(intId):
     return str(intId) in _stations 
          
@@ -17,13 +18,17 @@ def stationById(id):
 
 def _loadAllNodes() :
     aList = list()
+    print("loading stations");
     for aNode in _xml.findAll("node"):
         station = dict()
         station["id"] = int(aNode["id"])
         station["lat"] = float(aNode["lat"])
         station["lon"] = float(aNode["lon"])
         station["name"] = aNode.find(k="name")["v"]
-
+        if aNode.find(k="wheelchair")  and  "yes" in aNode.find(k="wheelchair")["v"] :
+            station["accessible"] = 1 
+        else : 
+            station["accessible"] = 0
         aList.append(station)
     print ("Loaded",len(aList),"stations")
     return aList
@@ -49,7 +54,10 @@ def relatedStations(aId):
         return _relatedStations[aId]
     else :
         return None
-        
+
+"""
+The function will return if the ids match the same station 
+"""        
 def isSameStation(id1, id2) :
     if id1 == id2 :
         return True 
@@ -57,6 +65,32 @@ def isSameStation(id1, id2) :
         return id2 in relatedStations(id1)
     else :
         return False
+
+"""
+For a given station, returns the city where it's located 
+"""
+def locateStations() :  
+    for key in _stations :
+        sys.stdout.write('.')
+        sys.stdout.flush()
+        aStation = _stations[key]
+        nominatimUrl = "http://nominatim.openstreetmap.org/reverse?format=json&osm_type=N&accept-language=fr&osm_id=" + str(aStation["id"])
+        nominatimData = localPageCache.getPage(nominatimUrl)
+        nominatimJson = json.loads(nominatimData)
+        if "address" in nominatimJson : 
+            if "city" in nominatimJson["address"] :
+                aStation["city"] = nominatimJson["address"]["city"]
+            elif "village" in nominatimJson["address"] : 
+                aStation["city"] = nominatimJson["address"]["village"]
+            elif "town" in nominatimJson["address"] : 
+                aStation["city"] = nominatimJson["address"]["town"]
+            elif "hamlet" in nominatimJson["address"] : 
+                aStation["city"] = nominatimJson["address"]["hamlet"]
+            else :
+                aStation["city"] = "HORRIBLE ERROR2"
+        else :
+            aStation["city"] = "HORRIBLE ERROR"
+    print('')    
             
 """
 Looks if the station at Index is present multiple times in the given direction
@@ -86,6 +120,8 @@ def parseStations():
             _relatedStations[str(aStation["id"])] =  [x["id"] for x in found if x["id"] != aStation["id"]]
             
         _stations[str(aStation["id"])] = aStation
+
+
 
 
 def stationsCloserThan(distance) :
@@ -150,19 +186,37 @@ def closestStation() :
     print(str(minDistance)+"m", stationById(s1), stationById(s2))                
         
 
+def printXml() : 
+    root = ET.Element("StationData")
+    for key in _stations :
+        aStation = _stations[key]
+        stationNode = ET.SubElement(root, 'station')
+        stationNode.set("lat", str(aStation["lat"]))
+        stationNode.set("lon", str(aStation["lon"]))
+        stationNode.set("name", aStation["name"])
+        stationNode.set("id", str(aStation["id"]))
+        stationNode.set("city", aStation["city"])
+        stationNode.set("accessible", str(aStation["accessible"]))
+    tree = ET.ElementTree(root)
 
+    tree.write("stations2.xml", pretty_print=True, encoding="utf-8", xml_declaration=True)
 
         
 print("Loading OSM stations")
 
 # Reading as binary because of the encoding. (Need to test it on non Windows OS)
-file = open("stations.xml", "rb")
+#file = open("stations.xml", "rb")
 
-_s = file.read()
+#_s = file.read()
+_s = localPageCache.getPage("http://overpass-api.de/api/interpreter?data=relation%283300434%29%3Brel%28r%29%3Brel%28r%29%3Bnode%28r%29%3Bout%3B");
+
 _xml = BeautifulSoup(_s)
 _stations=dict()
 _relatedStations = dict()
 _soloStations = list()
 parseStations() # inits soloStations & relatedStations    
 
+locateStations()
 
+printXml() 
+print('')

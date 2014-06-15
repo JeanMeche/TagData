@@ -9,7 +9,7 @@
 import hashlib,json, getopt, sys
 from os import listdir, makedirs
 from os.path import isfile, join, isdir, getmtime
-from urllib.request import urlopen
+from urllib.request import urlopen, HTTPError, URLError
 from datetime import datetime, timedelta
 
 
@@ -64,7 +64,11 @@ def getPage(url):
     else:
         if verbose:
             print("Loading page",url, "from the web")
-        u = urlopen(url)
+        try:    
+            u = urlopen(url)
+        except (HTTPError, URLError) as error:
+            print(str(error) + url)
+            return ""
         s = u.read().decode('utf-8')
 
         file = open(filename, "w")
