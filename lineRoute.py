@@ -4,6 +4,7 @@
 
 import sys, getopt, re
 import overpass
+import itertools, hashlib
 from bs4 import BeautifulSoup
 from math import sqrt
 import localPageCache
@@ -12,10 +13,13 @@ from lxml import etree as ET
 from simplekml import Kml 
 import random
 
+nodesDict = dict()
 tramRoutes = list()
-subRoutes = list()
+#subRoutes = list()
 osmTramIds = [('A', 2907314), ('B',2422329), ('C', 2427813), ('D', 2438215) , ('E',3785739)] # A,B,C,D,E
 lineName = 'A'
+
+
 
 def main(argv) : 
     try:
@@ -30,51 +34,51 @@ def main(argv) :
             verbose = True
 
 
-    global subRoutes
-    for aRelationId in osmTramIds :         
+#    global subRoutes
+    for aRelationId in osmTramIds : 
         parse(str(aRelationId[1]))
 
-    for index1, route1 in enumerate(tramRoutes):
-        for index2, route2 in enumerate(tramRoutes):
-            if index1 == index2 : 
-                continue
-            subRoute = longest_common_subroute(route1,route2)
-            if len(subRoute) > 1:
-                found = [route for route in subRoutes if (route[0], route[-1]) == (subRoute[0],subRoute[-1])]
-                if len(found) == 0 :
-                    subRoutes.append(subRoute)
-                    print(osmTramIds[index1][0],osmTramIds[index2][0],subRoute[0], subRoute[-1], len(subRoute))
+    # for index1, route1 in enumerate(tramRoutes):
+    #     for index2, route2 in enumerate(tramRoutes):
+    #         if index1 == index2 : 
+    #             continue
+    #         subRoute = longest_common_subroute(route1,route2)
+    #         if len(subRoute) > 1:
+    #             found = [route for route in subRoutes if (route[0], route[-1]) == (subRoute[0],subRoute[-1])]
+    #             if len(found) == 0 :
+    #                 subRoutes.append(subRoute)
+    #                 print(osmTramIds[index1][0],osmTramIds[index2][0],subRoute[0], subRoute[-1], len(subRoute))
 
 
-            subRoute = longest_common_subroute(route1, route2[::-1])
-            if len(subRoute) > 1:
-                found = [route for route in subRoutes if (route[0], route[-1]) == (subRoute[0],subRoute[-1])]
-                if len(found) == 0 :
-                    subRoutes.append(subRoute)
-                    print(osmTramIds[index1][0],osmTramIds[index2][0],subRoute[0], subRoute[-1], len(subRoute))
+    #         subRoute = longest_common_subroute(route1, route2[::-1])
+    #         if len(subRoute) > 1:
+    #             found = [route for route in subRoutes if (route[0], route[-1]) == (subRoute[0],subRoute[-1])]
+    #             if len(found) == 0 :
+    #                 subRoutes.append(subRoute)
+    #                 print(osmTramIds[index1][0],osmTramIds[index2][0],subRoute[0], subRoute[-1], len(subRoute))
 
-    print(len(subRoutes))
+    # print(len(subRoutes))
 
-    exportToXml()
+  #  exportToXml()
 
 
 
     # KML 
-    kml = Kml()
-    for index, aRoute in enumerate(subRoutes) :
+    # kml = Kml()
+    # for index, aRoute in enumerate(subRoutes) :
 
-        coords = [(float(x[1]),float(x[0])) for x in aRoute]
+    #     coords = [(float(x[1]),float(x[0])) for x in aRoute]
 
 
-        lin = kml.newlinestring(name="Pathway", description='-', coords= coords)
+    #     lin = kml.newlinestring(name="Pathway", description='-', coords= coords)
 
-        r = lambda: random.randint(0,255)
-        randomColor = '#%02X%02X%02Xff' % (r(),r(),r())
+    #     r = lambda: random.randint(0,255)
+    #     randomColor = '#%02X%02X%02Xff' % (r(),r(),r())
 
-        lin.style.linestyle.color = randomColor
-        lin.style.linestyle.width= 10  # 10 pixels
+    #     lin.style.linestyle.color = randomColor
+    #     lin.style.linestyle.width= 10  # 10 pixels
 
-    kml.save("singlestyle.kml")
+    # kml.save("singlestyle.kml")
 
 def longest_common_subroute(s1, s2):
     m = [[0] * (1 + len(s2)) for i in range(1 + len(s1))]
@@ -91,20 +95,31 @@ def longest_common_subroute(s1, s2):
     return s1[x_longest - longest: x_longest]
     
 def exportToXml() :
-    global lineName
     root = ET.Element("TramRoutes")
     
     for  index, aLine in enumerate(tramRoutes) :
-        line = ET.SubElement(root, "line")
-        line.set("name", lineName)
-        line.set("osmId", str(osmTramIds[index][1]))
         lineName = str(osmTramIds[index][0])
-        for aCoord in aLine : 
-            lat = aCoord[0]
-            lon = aCoord[1]
-            node = ET.SubElement(line, "node")
-            node.set("lat", lat)
-            node.set("lon", lon)
+
+        print(len(aLine), lineName)
+
+        relations = list()
+
+        for relationId,aWay in aLine : 
+            if relationId in relations:
+                print('-----------------')
+                continue
+            relations.append(relationId)
+
+            way = ET.SubElement(root, "way")
+            way.set("name", lineName)
+            way.set("id", relationId)
+
+            for aCoord in aWay : 
+                lat = aCoord[0]
+                lon = aCoord[1]
+                node = ET.SubElement(way, "node")
+                node.set("lat", lat)
+                node.set("lon", lon)
  
     tree = ET.ElementTree(root)   
     # Writing to file XML a valid XML encoded in UTF-8 (because Unicode FTW) 
@@ -140,11 +155,11 @@ def parse(relationId) :
     soup = BeautifulSoup(s)
     
     nodeNodes = soup.findAll("node")
-    nodesDict = dict()
+
     for aNode in nodeNodes :
         nodeId = aNode["id"] # Is an number but stored as string
         nodesDict[nodeId] = OsmNode(aNode)
-        
+
     
     # Parsing the ways 
     wayNodes = soup.findAll("way")
@@ -157,7 +172,8 @@ def parse(relationId) :
     
     # For each direction 
     for aRelationId in directionId :
-        masterWay = list()  # the global way with every node of the direction 
+        masterWay = list() 
+        groupedWays = list()  # the global way with every node of the direction 
         osmApiQuery = "http://api.openstreetmap.org/api/0.6/relation/" + aRelationId
     
         s = localPageCache.getPage(osmApiQuery)
@@ -169,48 +185,75 @@ def parse(relationId) :
         for aMember in members :
             ways.append(aMember["ref"])
 
+        subWay =  list()
+        shared = False
         for aWay in ways: 
+            
+            if shared != waysDict[aWay].isShared() :
+                mySubWay = groupedWay(subWay, waysDict[aWay].lines)
+                groupedWays.append(subWay)
+
+                subWay = list()
+                shared = not shared
+            subWay.extend(waysDict[aWay].nodesList)
+
+        mySubWay = groupedWay(subWay, waysDict[aWay].lines)
+        groupedWays.append(mySubWay) # adding the last subWay
+
+        #print([nodesDict[groupedWays[0][0]],nodesDict[groupedWays[0][-1]]])
+        print('*',len(groupedWays))
+
+        allWays.append(groupedWays)
 
 
-            masterWay.extend(waysDict[aWay].nodesList)
-
-        allNodes = list()
-        for aWay in masterWay :
-            allNodes.append((float(nodesDict[aWay].lat),float(nodesDict[aWay].lon)))
-        print(len(allNodes), " nodes for rel", aRelationId);
-        allWays.append(allNodes)
-
+    # For every groupedWay : Find matching opposite groupedWay => merging both ways 
+    # If there is not a match opposite way, don't merge it, it's a single piece 
 
 
     # Merging the 2 directions by averaging every closest nodes
     mergedWay = list() 
-    maxDist = 0; 
-    for aNode in allWays[0] : 
-        theOtherWay = allWays[1]
-        
-        nearestNode = min(theOtherWay, key=lambda p: nodeDistance(p, aNode))
-        
-        dist = haversine(nearestNode[1], nearestNode[0], aNode[1], aNode[0])
-        
-        if(maxDist < dist):
-            maxDist = dist
-        
-        #Problème en cas de terminus à 1 voie
-        
-        lat = (nearestNode[0]+aNode[0])/2
-        lon = (nearestNode[1]+aNode[1])/2
+    maxDist = 0;
 
-        lat = str("{0:.7f}".format(lat))
-        lon = str("{0:.7f}".format(lon))
+    lineRoute = list()
 
-        mergedWay.append((lat, lon))
+    #print(allWays[0])
+    # for relationId,aSubWay in allWays[0] : 
+    #     #print(aSubWay)
 
-    mergedWay = f7(mergedWay)
+    #     oppositeDirections = [x[1] for x in allWays[1]]
+    #     oppositeWayNodeIds = list(itertools.chain.from_iterable(oppositeDirections)) # Flattening the nested list (index 0 is the relationId, index 1 is the subWay), only node Ids  
 
-    tramRoutes.append(mergedWay)
-    print(maxDist, "m");
+    #     oppositeWay = list()
+    #     for aNode in oppositeWayNodeIds :
+    #         #print(nodesDict)
+    #         oppositeWay.append((float(nodesDict[aNode].lat),float(nodesDict[aNode].lon)))
 
+    #     for aNodeId in aSubWay :
+    #         aNode = (float(nodesDict[aNodeId].lat), float(nodesDict[aNodeId].lon))
+    #         nearestNode = min(oppositeWay, key=lambda p: nodeDistance(p, aNode))
+            
+    #         dist = haversine(nearestNode[1], nearestNode[0], aNode[1], aNode[0])
+            
+    #         if(maxDist < dist):
+    #             maxDist = dist
+            
+    #         #Problème en cas de terminus à 1 voie
+            
+    #         lat = (nearestNode[0]+aNode[0])/2
+    #         lon = (nearestNode[1]+aNode[1])/2
 
+    #         lat = str("{0:.7f}".format(lat))
+    #         lon = str("{0:.7f}".format(lon))
+
+    #         mergedWay.append((lat, lon))
+
+    #     mergedWay = f7(mergedWay)
+
+    #     lineRoute.append((relationId,mergedWay))
+    #     print(maxDist, "m");
+
+    tramRoutes.append(lineRoute)
+    print('------')
 
 def f7(seq):
     seen = set()
@@ -248,22 +291,33 @@ class OsmNode :
     def __init__(self,nodeNode):
         self.lat = nodeNode['lat']
         self.lon = nodeNode['lon']
+    def __repr__(self):
+        return '('+self.lat+','+ self.lon+')'
+
+    def __str__(self) :
+        return '('+self.lat+','+ self.lon+')'
 
 class OsmWay : 
     def __init__(self, wayNode) :
         self.nodesList = list() # A sorted list of node id 
         ndNodes = wayNode.findAll("nd")
-        name = wayNode.find(k="name")["v"]
-        # shared = '&' in name
-        # print(name, shared) 
+        self.lines= wayNode.find(k="name")["v"]
+        self.lines = re.sub(r'^(Ligne|Lignes) (.*)',r'\2', self.lines)
+        self.lines = re.findall(r"[\w']+", self.lines)
 
         for aNdNode in ndNodes : 
             self.nodesList.append(aNdNode["ref"])
 
         #print(len(self.nodesList), "nodes for relation", wayNode['id']) 
 
-    def isShared(): 
-        return '&' in name
+    def __str__(self):
+        return self.name
+
+    def __repr__(self): 
+        return self.name
+
+    def isShared(self): 
+        return len(self.lines) > 1 
                 
     def head(self) : 
         return self.nodesList[0]
@@ -273,11 +327,24 @@ class OsmWay :
 
     def hasNode(self, node) :
         return node in self.nodesList
+
             
+class groupedWay : 
+    def __init__(self, nodesList, lines):
+        global nodesDict
+        self.nodesList = nodesList # An ordered list of nodes 
+        self.lines = lines
 
+        # generating an id with low probability of collision : appending as string lat/lon of first, middle and last node 
+        # and converting the string to md5 hash
+        boundingNodes = [nodesDict[self.nodesList[0]], nodesDict[self.nodesList[len(self.nodesList)//2]], nodesDict[self.nodesList[-1]]]
+        stringCoordList = [str(i.lat + '-' + i.lon) for i in boundingNodes]
+        stringCoordList = '-'.join(stringCoordList).encode('utf-8')
+        self.id = hashlib.md5(stringCoordList).hexdigest()
+        # print(self)
 
-
-
+    def __str__(self):
+        return self.id + ' ' + str(self.lines)
 
 
 if __name__ == '__main__' : 
