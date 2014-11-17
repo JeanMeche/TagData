@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<line>
+    <picto>A</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#0076BD</bg>
+</line>
+<line>
+    <picto>B</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#009D3A</bg>
+</line>
+<line>
+    <picto>C</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#E4007C</bg>
+</line>
+<line>
+    <picto>D</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#F49B00</bg>
+</line>
+<line>
+    <picto>E</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#653090</bg>
+</line>
+
+<!-- CHRONO / EBUS --> 
+
+<line>
+    <picto>C1</picto>
+    <fg>#000000</fg>
+    <bg>#FFEF00</bg>
+</line>
+<line>
+    <picto>C2</picto>
+    <fg>#000000</fg>
+    <bg>#FFD41C</bg>
+</line>
+<line>
+    <picto>C3</picto>
+    <fg>#000000</fg>
+    <bg>#FF9700</bg>
+</line>
+<line>
+    <picto>C4</picto>
+    <fg>#000000</fg>
+    <bg>#FFD300</bg>
+</line>
+<line>
+    <picto>C5</picto>
+    <fg>#000000</fg>
+    <bg>#FFB200</bg>
+</line>
+<line>
+    <picto>C6</picto>
+    <fg>#000000</fg>
+    <bg>#FFEF00</bg>
+</line>
+<line>
+    <picto>E bus</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#653090</bg>
+</line>
+
+
+<!-- PROXIMO -->
+
+<line>
+    <picto>11</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#7EC100</bg>
+</line>
+<line>
+    <picto>12</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#009A30</bg>
+</line>
+<line>
+    <picto>13</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#00B6B9</bg>
+</line>
+<line>
+    <picto>14</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#C8CD00</bg>
+</line>
+<line>
+    <picto>15</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#00BF98</bg>
+</line>
+<line>
+    <picto>16</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#59A1D1</bg>
+</line>
+<line>
+    <picto>17</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#00A98A</bg>
+</line>
+<line>
+    <picto>18</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#00A98A</bg>
+</line>
+<line>
+    <picto>19</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#59A1D1</bg>
+</line>
+<line>
+    <picto>20</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#00BBDA</bg>
+</line>
+
+<line>
+    <picto>21</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#00BBDA</bg>
+</line>
+<line>
+    <picto>22</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#00BBDA</bg>
+</line>
+
+
+<!-- FLEXO -->
+<line>
+    <picto>40</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#FF4E6C</bg>
+</line>
+<line>
+    <picto>41</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#FF75AD</bg>
+</line>
+<line>
+    <picto>42</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#8B64AD</bg>
+</line>
+<line>
+    <picto>43</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#9079BA</bg>
+</line>
+<line>
+    <picto>44</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#AC6DB2</bg>
+</line>
+<line>
+    <picto>45</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#9079BA</bg>
+</line>
+<line>
+    <picto>46</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#FF92B6</bg>
+</line>
+<line>
+    <picto>47</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#9079BA</bg>
+</line>
+<line>
+    <picto>48</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#FF4E6C</bg>
+</line>
+<line>
+    <picto>49</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#8B64AD</bg>
+</line>
+<line>
+    <picto>50</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#D82C8F</bg>
+</line>
+<line>
+    <picto>51</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#9079BA</bg>
+</line>
+<line>
+    <picto>52</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#FF4E6C</bg>
+</line>
+<line>
+    <picto>53</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#FF75AD</bg>
+</line>
+<line>
+    <picto>54</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#AC6DB2</bg>
+</line>
+<line>
+    <picto>55</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#AC6DB2</bg>
+</line>
+<line>
+    <picto>56</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#FF75AD</bg>
+</line>
+<line>
+    <picto>57</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#5B1C86</bg>
+</line>
+<line>
+    <picto>58</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#5B1C86</bg>
+</line>
+<line>
+    <picto>60</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#D82C8F</bg>
+</line>
+<line>
+    <picto>61</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#FF92B6</bg>
+</line>
+<line>
+    <picto>62</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#D82C8F</bg>
+</line>
+<line>
+    <picto>63</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#D82C8F</bg>
+</line>
+<line>
+    <picto>65</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#FF92B6</bg>
+</line>
+<line>
+    <picto>66</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#8B64AD</bg>
+</line>
+<line>
+    <picto>67</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#D82C8F</bg>
+</line>
+<line>
+    <picto>68</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#EA516C</bg>
+</line>
+<line>
+    <picto>69</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#FF4E6C</bg>
+</line>
