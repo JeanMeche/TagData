@@ -235,6 +235,7 @@ def mergingData() :
 
         #In case the line ain't present on Mobitrans
         else:
+            print(osmLine["name"])
             osmLine.pop("sensA", None)
             osmLine.pop("sensB", None)
 

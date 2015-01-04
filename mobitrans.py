@@ -56,6 +56,8 @@ def idForLine(lineName):
 
 
 def alternateName(aLineName):
+    if 'Ebus' in aLineName:
+        return 'EBUS'
     if 'Chrono' in aLineName:
         return 'C' + aLineName[-1]
     if 'Flexo' in aLineName:
@@ -84,12 +86,12 @@ def findLineIds():
 
     ulLignes = rubDiv.find("ul", class_="lig")
     lignes = ulLignes.findAll("li", recursive=False)
-
     lines = list()
 
 
     for ligne in lignes:
-        if ligne.find("img") is not None:
+
+        if ligne.find("img") is not None and len(ligne.findAll("img")) is 2:
                 name = ligne.findAll("img")[1]['alt']
 
                 aLine = dict()
@@ -98,6 +100,15 @@ def findLineIds():
                 parsed = parse_qs(urlparse(url).query, keep_blank_values=True)
                 aLine['lineID'] = int(parsed["lign_id"][0])
                 lines.append(aLine)
+        elif ligne.find("img") is not None and len(ligne.findAll("img")) is 1 :
+            name = ligne.find('span').text
+
+            aLine = dict()
+            aLine['name'] = name
+            url = ligne.find("a").attrs['href']
+            parsed = parse_qs(urlparse(url).query, keep_blank_values=True)
+            aLine['lineID'] = int(parsed["lign_id"][0])
+            lines.append(aLine)
         else :
             print('PROBLEM')
 
@@ -127,10 +138,11 @@ def stationIdForLine(name, lineId, sens):
             result = result = [s for s in stationNameList if asciiName in s]
 
     if not result:
-        print(stationNameList)
         # Assuming the station is not available on Mobitrans for that direction
         # Keeping the ouput to remind to correct OSM.
         print(name, "id:", lineId, "sens:", sens, " - Station not available on Mobitrans for that direction")
+        print(stationNameList)
+
         return None
     theStation = [x for x in stations if x["name"] == result[0]]
     if len(theStation) > 0:

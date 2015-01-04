@@ -291,8 +291,8 @@
     "accessible": 0,
     "city": "Grenoble",
     "id": 1237282666,
-    "lat": 45.1912135,
-    "lon": 5.7068958,
+    "lat": 45.1911811,
+    "lon": 5.7071114,
     "name": "Esclangon",
     "road": "Rue du Vercors"
   },
@@ -1239,7 +1239,7 @@
     "lat": 45.1265051,
     "lon": 5.6871777,
     "name": "Le Coteau",
-    "road": "Rue du C\u00f4teau"
+    "road": "Rue du Coteau"
   },
   "1803020401": {
     "accessible": 0,
@@ -1257,7 +1257,7 @@
     "lat": 45.1252325,
     "lon": 5.6880811,
     "name": "La Balmette",
-    "road": "Rue du C\u00f4teau"
+    "road": "Rue du Coteau"
   },
   "1803020413": {
     "accessible": 0,
@@ -3216,8 +3216,8 @@
     "accessible": 0,
     "city": "La Tronche",
     "id": 1920434156,
-    "lat": 45.2015297,
-    "lon": 5.7423073,
+    "lat": 45.2015271,
+    "lon": 5.7423105,
     "name": "La Tronche - H\u00f4pital",
     "road": "Avenue des Maquis du Gr\u00e9sivaudan"
   },
@@ -3450,26 +3450,17 @@
     "accessible": 0,
     "city": "Seyssinet-Pariset",
     "id": 20934511,
-    "lat": 45.1765422,
-    "lon": 5.6881663,
+    "lat": 45.1764206,
+    "lon": 5.6879104,
     "name": "Belv\u00e9d\u00e8re",
     "road": "D 106G"
   },
-  "20934512": {
+  "20934524": {
     "accessible": 0,
     "city": "Seyssinet-Pariset",
-    "id": 20934512,
-    "lat": 45.1767097,
-    "lon": 5.6885443,
-    "name": "Belv\u00e9d\u00e8re",
-    "road": "D 106G"
-  },
-  "20934525": {
-    "accessible": 0,
-    "city": "Seyssinet-Pariset",
-    "id": 20934525,
-    "lat": 45.1784548,
-    "lon": 5.6922412,
+    "id": 20934524,
+    "lat": 45.178311,
+    "lon": 5.6919005,
     "name": "Murailles",
     "road": "Avenue de la Houille Blanche"
   },
@@ -4366,37 +4357,37 @@
   },
   "2698340261": {
     "accessible": 1,
-    "city": "Saint-Martin-le-Vinoux",
+    "city": "Grenoble",
     "id": 2698340261,
-    "lat": 45.1988542,
-    "lon": 5.716891,
+    "lat": 45.1988381,
+    "lon": 5.7169072,
     "name": "Casamaures Village",
     "road": "N 481"
   },
   "2698340273": {
     "accessible": 1,
-    "city": "Saint-Martin-le-Vinoux",
+    "city": "Grenoble",
     "id": 2698340273,
-    "lat": 45.198859,
-    "lon": 5.7168504,
+    "lat": 45.1988541,
+    "lon": 5.7168682,
     "name": "Casamaures Village",
     "road": "N 481"
   },
   "2698340281": {
     "accessible": 1,
-    "city": "Saint-Martin-le-Vinoux",
+    "city": "Grenoble",
     "id": 2698340281,
-    "lat": 45.1955578,
-    "lon": 5.7168713,
+    "lat": 45.1955695,
+    "lon": 5.7169342,
     "name": "Esplanade Centre",
     "road": "N 481"
   },
   "2698340299": {
     "accessible": 1,
-    "city": "Saint-Martin-le-Vinoux",
+    "city": "Grenoble",
     "id": 2698340299,
-    "lat": 45.195571,
-    "lon": 5.7169175,
+    "lat": 45.1955822,
+    "lon": 5.7169673,
     "name": "Esplanade Centre",
     "road": "N 481"
   },
@@ -4497,7 +4488,7 @@
     "lat": 45.1456594,
     "lon": 5.7171305,
     "name": "Marie Curie",
-    "road": "D 269Z"
+    "road": "Avenue du 8 Mai 1945"
   },
   "280970367": {
     "accessible": 1,
@@ -4506,7 +4497,7 @@
     "lat": 45.1487503,
     "lon": 5.7179901,
     "name": "La Rampe - Centre-Ville",
-    "road": "D 269Z"
+    "road": "Avenue du 8 Mai 1945"
   },
   "280970370": {
     "accessible": 1,
@@ -4665,8 +4656,8 @@
     "accessible": 1,
     "city": "Grenoble",
     "id": 2935257170,
-    "lat": 45.2081446,
-    "lon": 5.6965368,
+    "lat": 45.2081422,
+    "lon": 5.6965331,
     "name": "Martyrs-R\u00e9sistance",
     "road": "Avenue des Martyrs"
   },
@@ -4785,7 +4776,7 @@
     "lat": 45.1916702,
     "lon": 5.7108889,
     "name": "Palais de Justice",
-    "road": "Rue Pierre S\u00e9mard"
+    "road": "Rue Pierre Semard"
   },
   "2955103332": {
     "accessible": 1,
@@ -4827,8 +4818,8 @@
     "accessible": 0,
     "city": "Grenoble",
     "id": 2986748649,
-    "lat": 45.1915744,
-    "lon": 5.706389,
+    "lat": 45.1917457,
+    "lon": 5.7067003,
     "name": "Esclangon",
     "road": "Rue F\u00e9lix Esclangon"
   },
@@ -4885,15 +4876,6 @@
     "lon": 5.6796592,
     "name": "Les Glairaux",
     "road": "Rue des Moutonn\u00e9es"
-  },
-  "2988443526": {
-    "accessible": 0,
-    "city": "Seyssinet-Pariset",
-    "id": 2988443526,
-    "lat": 45.178557,
-    "lon": 5.6924688,
-    "name": "Murailles",
-    "road": "Avenue de la Houille Blanche"
   },
   "2988443527": {
     "accessible": 0,
@@ -5070,8 +5052,8 @@
     "accessible": 0,
     "city": "Jarrie",
     "id": 2997295973,
-    "lat": 45.1179644,
-    "lon": 5.747461,
+    "lat": 45.1179764,
+    "lon": 5.7474052,
     "name": "Le Pl\u00e2tre",
     "road": "Chemin de Champagnier \u00e0 Jarrie"
   },
@@ -5173,6 +5155,15 @@
     "lon": 5.672338,
     "name": "La Poya",
     "road": "Boulevard Paul Langevin"
+  },
+  "3257952566": {
+    "accessible": 0,
+    "city": "Jarrie",
+    "id": 3257952566,
+    "lat": 45.1178465,
+    "lon": 5.7476858,
+    "name": "Le Pl\u00e2tre",
+    "road": "Route du Platre"
   },
   "331701743": {
     "accessible": 0,
@@ -6366,10 +6357,10 @@
     "accessible": 1,
     "city": "Grenoble",
     "id": 457759151,
-    "lat": 45.2005253,
-    "lon": 5.7119529,
+    "lat": 45.1997503,
+    "lon": 5.7106209,
     "name": "Cit\u00e9 Jean-Mac\u00e9",
-    "road": "Rue Charles Bertier"
+    "road": "Rue Henri Tarz\u00e9"
   },
   "457759154": {
     "accessible": 1,
@@ -6390,13 +6381,13 @@
     "road": "Rue \u00c9mile Gueymard"
   },
   "457759157": {
-    "accessible": 0,
+    "accessible": 1,
     "city": "Grenoble",
     "id": 457759157,
-    "lat": 45.200068,
-    "lon": 5.7125669,
+    "lat": 45.2005231,
+    "lon": 5.7119504,
     "name": "Cit\u00e9 Jean-Mac\u00e9",
-    "road": "Rue Ernest Hareux"
+    "road": "Rue Charles Bertier"
   },
   "457759158": {
     "accessible": 0,
@@ -6597,7 +6588,7 @@
     "road": "Avenue Marcel Cachin"
   },
   "457759201": {
-    "accessible": 0,
+    "accessible": 1,
     "city": "Saint-Martin-d'H\u00e8res",
     "id": 457759201,
     "lat": 45.1640021,
@@ -7467,7 +7458,7 @@
     "lat": 45.1705265,
     "lon": 5.6807334,
     "name": "Centre Village",
-    "road": "Route de Saint-Nizier"
+    "road": "Avenue Hector Berlioz"
   },
   "474770738": {
     "accessible": 1,
@@ -9294,7 +9285,7 @@
     "lat": 45.1805452,
     "lon": 5.7113115,
     "name": "Vallier - Docteur Calmette",
-    "road": "Rue de l'Abb\u00e9 Gr\u00e9goire"
+    "road": "Rue Abb\u00e9 Gr\u00e9goire"
   },
   "488881181": {
     "accessible": 1,
@@ -9303,7 +9294,7 @@
     "lat": 45.1838914,
     "lon": 5.7117721,
     "name": "Abb\u00e9 Gr\u00e9goire",
-    "road": "Rue de l'Abb\u00e9 Gr\u00e9goire"
+    "road": "Rue Abb\u00e9 Gr\u00e9goire"
   },
   "488881182": {
     "accessible": 1,
@@ -11085,7 +11076,7 @@
     "lat": 45.191185,
     "lon": 5.7117481,
     "name": "Palais de Justice",
-    "road": "Rue Pierre S\u00e9mard"
+    "road": "Rue Pierre Semard"
   },
   "559240644": {
     "accessible": 1,
@@ -11373,7 +11364,7 @@
     "lat": 45.1911702,
     "lon": 5.7117235,
     "name": "Palais de Justice",
-    "road": "Rue Pierre S\u00e9mard"
+    "road": "Rue Pierre Semard"
   },
   "791183134": {
     "accessible": 1,
@@ -11616,7 +11607,7 @@
     "lat": 45.1456653,
     "lon": 5.7171018,
     "name": "Marie Curie",
-    "road": "D 269Z"
+    "road": "Avenue du 8 Mai 1945"
   },
   "793061835": {
     "accessible": 1,
@@ -11625,7 +11616,7 @@
     "lat": 45.1487544,
     "lon": 5.7179542,
     "name": "La Rampe - Centre-Ville",
-    "road": "D 269Z"
+    "road": "Avenue du 8 Mai 1945"
   },
   "793061837": {
     "accessible": 1,

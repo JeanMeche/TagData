@@ -106,6 +106,50 @@
       <station osmId="791814412" mbtId="2149" terminus="true">Le Prisme</station>
     </sens2>
   </line>
+  <line name="Ebus" osmId="3921485" mbtId="44" picto="EBUS">
+    <sens1>
+      <station osmId="474782376" mbtId="1491">Rochepleine</station>
+      <station osmId="474770809" mbtId="1247">Karben</station>
+      <station osmId="474770810" mbtId="1367">Les Bonnais</station>
+      <station osmId="474770811" mbtId="1391">La Pinéa</station>
+      <station osmId="474770813" mbtId="1390">Saint-Égrève - Mairie</station>
+      <station osmId="474770814" mbtId="1388">Pont de Vence</station>
+      <station osmId="474770815" mbtId="1368">Moutonnées</station>
+      <station osmId="474770816" mbtId="1389">Le Muret</station>
+      <station osmId="474770817" mbtId="1164">Prédieu</station>
+      <station osmId="474770818" mbtId="1462">Trois Ponts</station>
+      <station osmId="474770820" mbtId="1156">Basse Buisserate</station>
+      <station osmId="474770748" mbtId="1157">Le Néron</station>
+      <station osmId="474770822" mbtId="1158">Buisserate</station>
+      <station osmId="474770743" mbtId="1160">La Balme</station>
+      <station osmId="689497" mbtId="2664" terminus="true">Saint-Martin-le-Vinoux - Hôtel de Ville</station>
+      <station osmId="474770789" mbtId="1871">Croix de la Rochette</station>
+      <station osmId="474770803" mbtId="2000">Résidence Mutualiste</station>
+      <station osmId="474770805" mbtId="1998">LEP Françoise Dolto</station>
+      <station osmId="474770808" mbtId="1664">Rif Tronchard</station>
+    </sens1>
+    <sens2>
+      <station osmId="689497" mbtId="2664">Saint-Martin-le-Vinoux - Hôtel de Ville</station>
+      <station osmId="474770743" mbtId="1254">La Balme</station>
+      <station osmId="474770746" mbtId="1159">Buisserate</station>
+      <station osmId="474770748" mbtId="1253">Le Néron</station>
+      <station osmId="474770750" mbtId="1252">Basse Buisserate</station>
+      <station osmId="474770755" mbtId="1392">Trois Ponts</station>
+      <station osmId="474770757" mbtId="1369">Prédieu</station>
+      <station osmId="474770758" mbtId="1251">Le Muret</station>
+      <station osmId="474770761" mbtId="1250">Moutonnées</station>
+      <station osmId="474770763" mbtId="1387">Pont de Vence</station>
+      <station osmId="474770773" mbtId="1403">Saint-Égrève - Mairie</station>
+      <station osmId="474770774" mbtId="1249">La Pinéa</station>
+      <station osmId="2258516538" mbtId="1248">Les Bonnais</station>
+      <station osmId="474770778" mbtId="1246">Karben</station>
+      <station osmId="474770781" mbtId="1718">Rif Tronchard</station>
+      <station osmId="474770785" mbtId="1997">LEP Françoise Dolto</station>
+      <station osmId="474770787" mbtId="1999">Résidence Mutualiste</station>
+      <station osmId="1804374990" mbtId="2143" terminus="true">Croix de la Rochette</station>
+      <station osmId="474827255" mbtId="1490" terminus="true">Rochepleine</station>
+    </sens2>
+  </line>
   <line name="Chrono 4" osmId="3921486" mbtId="50" picto="C4">
     <sens1>
       <station osmId="2068724578" mbtId="1514">Victor Hugo</station>
@@ -183,7 +227,7 @@
       <station osmId="1906684830" mbtId="1876">Pôle Sud - Alpexpo</station>
       <station osmId="482798326" mbtId="1875">Alpexpo</station>
       <station osmId="482798327" mbtId="1186">François Quesnay</station>
-      <station osmId="3153267170" mbtId="1185" terminus="true">Hôpital Sud</station>
+      <station osmId="3153267170" mbtId="3002" terminus="true">Hôpital Sud</station>
     </sens2>
   </line>
   <line name="Tram E" osmId="3921488" mbtId="46" picto="E">
@@ -1146,8 +1190,8 @@
       <station osmId="1898074614" mbtId="2025">Louis Maisonnat</station>
       <station osmId="445206355" mbtId="2080">Aristide Bergès</station>
       <station osmId="316467401" mbtId="2927">Bouchayer - Hôtel de Ville</station>
-      <station osmId="20934525" mbtId="2939">Murailles</station>
-      <station osmId="20934512" mbtId="2933">Belvédère</station>
+      <station osmId="20934524" mbtId="2939">Murailles</station>
+      <station osmId="20934511" mbtId="2933">Belvédère</station>
       <station osmId="473976058" mbtId="1908">Centre Village</station>
       <station osmId="473976039" mbtId="2247" terminus="true">Village</station>
     </sens1>
@@ -1155,7 +1199,7 @@
       <station osmId="473976039" mbtId="2247">Village</station>
       <station osmId="473976058" mbtId="1933">Centre Village</station>
       <station osmId="20934511" mbtId="2932">Belvédère</station>
-      <station osmId="2988443526" mbtId="2938">Murailles</station>
+      <station osmId="20934524" mbtId="2938">Murailles</station>
       <station osmId="2988443524" mbtId="2926">Bouchayer - Hôtel de Ville</station>
       <station osmId="445206356" mbtId="2081">Aristide Bergès</station>
       <station osmId="1898074628" mbtId="2024">Louis Maisonnat</station>
@@ -1543,6 +1587,89 @@
       <station osmId="445206303" mbtId="2020" terminus="true">Cimetière</station>
     </sens2>
   </line>
+  <line name="Flexo 47" osmId="3931675" mbtId="67" picto="47">
+    <sens1>
+      <station osmId="1887378558" mbtId="2090">Claix - Pont Rouge</station>
+      <station osmId="1802058436" mbtId="2471">Charrières</station>
+      <station osmId="1802058441" mbtId="2473">Saint-Michel</station>
+      <station osmId="1802058433" mbtId="2475">Les Bauches</station>
+      <station osmId="1802058437" mbtId="2515">Pavillon</station>
+      <station osmId="1802088388" mbtId="2513">Risset</station>
+      <station osmId="2821192882" mbtId="2477">Bel Horizon</station>
+      <station osmId="1802088384" mbtId="2479">La Bâtie</station>
+      <station osmId="1802088386" mbtId="2481">La Chênaie</station>
+      <station osmId="2282420756" mbtId="2483">Grands Champs</station>
+      <station osmId="1802088387" mbtId="2511">Les Églantiers</station>
+      <station osmId="473349891" mbtId="2096">Claix - Mairie</station>
+      <station osmId="1802088385" mbtId="2551">Boulodrome École</station>
+      <station osmId="847983210" mbtId="2305">Les Roses</station>
+      <station osmId="1802109400" mbtId="2552">Les Pampres</station>
+      <station osmId="1802109398" mbtId="2507">Les Taillis</station>
+      <station osmId="369809032" mbtId="2553">Bellevue</station>
+      <station osmId="2282420811" mbtId="2554">La Chateraie</station>
+      <station osmId="1802109397" mbtId="2460" terminus="true">Val d'Allières</station>
+      <station osmId="473349863" mbtId="2516">Pompidou</station>
+    </sens1>
+    <sens2>
+      <station osmId="1802109397" mbtId="2460">Val d'Allières</station>
+      <station osmId="369809008" mbtId="2585">La Chateraie</station>
+      <station osmId="1802109399" mbtId="2584">Bellevue</station>
+      <station osmId="1802109398" mbtId="2506">Les Taillis</station>
+      <station osmId="1802090359" mbtId="2583">Les Pampres</station>
+      <station osmId="847983083" mbtId="2304">Les Roses</station>
+      <station osmId="1802088391" mbtId="2582">Boulodrome École</station>
+      <station osmId="1802088390" mbtId="2485">Claix - Mairie</station>
+      <station osmId="2282420997" mbtId="2510">Les Églantiers</station>
+      <station osmId="1802088381" mbtId="2484">Grands Champs</station>
+      <station osmId="1802088386" mbtId="2482">La Chênaie</station>
+      <station osmId="2821192885" mbtId="2480">La Bâtie</station>
+      <station osmId="369808348" mbtId="2478">Bel Horizon</station>
+      <station osmId="492241002" mbtId="2512">Risset</station>
+      <station osmId="1802058437" mbtId="2514">Pavillon</station>
+      <station osmId="1802058442" mbtId="2476">Les Bauches</station>
+      <station osmId="1802058440" mbtId="2474">Saint-Michel</station>
+      <station osmId="1802058436" mbtId="2472">Charrières</station>
+      <station osmId="1887378558" mbtId="1543">Claix - Pont Rouge</station>
+      <station osmId="473349859" mbtId="2516" terminus="true">Pompidou</station>
+    </sens2>
+  </line>
+  <line name="Flexo 48" osmId="3931676" mbtId="68" picto="48">
+    <sens1>
+      <station osmId="1887378558" mbtId="1544">Claix - Pont Rouge</station>
+      <station osmId="473349859" mbtId="1918">Pompidou</station>
+      <station osmId="1803020401" mbtId="2509">Fond Ratel</station>
+      <station osmId="1803020461" mbtId="2544">Mémorial</station>
+      <station osmId="1803020404" mbtId="2545">La Balmette</station>
+      <station osmId="513056272" mbtId="2546">Le Coteau</station>
+      <station osmId="1803020416" mbtId="2547">Les Cimentiers</station>
+      <station osmId="2821192887" mbtId="2548">Moucherotte</station>
+      <station osmId="1803020428" mbtId="2549">Les Pérouses</station>
+      <station osmId="473349891" mbtId="2096">Claix - Mairie</station>
+      <station osmId="473349894" mbtId="2146">Poste</station>
+      <station osmId="473349898" mbtId="2145">Furonnières</station>
+      <station osmId="473349903" mbtId="2064">La Croix Rolland</station>
+      <station osmId="1803020421" mbtId="2486">Malhivert</station>
+      <station osmId="2821192884" mbtId="2488">Chemin de l'Abbé</station>
+      <station osmId="1803020413" mbtId="2490" terminus="true">Cossey</station>
+    </sens1>
+    <sens2>
+      <station osmId="1803020413" mbtId="2491">Cossey</station>
+      <station osmId="1803020384" mbtId="2489">Chemin de l'Abbé</station>
+      <station osmId="1803020431" mbtId="2487">Malhivert</station>
+      <station osmId="473349904" mbtId="2063">La Croix Rolland</station>
+      <station osmId="473349898" mbtId="2144">Furonnières</station>
+      <station osmId="1803020469" mbtId="2502">Claix - Mairie</station>
+      <station osmId="1803020428" mbtId="2581">Les Pérouses</station>
+      <station osmId="2821192886" mbtId="2580">Moucherotte</station>
+      <station osmId="1803020425" mbtId="2579">Les Cimentiers</station>
+      <station osmId="1803020388" mbtId="2578">Le Coteau</station>
+      <station osmId="1803020404" mbtId="2577">La Balmette</station>
+      <station osmId="1803020454" mbtId="2576">Mémorial</station>
+      <station osmId="1803020401" mbtId="2508">Fond Ratel</station>
+      <station osmId="473349863" mbtId="1934">Pompidou</station>
+      <station osmId="1887378594" mbtId="1544" terminus="true">Claix - Pont Rouge</station>
+    </sens2>
+  </line>
   <line name="Flexo 50" osmId="3934879" mbtId="70" picto="50">
     <sens1>
       <station osmId="1110419160" mbtId="2561">Les Côtes</station>
@@ -1767,13 +1894,11 @@
       <station osmId="1302652285" mbtId="2354">Les Fauvettes</station>
       <station osmId="1954731826" mbtId="2356">Place du Village</station>
       <station osmId="2938825610" mbtId="2618">Résistance</station>
-      <station osmId="451237960" mbtId="2630" terminus="true">Casamaures Village</station>
       <station osmId="474770738" mbtId="1161">Conrad Kilian</station>
       <station osmId="2258516583" mbtId="1489">Saint-Martin-le-Vinoux - Hôtel de Ville</station>
       <station osmId="2977605635" mbtId="2745" terminus="true">Collège Chartreuse</station>
     </sens1>
     <sens2>
-      <station osmId="451237960" mbtId="2629">Casamaures Village</station>
       <station osmId="2938825610" mbtId="2617">Résistance</station>
       <station osmId="1954731826" mbtId="2357">Place du Village</station>
       <station osmId="1302652285" mbtId="2355">Les Fauvettes</station>
@@ -1945,37 +2070,11 @@
       <station osmId="393525947" mbtId="2776" terminus="true">Chemin de Namière</station>
     </sens2>
   </line>
-  <line name="Flexo 67" osmId="3936225" mbtId="81" picto="67">
-    <sens1>
-      <station osmId="531444891" mbtId="2812">Herbeys - Le Bourg</station>
-      <station osmId="41113374" mbtId="2810">Le Chollet</station>
-      <station osmId="41113438" mbtId="2809">Les Angonnes</station>
-      <station osmId="312167844" mbtId="2807">Beaulieu</station>
-      <station osmId="1821357930" mbtId="2946">Tavernolles</station>
-      <station osmId="498506887" mbtId="1499">Le Verderet</station>
-      <station osmId="498506914" mbtId="1152">Les Javaux</station>
-      <station osmId="498506923" mbtId="1153">Odyssée</station>
-      <station osmId="515302557" mbtId="1887">Les Écoles</station>
-      <station osmId="1905961758" mbtId="2004" terminus="true">Grand'Place</station>
-    </sens1>
-    <sens2>
-      <station osmId="1905961758" mbtId="2003">Grand'Place</station>
-      <station osmId="515302554" mbtId="1803">Général de Gaulle</station>
-      <station osmId="498506919" mbtId="1219">Odyssée</station>
-      <station osmId="498506910" mbtId="1220">Les Javaux</station>
-      <station osmId="498506894" mbtId="1498">Le Verderet</station>
-      <station osmId="1821357929" mbtId="2945">Tavernolles</station>
-      <station osmId="312167844" mbtId="2806">Beaulieu</station>
-      <station osmId="41113438" mbtId="2808">Les Angonnes</station>
-      <station osmId="41113374" mbtId="2810">Le Chollet</station>
-      <station osmId="531444891" mbtId="2811" terminus="true">Herbeys - Le Bourg</station>
-    </sens2>
-  </line>
   <line name="Flexo 66" osmId="3936226" mbtId="80" picto="66">
     <sens1>
       <station osmId="1397394585" mbtId="2805">Les Simanes</station>
       <station osmId="1826143642" mbtId="2803">Les Tevenets</station>
-      <station osmId="2997295973" mbtId="2942">Le Plâtre</station>
+      <station osmId="3257952566" mbtId="2942">Le Plâtre</station>
       <station osmId="40931791" mbtId="2801">Place du Laca</station>
       <station osmId="479738736" mbtId="1433">Gay Lussac</station>
       <station osmId="1916890655" mbtId="1430">Denis Papin</station>
