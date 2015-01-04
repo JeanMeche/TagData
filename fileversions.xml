@@ -1,6 +1,6 @@
 <xml>
-<file name="OsmMbtData.xml" version="2"  url="https://raw.githubusercontent.com/kyro38/TagData/master/OsmMbtData.xml"></file>
-<file name="stations.xml"   version="2"  url="https://raw.githubusercontent.com/kyro38/TagData/master/stations.xml"></file>
-<file name="lines.xml"      version="1"  url="https://raw.githubusercontent.com/kyro38/TagData/master/lines.xml"></file>
-<file name="lineRoutes.kml" version="1"  url="https://raw.githubusercontent.com/kyro38/TagData/master/lineRoutes.kml"></file>
+<file name="OsmMbtData.xml" version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/OsmMbtData.xml"></file>
+<file name="stations.xml"   version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/stations.xml"></file>
+<file name="lines.xml"      version="2"  url="https://raw.githubusercontent.com/kyro38/TagData/master/lines.xml"></file>
+<file name="lineRoutes.kml" version="2"  url="https://raw.githubusercontent.com/kyro38/TagData/master/lineRoutes.kml"></file>
 </xml>
