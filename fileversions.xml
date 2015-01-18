@@ -3,4 +3,5 @@
 <file name="stations.xml"   version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/stations.xml"></file>
 <file name="lines.xml"      version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/lines.xml"></file>
 <file name="lineRoutes.kml" version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/lineRoutes.kml"></file>
+<variable name="infotraficPage" version="1"  url="http://www.tag.fr/89"></variable>
 </xml>
