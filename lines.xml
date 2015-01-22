@@ -62,7 +62,11 @@
     <fg>#FFFFFF</fg>
     <bg>#653090</bg>
 </line>
-
+<line>
+    <picto>EBus</picto>
+    <fg>#FFFFFF</fg>
+    <bg>#653090</bg>
+</line>
 
 <!-- PROXIMO -->
 

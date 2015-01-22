@@ -1,8 +1,8 @@
 <xml>
-<file name="OsmMbtData.xml" version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/OsmMbtData.xml"></file>
-<file name="stations.xml"   version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/stations.xml"></file>
-<file name="lines.xml"      version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/lines.xml"></file>
-<file name="lineRoutes.kml" version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/lineRoutes.kml"></file>
-<variable name="infotraficPage" version="1"  url="http://www.tag.fr/89"></variable>
+<file name="OsmMbtData.xml"       version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/OsmMbtData.xml"></file>
+<file name="stations.xml"         version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/stations.xml"></file>
+<file name="lines.xml"            version="4"  url="https://raw.githubusercontent.com/kyro38/TagData/master/lines.xml"></file>
+<file name="lineRoutes.kml"       version="3"  url="https://raw.githubusercontent.com/kyro38/TagData/master/lineRoutes.kml"></file>
+<variable name="infotraficPage"   version="1"  url="http://www.tag.fr/89"></variable>
 <variable name="mobitransLineUrl" version="1" url="http://tag.mobitrans.fr/horaires/index.asp?rub_code=23&amp;lign_id=%@&amp;pa_id=%@&amp;sens=%lu"></variable>
 </xml>
