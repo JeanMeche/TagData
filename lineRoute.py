@@ -18,16 +18,19 @@ waysDict = dict()
 tramRoutes = dict()
 subRoutes = dict()
 
-osmTramIds = [('A', 3921492), ('B',3921491), ('C', 3921484), ('D', 3921494) , ('E',3921488)] # A,B,C,D,E
+# ('A', 3921492), ('B', 3921491), ('C', 3921484), ('D', 3921494), ('E', 3921488),
+# ('C1', 3921490), ('C2', 3921493), ('C3', 3921487), ('C4', 3921486), ('C5', 3921483), ('C6', 3921489),
+
+osmTramIds = [('Ebus', 3921485)]
 
 
-def main(argv) : 
+def main(argv):
     try:
-        opts, args = getopt.getopt(argv,"v",["print"])
+        opts, args = getopt.getopt(argv, "v", ["print"])
     except getopt.GetoptError:
-        print ('lineRoute.py')
+        print('lineRoute.py')
         sys.exit(2)
-    
+
     verbose = False
     for opt, arg in opts:
         if opt == '-v' :
@@ -37,7 +40,7 @@ def main(argv) :
     lineWays = list() 
 
     for aRelationId in osmTramIds :
-        directionsGroupedWays = groupWays(str(aRelationId[1]))
+        directionsGroupedWays = groupWays(str(aRelationId[1]),aRelationId[0])  # (id, lineName)
         lineWays.append((directionsGroupedWays, aRelationId[0]))
 
     mergeMiniSplits(lineWays)
@@ -157,22 +160,24 @@ def exportToXml() :
 
 
 """
-Parsing the ways & nodes informations for a particular line 
+Parsing the ways & nodes informations for a particular line
 """
-def groupWays (relationId) :
-    
+
+
+def groupWays(relationId, lineName):
+
     # Retrieving the directions for a line
     lineId = "http://api.openstreetmap.org/api/0.6/relation/" + relationId
     s = localPageCache.getPage(lineId)
     soup = BeautifulSoup(s)
     members = soup.findAll("member")
     directionId = [x["ref"] for x in members]
-    
+
     query = """
     <osm-script>
       <id-query type="relation" ref=" """ + relationId + """ "/>
-      <recurse type="relation-relation"/>   
-            
+      <recurse type="relation-relation"/>
+
       <recurse type="relation-way" role="forward" />
 
      <print mode="body"/>
@@ -180,32 +185,30 @@ def groupWays (relationId) :
       <print mode="skeleton" order="quadtile"/>
     </osm-script>
     """
-    
+
     s = overpass.query(query)
     soup = BeautifulSoup(s)
-    
+
     nodeNodes = soup.findAll("node")
 
-    for aNode in nodeNodes :
-        nodeId = aNode["id"] # Is an number but stored as string
+    for aNode in nodeNodes:
+        nodeId = aNode["id"]  # Is an number but stored as string
         nodesDict[nodeId] = OsmNode(aNode)
 
-    
-    # Parsing the ways 
+    # Parsing the ways
     wayNodes = soup.findAll("way")
-    for aWay in wayNodes : 
-        wayId = aWay["id"] # Is an number but stored as string
-        waysDict[wayId] = OsmWay(aWay)
-    
+    for aWay in wayNodes:
+        wayId = aWay["id"]  # Is an number but stored as string
+        waysDict[wayId] = OsmWay(aWay, lineName)
 
-    directionsGroupedWays = list() # ordered groupedWays for each direction
+    directionsGroupedWays = list()  # ordered groupedWays for each direction
 
-    # For each direction 
-    for aRelationId in directionId :
-        
-        groupedWays = list()  # the global way with every node of the direction 
+    # For each direction
+    for aRelationId in directionId:
+
+        groupedWays = list()  # the global way with every node of the direction
         osmApiQuery = "http://api.openstreetmap.org/api/0.6/relation/" + aRelationId
-    
+
         s = localPageCache.getPage(osmApiQuery)
         soup = BeautifulSoup(s)
 
@@ -216,7 +219,7 @@ def groupWays (relationId) :
             ways.append(aMember["ref"])
 
         subWay =  list()
-        shared = len(waysDict[ways[0]].lines) > 1 # wheter the lines starts shared or not. 
+        shared = len(waysDict[ways[0]].lines) > 1  # wheter the lines starts shared or not. 
         previous = None
 
 
@@ -523,35 +526,37 @@ class OsmNode :
     def __str__(self) :
         return '('+str("{0:.7f}".format(self.lat))+','+ str("{0:.7f}".format(self.lon))+')'
 
-class OsmWay : 
-    def __init__(self, wayNode) :
-        self.nodesList = list() # A sorted list of node id 
+class OsmWay :
+    def __init__(self, wayNode, lineName):
+        self.nodesList = list()  # A sorted list of node id
         ndNodes = wayNode.findAll("nd")
-        self.lines= wayNode.find(k="name")["v"]
-        self.lines = re.sub(r'^(Ligne|Lignes) (.*)',r'\2', self.lines)
-        self.lines = re.findall(r"[\w']+", self.lines)
-
-        for aNdNode in ndNodes : 
+        if wayNode.find(k="name"):
+            self.lines = wayNode.find(k="name")["v"]
+            self.lines = re.sub(r'^(Ligne|Lignes) (.*)', r'\2', self.lines)
+            self.lines = re.findall(r"[\w']+", self.lines)
+        else:
+            self.lines = lineName
+        for aNdNode in ndNodes:
             self.nodesList.append(aNdNode["ref"])
 
-        #print(len(self.nodesList), "nodes for relation", wayNode['id']) 
+        #print(len(self.nodesList), "nodes for relation", wayNode['id'])
 
     def __str__(self):
         return str(self.lines) + str(len(self.nodesList))
 
-    def __repr__(self): 
+    def __repr__(self):
         return str(self.lines) + str(len(self.nodesList))
 
-    def isShared(self): 
-        return len(self.lines) > 1 
-                
-    def head(self) : 
+    def isShared(self):
+        return len(self.lines) > 1
+
+    def head(self):
         return self.nodesList[0]
-        
-    def tail(self) : 
+
+    def tail(self):
         return self.nodesList[-1]
 
-    def hasNode(self, node) :
+    def hasNode(self, node):
         return node in self.nodesList
 
 class groupedWay : 

@@ -65,6 +65,14 @@ def main():
     allStations.extend(mergedTramStations)
     allStations.extend(mergedBusStations)
 
+
+    for aStation in allStations:
+        name = aStation["name"]
+        city = aStation["city"]
+        if city in name:
+            print(name, city)
+
+
     # with open('clusteredStations.json', 'w', encoding='utf8') as fp:
     #     json.dump(allStations, fp, indent=2, ensure_ascii=False)
     exportToXml(allStations)
