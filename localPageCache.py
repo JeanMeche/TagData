@@ -13,6 +13,7 @@ from os import makedirs
 from os.path import isfile, isdir
 from datetime import datetime, timedelta
 import requests
+import io 
 
 #  Will update the file from the server if the cached file is older than the limit.
 timelimit = timedelta(days=7)
@@ -79,7 +80,7 @@ def getPage(url):
         return ""
     s = r.text
 
-    file = open(filename, "w")
+    file = io.open(filename, 'w', encoding='utf8')
     file.write(s)
     file.close()
     _setUpdateTime(url)
