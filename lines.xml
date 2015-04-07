@@ -30,7 +30,7 @@
 <line>
     <picto>C1</picto>
     <fg>#000000</fg>
-    <bg>#FFEF00</bg>
+    <bg>#FFDE03</bg>
 </line>
 <line>
     <picto>C2</picto>
@@ -55,7 +55,7 @@
 <line>
     <picto>C6</picto>
     <fg>#000000</fg>
-    <bg>#FFEF00</bg>
+    <bg>#FFDE03</bg>
 </line>
 <line>
     <picto>EBus</picto>
@@ -214,11 +214,11 @@
     <fg>#FFFFFF</fg>
     <bg>#FF75AD</bg>
 </line>
-<line>
+<!-- <line>
     <picto>57</picto>
     <fg>#FFFFFF</fg>
     <bg>#5B1C86</bg>
-</line>
+</line> -->
 <line>
     <picto>58</picto>
     <fg>#FFFFFF</fg>
