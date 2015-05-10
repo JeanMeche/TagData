@@ -119,9 +119,9 @@
       <station osmId="474770817" mbtId="1164">Prédieu</station>
       <station osmId="474770818" mbtId="1462">Trois Ponts</station>
       <station osmId="474770820" mbtId="1156">Basse Buisserate</station>
-      <station osmId="474770748" mbtId="1157">Le Néron</station>
+      <station osmId="3399607907" mbtId="1157">Le Néron</station>
       <station osmId="474770822" mbtId="1158">Buisserate</station>
-      <station osmId="474770743" mbtId="1160">La Balme</station>
+      <station osmId="3399607904" mbtId="1160">La Balme</station>
       <station osmId="689497" mbtId="2664" terminus="true">Saint-Martin-le-Vinoux - Hôtel de Ville</station>
       <station osmId="474770789" mbtId="1871">Croix de la Rochette</station>
       <station osmId="474770803" mbtId="2000">Résidence Mutualiste</station>
@@ -743,7 +743,7 @@
       <station osmId="457759187" mbtId="2082">André Argouges</station>
       <station osmId="457759185" mbtId="1848">Les Bains</station>
       <station osmId="457759183" mbtId="1847">Edison</station>
-      <station osmId="457759181" mbtId="1846">Clemenceau</station>
+      <station osmId="457759181" mbtId="1846">Clémenceau</station>
       <station osmId="457759177" mbtId="1845">Auguste Ravier</station>
       <station osmId="457759176" mbtId="1538">Driant</station>
       <station osmId="1829590508" mbtId="1530">Chavant</station>
@@ -1183,9 +1183,10 @@
       <station osmId="445963861" mbtId="1654">Gérard Philippe</station>
       <station osmId="445963872" mbtId="1927">Rue des Alpes</station>
       <station osmId="445963866" mbtId="1789">Marat</station>
-      <station osmId="445963863" mbtId="1926">École Robespierre</station>
-      <station osmId="445963860" mbtId="1662">Charmettes</station>
-      <station osmId="445963856" mbtId="1793">Rue Pasteur</station>
+      <station osmId="278466580" mbtId="3031">Les Écrins</station>
+      <station osmId="473975714" mbtId="3027">Jules Guesde</station>
+      <station osmId="3399647133" mbtId="3030">Place du Marché Cachin</station>
+      <station osmId="3399647134" mbtId="3033">Rue Pasteur</station>
       <station osmId="445963854" mbtId="1663">Curie - Vercors</station>
       <station osmId="1898074614" mbtId="2025">Louis Maisonnat</station>
       <station osmId="445206355" mbtId="2080">Aristide Bergès</station>
@@ -1204,9 +1205,10 @@
       <station osmId="445206356" mbtId="2081">Aristide Bergès</station>
       <station osmId="1898074628" mbtId="2024">Louis Maisonnat</station>
       <station osmId="445963854" mbtId="1760">Curie - Vercors</station>
-      <station osmId="445963855" mbtId="1657">Rue Pasteur</station>
-      <station osmId="2935256678" mbtId="2679">Charmettes</station>
-      <station osmId="445963864" mbtId="1790">École Robespierre</station>
+      <station osmId="3399647134" mbtId="3034">Rue Pasteur</station>
+      <station osmId="496601106" mbtId="3029">Place du Marché Cachin</station>
+      <station osmId="473975711" mbtId="3028">Jules Guesde</station>
+      <station osmId="278466580" mbtId="3032">Les Écrins</station>
       <station osmId="445963867" mbtId="1788">Marat</station>
       <station osmId="1028230616" mbtId="1787">Rue des Alpes</station>
       <station osmId="445963861" mbtId="1786">Gérard Philippe</station>
@@ -1230,7 +1232,7 @@
       <station osmId="473975828" mbtId="2032">Ancienne Mairie</station>
       <station osmId="473975850" mbtId="2034">Jean Prévost</station>
       <station osmId="473975900" mbtId="2036">Parc Karl Marx</station>
-      <station osmId="473975912" mbtId="2038">Aristide Bergès</station>
+      <station osmId="473975912" mbtId="2038">Bergès - Vercors</station>
       <station osmId="445206358" mbtId="1896">Les Îles</station>
       <station osmId="445206354" mbtId="2026">Seyssinet Pariset - Hôtel de Ville</station>
       <station osmId="2988443529" mbtId="2026" terminus="true">Seyssinet Pariset - Hôtel de Ville</station>
@@ -1252,8 +1254,7 @@
     </sens1>
     <sens2>
       <station osmId="2988443529" mbtId="2928">Seyssinet Pariset - Hôtel de Ville</station>
-      <station osmId="2988443524" mbtId="2926">Bouchayer - Hôtel de Ville</station>
-      <station osmId="473975906" mbtId="2037">Aristide Bergès</station>
+      <station osmId="3425200328" mbtId="3074">Bergès - Vercors</station>
       <station osmId="473975896" mbtId="2035">Parc Karl Marx</station>
       <station osmId="473975836" mbtId="2033">Jean Prévost</station>
       <station osmId="473975823" mbtId="2031">Ancienne Mairie</station>
@@ -1328,6 +1329,7 @@
       <station osmId="1799285834" mbtId="1641">Musée Dauphinois</station>
       <station osmId="1051838960" mbtId="2142">Veyret</station>
       <station osmId="957256579" mbtId="1949" terminus="true">Le Rabot</station>
+      <station osmId="1900626638" mbtId="1841">Grenoble - Gares</station>
     </sens1>
     <sens2>
       <station osmId="957256579" mbtId="1949">Le Rabot</station>
@@ -1335,6 +1337,7 @@
       <station osmId="2284787622" mbtId="1643">Musée Dauphinois</station>
       <station osmId="258689886" mbtId="2202">Maurice Gignoux</station>
       <station osmId="21669811" mbtId="1630" terminus="true">Victor Hugo</station>
+      <station osmId="1900626638" mbtId="1840" terminus="true">Grenoble - Gares</station>
     </sens2>
   </line>
   <line name="Flexo 43" osmId="3928896" mbtId="63" picto="43">
@@ -1393,27 +1396,39 @@
       <station osmId="480458780" mbtId="2394">Doyen Gosse</station>
       <station osmId="480458776" mbtId="2415">Vercors</station>
       <station osmId="1920404370" mbtId="2382" terminus="true">Grand Sablon</station>
-      <station osmId="480458822" mbtId="2396">La Détourbe</station>
-      <station osmId="2287115290" mbtId="2575">La Treille</station>
-      <station osmId="1799557062" mbtId="2574">Saint-Victor</station>
-      <station osmId="1799557070" mbtId="2303">Montlivet</station>
-      <station osmId="1799557075" mbtId="2573">Pré Catlan</station>
-      <station osmId="1799557059" mbtId="2572">Gué du Boutet</station>
-      <station osmId="2287115283" mbtId="2458">Croix de Cibeins</station>
-      <station osmId="1799557085" mbtId="2571">Croix des Rameaux</station>
-      <station osmId="1799530468" mbtId="2570">Champlars</station>
-      <station osmId="1799525871" mbtId="2385">Hauts de Meylan</station>
     </sens1>
     <sens2>
-      <station osmId="1920356979" mbtId="2382">Grand Sablon</station>
-      <station osmId="480458776" mbtId="2381">Vercors</station>
+      <station osmId="480458822" mbtId="1166">La Détourbe</station>
+      <station osmId="2287115290" mbtId="2543">La Treille</station>
+      <station osmId="1799557062" mbtId="2542">Saint-Victor</station>
+      <station osmId="1799557070" mbtId="2302">Montlivet</station>
+      <station osmId="1799557075" mbtId="2541">Pré Catlan</station>
+      <station osmId="1799557059" mbtId="2540">Gué du Boutet</station>
+      <station osmId="2287115283" mbtId="2459">Croix de Cibeins</station>
+      <station osmId="1799557085" mbtId="2539">Croix des Rameaux</station>
+      <station osmId="1799530468" mbtId="2538">Champlars</station>
+      <station osmId="1799525871" mbtId="2344">Hauts de Meylan</station>
+      <station osmId="480458811" mbtId="1190">Les Muriers</station>
+      <station osmId="480458809" mbtId="1271">Lycée du Grésivaudan - Bachais</station>
+      <station osmId="480458806" mbtId="2373">Saint-Jean Bosco</station>
+      <station osmId="480458804" mbtId="2375">Chaumetière</station>
+      <station osmId="1799525908" mbtId="2369">Revirée - Sayettes</station>
+      <station osmId="1799525872" mbtId="2537">Lionel Terray</station>
+      <station osmId="498507078" mbtId="1193">Place de la Louisiane</station>
+      <station osmId="1799525877" mbtId="2386">Champ Rochas</station>
+      <station osmId="480458791" mbtId="2297">Les Léchères</station>
+      <station osmId="480458788" mbtId="2376">Plaine Fleurie</station>
+      <station osmId="480458783" mbtId="2377">Carronnerie Basse</station>
+      <station osmId="480458782" mbtId="2378">Pascal</station>
       <station osmId="480458780" mbtId="2380">Doyen Gosse</station>
+      <station osmId="480458776" mbtId="2381">Vercors</station>
+      <station osmId="1920404370" mbtId="2382" terminus="true">Grand Sablon</station>
+      <station osmId="1920356979" mbtId="2382">Grand Sablon</station>
       <station osmId="480458781" mbtId="2378">Pascal</station>
       <station osmId="480458784" mbtId="2377">Carronnerie Basse</station>
       <station osmId="480458787" mbtId="2376">Plaine Fleurie</station>
       <station osmId="566712277" mbtId="2297">Les Léchères</station>
       <station osmId="277364392" mbtId="2386">Champ Rochas</station>
-      <station osmId="498507078" mbtId="1193">Place de la Louisiane</station>
       <station osmId="1799525916" mbtId="2537">Lionel Terray</station>
       <station osmId="480458803" mbtId="2369">Revirée - Sayettes</station>
       <station osmId="480458805" mbtId="2375">Chaumetière</station>
@@ -1431,7 +1446,6 @@
       <station osmId="1799557079" mbtId="2459">Croix de Cibeins</station>
       <station osmId="386005274" mbtId="2540">Gué du Boutet</station>
       <station osmId="2287115294" mbtId="2541">Pré Catlan</station>
-      <station osmId="1799557070" mbtId="2302">Montlivet</station>
       <station osmId="2287115295" mbtId="2542">Saint-Victor</station>
       <station osmId="1799557066" mbtId="2543">La Treille</station>
       <station osmId="480458823" mbtId="1166" terminus="true">La Détourbe</station>
@@ -2058,7 +2072,6 @@
       <station osmId="343654575" mbtId="2944">La Rivoire</station>
       <station osmId="343653247" mbtId="2937">Le Fontanil - Cimetière</station>
       <station osmId="343653263" mbtId="2773">Le Fontanil - Mairie</station>
-      <station osmId="2997242322" mbtId="2773">Le Fontanil - Stade</station>
       <station osmId="474770808" mbtId="1664">Rif Tronchard</station>
       <station osmId="474770809" mbtId="1247">Karben</station>
       <station osmId="474770810" mbtId="1367">Les Bonnais</station>
@@ -2069,7 +2082,6 @@
       <station osmId="2258516538" mbtId="1248">Les Bonnais</station>
       <station osmId="474770778" mbtId="1246">Karben</station>
       <station osmId="474770781" mbtId="1718">Rif Tronchard</station>
-      <station osmId="2997242322" mbtId="2772">Le Fontanil - Stade</station>
       <station osmId="343653263" mbtId="2772">Le Fontanil - Mairie</station>
       <station osmId="343653247" mbtId="2936">Le Fontanil - Cimetière</station>
       <station osmId="343654575" mbtId="2943">La Rivoire</station>
