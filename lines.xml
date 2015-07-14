@@ -57,11 +57,6 @@
     <fg>#000000</fg>
     <bg>#FFDE03</bg>
 </line>
-<line>
-    <picto>EBus</picto>
-    <fg>#FFFFFF</fg>
-    <bg>#653090</bg>
-</line>
 
 <!-- PROXIMO -->
 
@@ -214,11 +209,11 @@
     <fg>#FFFFFF</fg>
     <bg>#FF75AD</bg>
 </line>
-<!-- <line>
+<line>
     <picto>57</picto>
     <fg>#FFFFFF</fg>
     <bg>#5B1C86</bg>
-</line> -->
+</line>
 <line>
     <picto>58</picto>
     <fg>#FFFFFF</fg>

@@ -1,74 +1,83 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <stations>
-  <station lat="45.1816551" lon="5.7317431" name="Albert 1er de Belgique" city="Grenoble" source="791376450,1900686598" type="tram" orientation="-87.1816757" road="Avenue Général Champon"/>
-  <station lat="45.1738491" lon="5.7142652" name="Alliés" city="Grenoble" source="2604977131,2604977130" type="tram" orientation="-83.8521448" road="Cours de la Libération et du Général de Gaulle"/>
-  <station lat="45.1890394" lon="5.7193893" name="Alsace - Lorraine" city="Grenoble" source="2604977133,2604977132" type="tram" orientation="-107.7830833" road="Cours Jean Jaurès"/>
+  <station lat="45.1816551" lon="5.7317431" name="Albert 1er de Belgique" city="Grenoble" source="1900686598,791376450" type="tram" orientation="-87.1816757" road="Avenue Général Champon"/>
+  <station lat="45.1738491" lon="5.7142652" name="Alliés" city="Grenoble" source="2604977130,2604977131" type="tram" orientation="-83.8521448" road="Cours de la Libération et du Général de Gaulle"/>
+  <station lat="45.1890394" lon="5.7193893" name="Alsace - Lorraine" city="Grenoble" source="2604977132,2604977133" type="tram" orientation="-107.7830833" road="Cours Jean Jaurès"/>
   <station lat="45.1894037" lon="5.7202656" name="Alsace - Lorraine" city="Grenoble" source="791177562,791177549" type="tram" orientation="-8.0173935" road="Avenue Alsace Lorraine"/>
-  <station lat="45.1634667" lon="5.7305401" name="Arlequin" city="Grenoble" source="1747427949,1747427968" type="tram" orientation="95.7854051" road="Chemin du Tramway"/>
-  <station lat="45.1424120" lon="5.7153578" name="Auguste Delaune" city="Échirolles" source="280969997,793061837,1916864159" type="both" orientation="-72.2952043" road="Avenue du Général de Gaulle"/>
+  <station lat="45.1634667" lon="5.7305401" name="Arlequin" city="Grenoble" source="1747427968,1747427949" type="tram" orientation="95.7854051" road="Chemin du Tramway"/>
+  <station lat="45.1424120" lon="5.7153578" name="Auguste Delaune" city="Échirolles" source="280969997,793061837" type="tram" orientation="-72.2952043" road="Avenue du Général de Gaulle"/>
   <station lat="45.1887977" lon="5.7067635" name="Berriat - Le Magasin" city="Grenoble" source="1898671429,791242175" type="tram" orientation="177.1024128" road="Cours Berriat"/>
-  <station lat="45.1923209" lon="5.7709343" name="Bibliothèques Universitaires" city="Gières" source="349267079,26563282" type="tram" orientation="93.1580529" road="Rue de la Bibliothèque"/>
+  <station lat="45.1923209" lon="5.7709343" name="Bibliothèques Universitaires" city="Gières" source="26563282,349267079" type="tram" orientation="93.1580529" road="Rue de la Bibliothèque"/>
   <station lat="45.2022340" lon="5.7043764" name="CEA - Cambridge" city="Grenoble" source="2655663400" type="tram" orientation="142.8860583" road="Avenue des Martyrs"/>
   <station lat="45.2026565" lon="5.7038695" name="CEA - Cambridge" city="Grenoble" source="2655663401" type="tram" orientation="33.1943772" road="Avenue des Martyrs"/>
-  <station lat="45.1988461" lon="5.7168877" name="Casamaures Village" city="Grenoble" source="2698340273,2698340261" type="tram" orientation="-121.3317331" road="N 481"/>
-  <station lat="45.1938498" lon="5.6801853" name="Charles Michels" city="Fontaine" source="792681772,316471568" type="tram" orientation="160.4640414" road=""/>
-  <station lat="45.1845914" lon="5.7317222" name="Chavant" city="Grenoble" source="791376438,136221" type="tram" orientation="77.4640173" road="Rue Jean Bistési"/>
+  <station lat="45.1988434" lon="5.7168870" name="Casamaures Village" city="Grenoble" source="2698340261,2698340273" type="tram" orientation="-121.3317331" road="N 481"/>
+  <station lat="45.1938498" lon="5.6801853" name="Charles Michels" city="Fontaine" source="316471568,792681772" type="tram" orientation="160.4640414" road=""/>
+  <station lat="45.1845914" lon="5.7317222" name="Chavant" city="Grenoble" source="136221,791376438" type="tram" orientation="77.4640173" road="Rue Jean Bistési"/>
   <station lat="45.1949202" lon="5.7111851" name="Cité Internationale" city="Grenoble" source="55388379,791183134" type="tram" orientation="78.5917901" road="Place de Sfax"/>
-  <station lat="45.1890768" lon="5.7744042" name="Condillac - Universités" city="Saint-Martin-d'Hères" source="823725329,280981821,823725350" type="tram" orientation="-31.3076858" road=""/>
-  <station lat="45.1848898" lon="5.7179873" name="Condorcet" city="Grenoble" source="2604977135,2604977134" type="tram" orientation="71.2927924" road="Cours Jean Jaurès"/>
+  <station lat="45.1890768" lon="5.7744042" name="Condillac - Universités" city="Saint-Martin-d'Hères" source="823725350,280981821,823725329" type="tram" orientation="-31.3076858" road=""/>
+  <station lat="45.1848898" lon="5.7179873" name="Condorcet" city="Grenoble" source="2604977134,2604977135" type="tram" orientation="71.2927924" road="Cours Jean Jaurès"/>
   <station lat="45.1384223" lon="5.7131503" name="Denis Papin" city="Échirolles" source="280970364,793061746" type="tram" orientation="65.0939851" road="Avenue du Général de Gaulle"/>
-  <station lat="45.1955758" lon="5.7169508" name="Esplanade Centre" city="Grenoble" source="2698340299,2698340281" type="tram" orientation="123.5083727" road="N 481"/>
-  <station lat="45.1559791" lon="5.7192190" name="Essarts - La Butte" city="Échirolles" source="280970370,793061850" type="tram" orientation="74.7901901" road="Avenue des États Généraux"/>
-  <station lat="45.1764638" lon="5.6942499" name="Fauconnière" city="Seyssinet-Pariset" source="445110024,791725882" type="tram" orientation="87.7062655" road="Avenue Victor Hugo"/>
+  <station lat="45.1956615" lon="5.7168973" name="Esplanade Centre" city="Grenoble" source="2698340281,2698340299" type="tram" orientation="123.5083727" road="N 481"/>
+  <station lat="45.1559791" lon="5.7192190" name="Essarts - La Butte" city="Échirolles" source="793061850,280970370" type="tram" orientation="74.7901901" road="Avenue des États Généraux"/>
+  <station lat="45.1764638" lon="5.6942499" name="Fauconnière" city="Seyssinet-Pariset" source="791725882,445110024" type="tram" orientation="87.7062655" road="Avenue Victor Hugo"/>
+  <station lat="45.2228860" lon="5.6890352" name="Fiancey - Prédieu" city="Saint-Égrève" source="3399607902,3647742047" type="tram" orientation="130.1927765" road="Route de Grenoble"/>
   <station lat="45.1870552" lon="5.7445490" name="Flandrin - Valmy" city="Grenoble" source="1123336178,1123336180,1829688368,1829688373" type="both" orientation="62.3411909" road="Rue Jules Flandrin"/>
-  <station lat="45.1808144" lon="5.7225594" name="Foch - Ferrié" city="Grenoble" source="290063230,791513811,1985750388,1804418008" type="both" orientation="-17.2506328" road="Boulevard Maréchal Foch"/>
+  <station lat="45.1808144" lon="5.7225594" name="Foch - Ferrié" city="Grenoble" source="791513811,290063230,1804418008,1985750388" type="both" orientation="-17.2506328" road="Boulevard Maréchal Foch"/>
   <station lat="45.1913061" lon="5.6873897" name="Fontaine - Hôtel de Ville - La Source" city="Fontaine" source="792681685,445133773" type="tram" orientation="160.3741615" road="Avenue Aristide Briand"/>
-  <station lat="45.1923046" lon="5.7645948" name="Gabriel Fauré" city="Saint-Martin-d'Hères" source="26563275,1831334491" type="tram" orientation="3.4340481" road="Avenue Centrale"/>
+  <station lat="45.1923046" lon="5.7645948" name="Gabriel Fauré" city="Saint-Martin-d'Hères" source="1831334491,26563275" type="tram" orientation="3.4340481" road="Avenue Centrale"/>
   <station lat="45.1854374" lon="5.7856086" name="Gières - Gare - Universités" city="Gières" source="280981537,1862030714" type="tram" orientation="-2.2330464" road=""/>
   <station lat="45.1876032" lon="5.7846214" name="Gières - Plaine des Sports" city="Gières" source="1865469685" type="tram" orientation="141.8842106" road="Mail des Sports"/>
-  <station lat="45.1721373" lon="5.6941859" name="Grand Pré" city="Seyssinet-Pariset" source="445110038,791725890" type="tram" orientation="-84.9882972" road="Avenue Victor Hugo"/>
+  <station lat="45.1721373" lon="5.6941859" name="Grand Pré" city="Seyssinet-Pariset" source="791725890,445110038" type="tram" orientation="-84.9882972" road="Avenue Victor Hugo"/>
   <station lat="45.1990435" lon="5.7498234" name="Grand Sablon" city="La Tronche" source="1920404362,1920404377,1920356979" type="both" orientation="165.2056137" road=""/>
-  <station lat="45.1590714" lon="5.7322631" name="Grand'Place" city="Grenoble" source="793067922,51919743,482799216,1905961756,1905961760,1905961759,1905961758,1905961757,1905961754" type="both" orientation="-156.7035359" road=""/>
+  <station lat="45.1590714" lon="5.7322631" name="Grand'Place" city="Grenoble" source="793067922,51919743,1905961760,1905961757,1905961758,482799216,1905961754,1905961759,1905961756" type="both" orientation="-156.7035359" road=""/>
   <station lat="45.1900817" lon="5.7151663" name="Grenoble - Gares" city="Grenoble" source="26561617,791177561,791250352" type="tram" orientation="120.4393658" road="Place de la Gare"/>
   <station lat="45.1874660" lon="5.7377648" name="Grenoble - Hôtel de Ville" city="Grenoble" source="1794046736,1794046737" type="tram" orientation="-158.4103240" road="Boulevard Jean Pain"/>
-  <station lat="45.1823462" lon="5.7281289" name="Gustave Rivet" city="Grenoble" source="290063178,791513852" type="tram" orientation="23.6375711" road="Boulevard Maréchal Joffre"/>
+  <station lat="45.1823462" lon="5.7281289" name="Gustave Rivet" city="Grenoble" source="791513852,290063178" type="tram" orientation="23.6375711" road="Boulevard Maréchal Joffre"/>
   <station lat="45.1910787" lon="5.7587500" name="Hector Berlioz - Universités" city="Saint-Martin-d'Hères" source="352963135,26514464" type="tram" orientation="74.5811922" road="Avenue du Doyen Louis Weil"/>
-  <station lat="45.1901671" lon="5.7282304" name="Hubert Dubedout - Maison du tourisme" city="Grenoble" source="736621113,1900674548" type="tram" orientation="-3.9040118" road="Rue Raoul Blanchard"/>
+  <station lat="45.2137422" lon="5.6986710" name="Horloge" city="Saint-Martin-le-Vinoux" source="3647742048,2363286059" type="tram" orientation="-3.8383248" road="Avenue du Général Leclerc"/>
+  <station lat="45.1901671" lon="5.7282304" name="Hubert Dubedout - Maison du tourisme" city="Grenoble" source="1900674548,736621113" type="tram" orientation="-3.9040118" road="Rue Raoul Blanchard"/>
+  <station lat="45.2422804" lon="5.6711620" name="Karben" city="Saint-Égrève" source="3647948740,3399607903" type="tram" orientation="-26.8386024" road="Route de Lyon"/>
   <station lat="45.1662856" lon="5.7311775" name="La Bruyère" city="Grenoble" source="793067917,51919724" type="tram" orientation="32.2978007" road="Avenue La Bruyère"/>
+  <station lat="45.2353899" lon="5.6759683" name="La Pinéa - Saint-Robert" city="Saint-Égrève" source="3399607905,3647948741" type="tram" orientation="135.5061330" road="Avenue du Général de Gaulle"/>
   <station lat="45.1970708" lon="5.6723254" name="La Poya" city="Fontaine" source="792681747,316487927" type="tram" orientation="-123.4476789" road="Boulevard Paul Langevin"/>
   <station lat="45.1487524" lon="5.7179721" name="La Rampe - Centre-Ville" city="Échirolles" source="793061835,280970367" type="tram" orientation="-52.5247004" road="Avenue du 8 Mai 1945"/>
-  <station lat="45.2006181" lon="5.7412181" name="La Tronche - Hôpital" city="Grenoble" source="290063653,790708916" type="tram" orientation="-142.7170161" road="Pont de l'Ile Verte"/>
-  <station lat="45.1663476" lon="5.6904917" name="Le Prisme" city="Seyssins" source="791814412,445110072,445206267,445206264" type="both" orientation="8.0851521" road=""/>
-  <station lat="45.1890973" lon="5.6984775" name="Les Fontainades - Le Vog" city="Fontaine" source="792681722,792681790" type="tram" orientation="178.8907407" road="Avenue Aristide Briand"/>
+  <station lat="45.2006181" lon="5.7412181" name="La Tronche - Hôpital" city="Grenoble" source="790708916,290063653" type="tram" orientation="-142.7170161" road="Pont de l'Ile Verte"/>
+  <station lat="45.2256984" lon="5.6865641" name="Le Muret" city="Saint-Égrève" source="3647742049,3399607906" type="tram" orientation="120.9814481" road="Route de Grenoble"/>
+  <station lat="45.1663476" lon="5.6904917" name="Le Prisme" city="Seyssins" source="445110072,791814412,445206264,445206267" type="both" orientation="8.0851521" road=""/>
+  <station lat="45.1890973" lon="5.6984775" name="Les Fontainades - Le Vog" city="Fontaine" source="792681790,792681722" type="tram" orientation="178.8907407" road="Avenue Aristide Briand"/>
   <station lat="45.1569491" lon="5.7278298" name="Les Granges" city="Échirolles" source="622114604,280970380" type="tram" orientation="-178.7368988" road=""/>
-  <station lat="45.1922711" lon="5.7578646" name="Les Taillées - Universités" city="Saint-Martin-d'Hères" source="26563271,1829929967,352957604" type="tram" orientation="-20.4596542" road="Rue de la Houille Blanche"/>
-  <station lat="45.1892085" lon="5.6942458" name="Louis Maisonnat" city="Fontaine" source="792681671,445133761,1898074614,1898074628" type="both" orientation="-47.2130978" road="Place Louis Maisonnat"/>
-  <station lat="45.1693356" lon="5.7127513" name="Louise Michel" city="Grenoble" source="2604977138,2604977143,474855283,473364882" type="both" orientation="-90.0000000" road="Cours de la Libération et du Général de Gaulle"/>
-  <station lat="45.1734963" lon="5.7320127" name="MC2 - Maison de la Culture" city="Grenoble" source="259956811,791376410" type="tram" orientation="-87.5169165" road="Avenue Marcelin Berthelot"/>
+  <station lat="45.1922711" lon="5.7578646" name="Les Taillées - Universités" city="Saint-Martin-d'Hères" source="352957604,26563271,1829929967" type="tram" orientation="-20.4596542" road="Rue de la Houille Blanche"/>
+  <station lat="45.1892085" lon="5.6942458" name="Louis Maisonnat" city="Fontaine" source="445133761,792681671,1898074628,1898074614" type="both" orientation="-47.2130978" road="Place Louis Maisonnat"/>
+  <station lat="45.1693356" lon="5.7127513" name="Louise Michel" city="Grenoble" source="2604977143,2604977138,474855283,473364882" type="both" orientation="-90.0000000" road="Cours de la Libération et du Général de Gaulle"/>
+  <station lat="45.1734963" lon="5.7320127" name="MC2 - Maison de la Culture" city="Grenoble" source="791376410,259956811" type="tram" orientation="-87.5169165" road="Avenue Marcelin Berthelot"/>
   <station lat="45.1844830" lon="5.7543105" name="Maison Communale" city="Saint-Martin-d'Hères" source="259810384,1871592611" type="tram" orientation="61.1967007" road="Place du Conseil National de la Résistance"/>
   <station lat="45.1694820" lon="5.7322356" name="Malherbe" city="Grenoble" source="1905881612,791376400" type="tram" orientation="-88.0163033" road="Avenue Marcelin Berthelot"/>
-  <station lat="45.1456623" lon="5.7171161" name="Marie Curie" city="Échirolles" source="280970365,793061768" type="tram" orientation="-20.3166795" road="Avenue du 8 Mai 1945"/>
-  <station lat="45.1676370" lon="5.6942730" name="Mas des Iles" city="Seyssins" source="791814439,445110050" type="tram" orientation="89.6829654" road="Avenue Louis Armand"/>
-  <station lat="45.1846769" lon="5.7791185" name="Mayencin - Champ Roman" city="Gières" source="280981820,349267234" type="tram" orientation="135.3172993" road="Rue de l'Étang"/>
-  <station lat="45.2003361" lon="5.7455364" name="Michallon" city="La Tronche" source="790022883,26562305" type="tram" orientation="10.1991515" road="Rond-point de la Grotte"/>
-  <station lat="45.1789622" lon="5.7318206" name="Mounier" city="Grenoble" source="259956808,791376422" type="tram" orientation="91.9599273" road="Avenue Marcelin Berthelot"/>
-  <station lat="45.1867778" lon="5.7567148" name="Neyrpic - Belledonne" city="Saint-Martin-d'Hères" source="26514427,352962923,1829896922,1829896952" type="both" orientation="167.6062979" road="Avenue Gabriel Péri"/>
+  <station lat="45.1456623" lon="5.7171161" name="Marie Curie" city="Échirolles" source="793061768,280970365" type="tram" orientation="-20.3166795" road="Avenue du 8 Mai 1945"/>
+  <station lat="45.1676370" lon="5.6942730" name="Mas des Iles" city="Seyssins" source="445110050,791814439" type="tram" orientation="89.6829654" road="Avenue Louis Armand"/>
+  <station lat="45.1846769" lon="5.7791185" name="Mayencin - Champ Roman" city="Gières" source="349267234,280981820" type="tram" orientation="135.3172993" road="Rue de l'Étang"/>
+  <station lat="45.2003361" lon="5.7455364" name="Michallon" city="La Tronche" source="26562305,790022883" type="tram" orientation="10.1991515" road="Rond-Point de la Grotte"/>
+  <station lat="45.1789622" lon="5.7318206" name="Mounier" city="Grenoble" source="791376422,259956808" type="tram" orientation="91.9599273" road="Avenue Marcelin Berthelot"/>
+  <station lat="45.1867778" lon="5.7567148" name="Neyrpic - Belledonne" city="Saint-Martin-d'Hères" source="26514427,352962923,1829896952,1829896922" type="both" orientation="167.6062979" road="Avenue Gabriel Péri"/>
   <station lat="45.1936121" lon="5.7321834" name="Notre-Dame - Musée" city="Grenoble" source="790708919,790708934" type="tram" orientation="-102.7062897" road="Rue Frédéric Taulier"/>
-  <station lat="45.1911776" lon="5.7117358" name="Palais de Justice" city="Grenoble" source="55388395,791183038" type="tram" orientation="-13.3028516" road="Rue Pierre Semard"/>
+  <station lat="45.2175223" lon="5.6937121" name="Néron" city="Saint-Martin-le-Vinoux" source="3399607909,3647742050" type="tram" orientation="-146.9666816" road="Avenue du Général Leclerc"/>
+  <station lat="45.1911776" lon="5.7117358" name="Palais de Justice" city="Grenoble" source="791183038,55388395" type="tram" orientation="-13.3028516" road="Rue Pierre Semard"/>
+  <station lat="45.2548759" lon="5.6616607" name="Palluel" city="Fontanil-Cornillon" source="3399607910,3647948743" type="tram" orientation="122.3637800" road="Route de Lyon"/>
   <station lat="45.1751363" lon="5.7573011" name="Parc Jo Blanchon" city="Saint-Martin-d'Hères" source="349326994,256755858" type="tram" orientation="117.6536320" road="Parvis Central"/>
-  <station lat="45.2057983" lon="5.6996949" name="Presqu'île" city="Grenoble" source="2787443056,2787443059,457759108,2787443052" type="both" orientation="7.7653295" road="Avenue des Martyrs"/>
+  <station lat="45.2299494" lon="5.6826107" name="Pont de Vence" city="Saint-Égrève" source="3399607911,3647948744" type="tram" orientation="90.0000000" road="Avenue du Général de Gaulle"/>
+  <station lat="45.2057983" lon="5.6996949" name="Presqu'île" city="Grenoble" source="2787443059,2787443056,2787443052,457759108" type="both" orientation="7.7653295" road="Avenue des Martyrs"/>
   <station lat="45.1877186" lon="5.7513447" name="Péri - Brossolette" city="Saint-Martin-d'Hères" source="1829874481,514002007" type="tram" orientation="126.3506219" road="Avenue Gabriel Péri"/>
   <station lat="45.1571973" lon="5.7330271" name="Pôle Sud - Alpexpo" city="Grenoble" source="793061750,280970383" type="tram" orientation="-178.7430005" road="Cour des Érables"/>
+  <station lat="45.2482443" lon="5.6665786" name="Rafour" city="Fontanil-Cornillon" source="3399607912,3647948745" type="tram" orientation="-56.6804026" road="Route de Lyon"/>
   <station lat="45.1883738" lon="5.7138102" name="Saint-Bruno" city="Grenoble" source="403348647,791177502" type="tram" orientation="176.3795865" road="Cours Berriat"/>
-  <station lat="45.2077682" lon="5.7067590" name="Saint-Martin-le-Vinoux - Hôtel de Ville" city="Saint-Martin-le-Vinoux" source="2698340312,2698340334,689497" type="both" orientation="24.6543967" road=""/>
-  <station lat="45.1913542" lon="5.7306564" name="Sainte-Claire - Les Halles" city="Grenoble" source="790708976,790708935" type="tram" orientation="-121.4232930" road="Place Sainte-Claire"/>
+  <station lat="45.2077682" lon="5.7067590" name="Saint-Martin-le-Vinoux - Hôtel de Ville" city="Saint-Martin-le-Vinoux" source="2698340334,2698340312" type="tram" orientation="-47.6266132" road=""/>
+  <station lat="45.1913542" lon="5.7306564" name="Sainte-Claire - Les Halles" city="Grenoble" source="790708935,790708976" type="tram" orientation="-121.4232930" road="Place Sainte-Claire"/>
   <station lat="45.1802384" lon="5.6963708" name="Seyssinet Pariset - Hôtel de Ville" city="Seyssinet-Pariset" source="257198085,791718597" type="tram" orientation="-18.3384563" road="Boulevard de l'Europe"/>
   <station lat="45.1583538" lon="5.7220740" name="Surieux" city="Échirolles" source="622023077,622122735" type="tram" orientation="-25.1347225" road="Rue de Normandie"/>
   <station lat="45.1800788" lon="5.7062389" name="Vallier - Catane" city="Grenoble" source="445109996,791513849" type="tram" orientation="0.9713697" road="Boulevard Joseph Vallier"/>
-  <station lat="45.1801446" lon="5.7107744" name="Vallier - Docteur Calmette" city="Grenoble" source="791513793,445109994" type="tram" orientation="11.2708685" road="Boulevard Joseph Vallier"/>
-  <station lat="45.1803139" lon="5.7156521" name="Vallier - Libération" city="Grenoble" source="445109990,791513796" type="tram" orientation="-177.0322693" road="Boulevard Joseph Vallier"/>
+  <station lat="45.1801446" lon="5.7107744" name="Vallier - Docteur Calmette" city="Grenoble" source="445109994,791513793" type="tram" orientation="11.2708685" road="Boulevard Joseph Vallier"/>
+  <station lat="45.1803139" lon="5.7156521" name="Vallier - Libération" city="Grenoble" source="791513796,445109990" type="tram" orientation="-177.0322693" road="Boulevard Joseph Vallier"/>
   <station lat="45.1797092" lon="5.7162393" name="Vallier - Libération" city="Grenoble" source="2604977147,2604977148" type="tram" orientation="-58.9767340" road="Cours de la Libération et du Général de Gaulle"/>
-  <station lat="45.1882554" lon="5.7315002" name="Verdun-Préfecture" city="Grenoble" source="1829656135,26514598,372746162" type="both" orientation="-147.4537070" road=""/>
+  <station lat="45.1882554" lon="5.7315002" name="Verdun-Préfecture" city="Grenoble" source="26514598,1829656135,372746162" type="both" orientation="-147.4537070" road=""/>
   <station lat="45.1898285" lon="5.7250957" name="Victor Hugo" city="Grenoble" source="1829038578,1829038566" type="tram" orientation="-158.6156014" road="Rue Molière"/>
   <station lat="45.1531091" lon="5.7184726" name="Échirolles - Gare" city="Échirolles" source="1914299432,1914299431" type="tram" orientation="-104.5772284" road="Rue d'Auvergne"/>
   <station lat="45.1794153" lon="5.7551869" name="Édouard Vaillant" city="Saint-Martin-d'Hères" source="349327011,250529114" type="tram" orientation="110.9722066" road="Place Lucie Aubrac"/>
@@ -77,33 +86,33 @@
   <station lat="45.2041323" lon="5.7154736" name="16 Août 1944" city="Saint-Martin-le-Vinoux" source="164312441" type="bus" road="Rue du 16 Août 1944"/>
   <station lat="45.1710515" lon="5.7568611" name="8 Mai 1945" city="Saint-Martin-d'Hères" source="515302521" type="bus" road="Avenue du 8 Mai 1945"/>
   <station lat="45.1838914" lon="5.7117721" name="Abbé Grégoire" city="Grenoble" source="488881181" type="bus" road="Rue Abbé Grégoire"/>
-  <station lat="45.2051313" lon="5.7645861" name="Aiguinards-Hexagone" city="Meylan" source="514050486,514050481" type="bus" road="Avenue de Verdun"/>
-  <station lat="45.2062134" lon="5.7641259" name="Aiguinards-Hexagone" city="Meylan" source="498507086,498507083" type="bus" road="Rue des Aiguinards"/>
+  <station lat="45.2062134" lon="5.7641259" name="Aiguinards-Hexagone" city="Meylan" source="498507083,498507086" type="bus" road="Rue des Aiguinards"/>
+  <station lat="45.2051313" lon="5.7645861" name="Aiguinards-Hexagone" city="Meylan" source="514050481,514050486" type="bus" road="Avenue de Verdun"/>
   <station lat="45.1842633" lon="5.7106567" name="Alembert" city="Grenoble" source="488881129" type="bus" road="Rue d'Alembert"/>
+  <station lat="45.1733493" lon="5.7141059" name="Alliés" city="Grenoble" source="2150731509,473364885" type="bus" road="Cours de la Libération et du Général de Gaulle"/>
   <station lat="45.1744866" lon="5.7140776" name="Alliés" city="Grenoble" source="2258635530" type="bus" road="Rue Anatole France"/>
   <station lat="45.1747984" lon="5.7138265" name="Alliés" city="Grenoble" source="21264092" type="bus" road="Boulevard Roger Salengro"/>
-  <station lat="45.1733493" lon="5.7141059" name="Alliés" city="Grenoble" source="473364885,2150731509" type="bus" road="Cours de la Libération et du Général de Gaulle"/>
   <station lat="45.0578914" lon="5.6847823" name="Allée des Granges" city="Vif" source="1805431180" type="bus" road=""/>
-  <station lat="45.1318112" lon="5.7001234" name="Allées de Nice" city="Le Pont-de-Claix" source="1893323969,1893324016" type="bus" road="Cours Saint-André"/>
+  <station lat="45.1318112" lon="5.7001234" name="Allées de Nice" city="Le Pont-de-Claix" source="1893324016,1893323969" type="bus" road="Cours Saint-André"/>
   <station lat="45.1543600" lon="5.7337444" name="Alpexpo" city="Grenoble" source="482798325,482798326" type="bus" road="Avenue d'Innsbruck"/>
-  <station lat="45.1718274" lon="5.7049850" name="Anatole France" city="Grenoble" source="488881136" type="bus" road="Avenue Rhin et Danube"/>
   <station lat="45.1720704" lon="5.7049992" name="Anatole France" city="Grenoble" source="2092730830" type="bus" road=""/>
+  <station lat="45.1718274" lon="5.7049850" name="Anatole France" city="Grenoble" source="488881136" type="bus" road="Avenue Rhin et Danube"/>
   <station lat="45.1597637" lon="5.6817547" name="Ancienne Gare" city="Seyssins" source="473349920" type="bus" road="Avenue de la Poste"/>
-  <station lat="45.1928482" lon="5.6779846" name="Ancienne Mairie" city="Fontaine" source="473975823,473975828" type="bus" road="Boulevard Paul Langevin"/>
+  <station lat="45.1928482" lon="5.6779846" name="Ancienne Mairie" city="Fontaine" source="473975828,473975823" type="bus" road="Boulevard Paul Langevin"/>
   <station lat="45.1750672" lon="5.7448094" name="André Argouges" city="Grenoble" source="457759188" type="bus" road="Rue Léon Jouhaux"/>
   <station lat="45.1758689" lon="5.7440261" name="André Argouges" city="Grenoble" source="457759187" type="bus" road="Rue Léon Jouhaux"/>
   <station lat="45.1778202" lon="5.7779220" name="Anguisses" city="Saint-Martin-d'Hères" source="451116329" type="bus" road="Avenue Jean Jaurès"/>
-  <station lat="45.1483504" lon="5.7231884" name="Antoine Polotti" city="Échirolles" source="504708772" type="bus" road="D 269Z"/>
   <station lat="45.1485982" lon="5.7225609" name="Antoine Polotti" city="Échirolles" source="504708769" type="bus" road="D 269Z"/>
-  <station lat="45.1970838" lon="5.7117749" name="Arago" city="Grenoble" source="457759154" type="bus" road="Rue Henri Tarzé"/>
+  <station lat="45.1483504" lon="5.7231884" name="Antoine Polotti" city="Échirolles" source="504708772" type="bus" road="D 269Z"/>
   <station lat="45.1977182" lon="5.7115077" name="Arago" city="Grenoble" source="457759158" type="bus" road="Rue Henri Tarzé"/>
-  <station lat="45.1855427" lon="5.6946085" name="Aristide Bergès" city="Seyssinet-Pariset" source="445206356" type="bus" road="Rue Aime Bouchayer"/>
+  <station lat="45.1970838" lon="5.7117749" name="Arago" city="Grenoble" source="457759154" type="bus" road="Rue Henri Tarzé"/>
   <station lat="45.1850993" lon="5.6946051" name="Aristide Bergès" city="Seyssinet-Pariset" source="445206355" type="bus" road="Rue Aime Bouchayer"/>
-  <station lat="45.1422161" lon="5.7151323" name="Auguste Delaune" city="Échirolles" source="1916864153" type="bus" road="Avenue du Général de Gaulle"/>
+  <station lat="45.1855427" lon="5.6946085" name="Aristide Bergès" city="Seyssinet-Pariset" source="445206356" type="bus" road="Rue Aime Bouchayer"/>
   <station lat="45.1433920" lon="5.7142494" name="Auguste Delaune" city="Échirolles" source="482798347" type="bus" road="Rue Missak Manouchian"/>
+  <station lat="45.1427317" lon="5.7162680" name="Auguste Delaune" city="Échirolles" source="1916864143,1916864146" type="bus" road="Rue Missak Manouchian"/>
   <station lat="45.1448789" lon="5.7096899" name="Auguste Ferrier" city="Échirolles" source="482798349,482798350" type="bus" road="Avenue Auguste Ferrier"/>
-  <station lat="45.1837404" lon="5.7389070" name="Auguste Ravier" city="Grenoble" source="457759177" type="bus" road="Boulevard Clémenceau"/>
-  <station lat="45.1839999" lon="5.7395647" name="Auguste Ravier" city="Grenoble" source="457759178" type="bus" road="Boulevard Clémenceau"/>
+  <station lat="45.1837404" lon="5.7389070" name="Auguste Ravier" city="Grenoble" source="457759177" type="bus" road="Boulevard Clemenceau"/>
+  <station lat="45.1839999" lon="5.7395647" name="Auguste Ravier" city="Grenoble" source="457759178" type="bus" road="Boulevard Clemenceau"/>
   <station lat="45.1672291" lon="5.7052148" name="Bachelard" city="Grenoble" source="488881138" type="bus" road="Rue Albert Reynier"/>
   <station lat="45.1666347" lon="5.7066727" name="Bachelard" city="Grenoble" source="488881174" type="bus" road="Rue Albert Reynier"/>
   <station lat="45.1782185" lon="5.7361688" name="Bajatière" city="Grenoble" source="498506993,498506998" type="bus" road="Avenue Jean Perrot"/>
@@ -111,63 +120,58 @@
   <station lat="45.2380773" lon="5.6806761" name="Barnave" city="Saint-Égrève" source="474827246,474827247" type="bus" road=""/>
   <station lat="45.2528435" lon="5.7417708" name="Bas de Mont-Quaix" city="Quaix-en-Chartreuse" source="1907488644,2997242317" type="bus" road="Route de Sarcenas"/>
   <station lat="45.2429088" lon="5.6321230" name="Bascule" city="Noyarey" source="473851906" type="bus" road="Avenue Saint-Jean"/>
-  <station lat="45.2169775" lon="5.6941916" name="Basse Buisserate" city="Saint-Martin-le-Vinoux" source="474770820,474770750" type="bus" road="Avenue du Général Leclerc"/>
   <station lat="45.2045206" lon="5.7377326" name="Bastille" city="La Tronche" source="488881199,488881198" type="bus" road="Grande Rue"/>
-  <station lat="45.2273835" lon="5.7587901" name="Batonnière" city="Corenc" source="2287025664" type="bus" road="Route de la Chartreuse"/>
-  <station lat="45.2272939" lon="5.7588083" name="Batonnière" city="Corenc" source="137909" type="bus" road="Chemin de Bâtonnière"/>
+  <station lat="45.2273387" lon="5.7587992" name="Batonnière" city="Corenc" source="2287025664,137909" type="bus" road="Route de la Chartreuse"/>
   <station lat="44.9806806" lon="5.6228674" name="Bayanne" city="Miribel-Lanchâtre" source="2283127486" type="bus" road="D 8"/>
-  <station lat="45.1460891" lon="5.7043568" name="Bayard" city="Échirolles" source="1895459407,1895459442" type="bus" road="Avenue Colonel Manhès"/>
-  <station lat="45.1456563" lon="5.7047159" name="Bayard" city="Échirolles" source="1895424237" type="bus" road="Cours Jean Jaurès"/>
   <station lat="45.1464005" lon="5.7050933" name="Bayard" city="Échirolles" source="1895459478" type="bus" road="Cours Jean Jaurès"/>
+  <station lat="45.1460891" lon="5.7043568" name="Bayard" city="Échirolles" source="1895459442,1895459407" type="bus" road="Avenue Colonel Manhès"/>
+  <station lat="45.1456563" lon="5.7047159" name="Bayard" city="Échirolles" source="1895424237" type="bus" road="Cours Jean Jaurès"/>
   <station lat="45.1752683" lon="5.6969310" name="Beau Site" city="Seyssinet-Pariset" source="445206344" type="bus" road="Avenue de la République"/>
   <station lat="45.1758902" lon="5.6969430" name="Beau Site" city="Seyssinet-Pariset" source="445206345" type="bus" road="Avenue de la République"/>
   <station lat="45.1385917" lon="5.7735864" name="Beaulieu" city="Brié-et-Angonnes" source="312167844" type="bus" road="Route des Angonnes"/>
   <station lat="45.2101018" lon="5.6485855" name="Beaurevoir" city="Sassenage" source="1802977986" type="bus" road="Rue Pierre Dalloz"/>
   <station lat="45.1641553" lon="5.7178730" name="Beauvert" city="Grenoble" source="479738762" type="bus" road="Avenue Léon Blum"/>
   <station lat="45.1590050" lon="5.6832629" name="Beauvoir" city="Seyssins" source="473349930" type="bus" road="Avenue de Grenoble"/>
-  <station lat="45.1610822" lon="5.7552879" name="Bel Air" city="Eybens" source="457759202" type="bus" road="D 269A"/>
-  <station lat="45.1087746" lon="5.6719443" name="Bel Horizon" city="Claix" source="369808348" type="bus" road="Allée du Bel Horizon"/>
-  <station lat="45.1086886" lon="5.6719521" name="Bel Horizon" city="Claix" source="2821192882" type="bus" road="Chemin de Risset"/>
+  <station lat="45.1610822" lon="5.7552879" name="Bel Air" city="Les Bernards" source="457759202" type="bus" road="D 269A"/>
+  <station lat="45.1087316" lon="5.6719482" name="Bel Horizon" city="Claix" source="369808348,2821192882" type="bus" road="Chemin de Risset"/>
   <station lat="45.2226929" lon="5.6839856" name="Belledonne" city="Saint-Égrève" source="474827287" type="bus" road="Rue Lieutenant Fiancey"/>
-  <station lat="45.1118939" lon="5.6655177" name="Bellevue" city="Claix" source="1802109399,369809032" type="bus" road="Rue du Château"/>
+  <station lat="45.1118939" lon="5.6655177" name="Bellevue" city="Claix" source="369809032,1802109399" type="bus" road="Rue du Château"/>
   <station lat="45.2440858" lon="5.6925103" name="Bellevue" city="Proveysieux" source="1738553910" type="bus" road="Route de Proveysieux"/>
   <station lat="45.1764206" lon="5.6879104" name="Belvédère" city="Seyssinet-Pariset" source="20934511" type="bus" road="D 106G"/>
-  <station lat="45.1842677" lon="5.6918778" name="Bergès - Vercors" city="Seyssinet-Pariset" source="473975912" type="bus" road="Rue Aristide Bergès"/>
   <station lat="45.1838962" lon="5.6902223" name="Bergès - Vercors" city="Seyssinet-Pariset" source="3425200328" type="bus" road="Boulevard des Frères Desaire"/>
-  <station lat="45.0899197" lon="5.6925328" name="Berliognière" city="Varces-Allières-et-Risset" source="1027212572,1805431133" type="bus" road="Rue Honoré de Balzac"/>
-  <station lat="45.1885971" lon="5.7058514" name="Berriat - Le Magasin" city="Grenoble" source="1585851724,1898683792" type="bus" road="Rue Ampère"/>
+  <station lat="45.1842677" lon="5.6918778" name="Bergès - Vercors" city="Seyssinet-Pariset" source="473975912" type="bus" road="Rue Aristide Bergès"/>
+  <station lat="45.0899197" lon="5.6925328" name="Berliognière" city="Varces-Allières-et-Risset" source="1805431133,1027212572" type="bus" road="Rue Honoré de Balzac"/>
+  <station lat="45.1885971" lon="5.7058514" name="Berriat - Le Magasin" city="Grenoble" source="1898683792,1585851724" type="bus" road="Rue Ampère"/>
   <station lat="45.1916876" lon="5.7703742" name="Bibliothèques Universitaires" city="Gières" source="1831366705" type="bus" road="Avenue Centrale"/>
-  <station lat="45.1888366" lon="5.7366373" name="Bir Hakeim" city="Grenoble" source="451116247,451116245" type="bus" road="Place Bir-Hakeim"/>
+  <station lat="45.1888206" lon="5.7366089" name="Bir Hakeim" city="Grenoble" source="451116247,451116245" type="bus" road="Place Bir-Hakeim"/>
   <station lat="45.2106686" lon="5.6562684" name="Blanc Fontaine" city="Sassenage" source="2169308480" type="bus" road="Rue du Vercors"/>
   <station lat="45.2108710" lon="5.6563768" name="Blanc Fontaine" city="Sassenage" source="2139228181" type="bus" road="Rue Henri Blanc Fontaine"/>
   <station lat="45.2248212" lon="5.8377072" name="Bois Français" city="Saint-Ismier" source="2299463674" type="bus" road=""/>
   <station lat="45.1793745" lon="5.7508296" name="Bon Pasteur" city="Grenoble" source="451237945" type="bus" road="Avenue Jules Vallès"/>
-  <station lat="45.1785918" lon="5.7499169" name="Bon Pasteur" city="Grenoble" source="496601253" type="bus" road="Rue Marius Blanchet"/>
   <station lat="45.1787670" lon="5.7508309" name="Bon Pasteur" city="Grenoble" source="496601255" type="bus" road="Rue Marius Blanchet"/>
+  <station lat="45.1785918" lon="5.7499169" name="Bon Pasteur" city="Grenoble" source="496601253" type="bus" road="Rue Marius Blanchet"/>
   <station lat="45.1782339" lon="5.7515372" name="Bon Pasteur" city="Grenoble" source="451237944" type="bus" road="Avenue Jules Vallès"/>
-  <station lat="45.1812314" lon="5.6944989" name="Bouchayer - Hôtel de Ville" city="Seyssinet-Pariset" source="316467401,2988443524" type="bus" road="Rue Aime Bouchayer"/>
+  <station lat="45.1812314" lon="5.6944989" name="Bouchayer - Hôtel de Ville" city="Seyssinet-Pariset" source="2988443524,316467401" type="bus" road="Rue Aime Bouchayer"/>
   <station lat="45.1196087" lon="5.6690147" name="Boulodrome École" city="Claix" source="1802088385" type="bus" road=""/>
   <station lat="45.1196205" lon="5.6693199" name="Boulodrome École" city="Claix" source="1802088391" type="bus" road="Rue Fantin Latour"/>
-  <station lat="45.1377233" lon="5.7479259" name="Bresson - Mairie" city="Bresson" source="1826463227,1826463230" type="bus" road="Rue de la République"/>
-  <station lat="45.1112168" lon="5.7864240" name="Brié-et-Angonnes - Église" city="Brié-et-Angonnes" source="1821374966" type="bus" road="Route Napoléon"/>
+  <station lat="45.1377233" lon="5.7479259" name="Bresson - Mairie" city="Bresson" source="1826463230,1826463227" type="bus" road="Rue de la République"/>
   <station lat="45.1107790" lon="5.7870827" name="Brié-et-Angonnes - Église" city="Brié-et-Angonnes" source="2594139005" type="bus" road="Route Napoléon"/>
+  <station lat="45.1112056" lon="5.7864162" name="Brié-et-Angonnes - Église" city="Brié-et-Angonnes" source="1821374966" type="bus" road="Route Napoléon"/>
   <station lat="45.2158153" lon="5.7721743" name="Buclos" city="Meylan" source="488881220" type="bus" road="Avenue de l'Eygala"/>
   <station lat="45.2157032" lon="5.7715953" name="Buclos" city="Meylan" source="488881219" type="bus" road="Avenue de l'Eygala"/>
-  <station lat="45.2135037" lon="5.6992929" name="Buisserate" city="Saint-Martin-le-Vinoux" source="474770746" type="bus" road="Avenue du Général Leclerc"/>
-  <station lat="45.2136903" lon="5.6986861" name="Buisserate" city="Saint-Martin-le-Vinoux" source="474770822" type="bus" road="Avenue du Général Leclerc"/>
   <station lat="45.2088524" lon="5.7974886" name="Busserolles" city="Meylan" source="911300141" type="bus" road="Chemin du Vieux Chêne"/>
   <station lat="45.2187377" lon="5.7830484" name="Bérivère" city="Meylan" source="2431368763,35180837" type="bus" road="Avenue de Chartreuse"/>
   <station lat="45.2106147" lon="5.7060413" name="Canet" city="Saint-Martin-le-Vinoux" source="313507304" type="bus" road="Chemin du Canet"/>
-  <station lat="45.2401608" lon="5.6661838" name="Cap 38" city="Saint-Égrève" source="474827216" type="bus" road=""/>
   <station lat="45.2399815" lon="5.6664921" name="Cap 38" city="Saint-Égrève" source="474827214" type="bus" road="Avenue de San Marino"/>
+  <station lat="45.2401608" lon="5.6661838" name="Cap 38" city="Saint-Égrève" source="474827216" type="bus" road=""/>
   <station lat="45.2171905" lon="5.6813631" name="Cap des H'" city="Saint-Égrève" source="474827285,474827276" type="bus" road="Avenue de l'Île Brune"/>
-  <station lat="45.1757329" lon="5.7258764" name="Capuche" city="Grenoble" source="479738774" type="bus" road="Rue de Stalingrad"/>
-  <station lat="45.1765998" lon="5.7245764" name="Capuche" city="Grenoble" source="482798310" type="bus" road="Rue du Général Ferrié"/>
-  <station lat="45.1760442" lon="5.7247477" name="Capuche" city="Grenoble" source="482798311" type="bus" road="Rue du Général Ferrié"/>
   <station lat="45.1761739" lon="5.7261778" name="Capuche" city="Grenoble" source="479738775" type="bus" road="Rue de Stalingrad"/>
-  <station lat="45.1147858" lon="5.6902598" name="Carrière" city="Claix" source="1887337026,1887337023" type="bus" road="Avenue de la Libération"/>
+  <station lat="45.1765998" lon="5.7245764" name="Capuche" city="Grenoble" source="482798310" type="bus" road="Rue du Général Ferrié"/>
+  <station lat="45.1757329" lon="5.7258764" name="Capuche" city="Grenoble" source="479738774" type="bus" road="Rue de Stalingrad"/>
+  <station lat="45.1760442" lon="5.7247477" name="Capuche" city="Grenoble" source="482798311" type="bus" road="Rue du Général Ferrié"/>
+  <station lat="45.1147858" lon="5.6902598" name="Carrière" city="Claix" source="1887337023,1887337026" type="bus" road="Avenue de la Libération"/>
   <station lat="45.2006354" lon="5.7580542" name="Carronnerie - Île d'Amour" city="La Tronche" source="514050493" type="bus" road=""/>
-  <station lat="45.2010810" lon="5.7585559" name="Carronnerie Basse" city="La Tronche" source="480458783,480458784,2031784209" type="bus" road="Boulevard de la Chantourne"/>
+  <station lat="45.2010810" lon="5.7585559" name="Carronnerie Basse" city="La Tronche" source="480458783,2031784209,480458784" type="bus" road="Boulevard de la Chantourne"/>
   <station lat="45.1989534" lon="5.7180702" name="Casamaures Village" city="Grenoble" source="451237960" type="bus" road="Ancienne Route de Lyon"/>
   <station lat="45.1850047" lon="5.7254282" name="Caserne de Bonne" city="Grenoble" source="904382059" type="bus" road="Boulevard Gambetta"/>
   <station lat="44.9827279" lon="5.6229745" name="Cassoulet" city="Miribel-Lanchâtre" source="480740175" type="bus" road="D 8"/>
@@ -179,38 +183,38 @@
   <station lat="45.2061654" lon="5.7521002" name="Centre Théologique" city="La Tronche" source="498507069" type="bus" road="Avenue des Maquis du Grésivaudan"/>
   <station lat="45.1705265" lon="5.6807334" name="Centre Village" city="Seyssinet-Pariset" source="473976058" type="bus" road="Avenue Hector Berlioz"/>
   <station lat="45.0851071" lon="5.6671583" name="Chambord" city="Varces" source="2283127488,2283127491" type="bus" road="Route de Grenoble"/>
-  <station lat="45.2063432" lon="5.6839036" name="Chamechaude" city="Sassenage" source="457759140" type="bus" road="Rue de Chamechaude"/>
+  <station lat="45.2056033" lon="5.6833225" name="Chamechaude" city="Sassenage" source="457759140" type="bus" road="Rue de Chamechaude"/>
   <station lat="45.2050671" lon="5.6835273" name="Chamechaude" city="Fontaine" source="473975689" type="bus" road="Rue de la Sure"/>
   <station lat="45.1562795" lon="5.7550237" name="Champ Fila" city="Eybens" source="504708749" type="bus" road="Avenue de Poisat"/>
   <station lat="45.2074425" lon="5.7591248" name="Champ Rochas" city="Meylan" source="1799525877" type="bus" road="Rue Champ Rochas"/>
   <station lat="45.2071269" lon="5.7582983" name="Champ Rochas" city="Meylan" source="277364392" type="bus" road="Rue Champ Rochas"/>
   <station lat="45.1847257" lon="5.7684314" name="Champ Roman" city="Saint-Martin-d'Hères" source="496601277" type="bus" road="Rue Georges Sadoul"/>
-  <station lat="45.1844282" lon="5.7675908" name="Champ Roman" city="Saint-Martin-d'Hères" source="496601274,513946138" type="bus" road="Avenue Gabriel Péri"/>
+  <station lat="45.1844282" lon="5.7675908" name="Champ Roman" city="Saint-Martin-d'Hères" source="513946138,496601274" type="bus" road="Avenue Gabriel Péri"/>
   <station lat="45.1838913" lon="5.7682259" name="Champ Roman" city="Saint-Martin-d'Hères" source="504708692" type="bus" road="Avenue de la Commune de Paris"/>
   <station lat="45.1855794" lon="5.7231877" name="Championnet" city="Grenoble" source="482798369" type="bus" road="Rue Lesdiguières"/>
   <station lat="45.1853837" lon="5.7224992" name="Championnet" city="Grenoble" source="482798370" type="bus" road="Place Championnet"/>
   <station lat="45.2202128" lon="5.7799338" name="Champlars" city="Meylan" source="1799530468,2287115278" type="bus" road="Chemin de l'Église"/>
-  <station lat="45.1862386" lon="5.7249751" name="Champollion" city="Grenoble" source="479738781,479738782" type="bus" road="Rue Lesdiguières"/>
-  <station lat="45.1857622" lon="5.8028912" name="Champrondet" city="Gières" source="451116393,451116397" type="bus" road="Rue de la Libération"/>
-  <station lat="45.1782941" lon="5.7105287" name="Champs-Elysées" city="Grenoble" source="866063" type="bus" road="Rue des Champs Elysées"/>
+  <station lat="45.1862386" lon="5.7249751" name="Champollion" city="Grenoble" source="479738782,479738781" type="bus" road="Rue Lesdiguières"/>
+  <station lat="45.1857622" lon="5.8028912" name="Champrondet" city="Gières" source="451116397,451116393" type="bus" road="Rue de la Libération"/>
   <station lat="45.1779518" lon="5.7102804" name="Champs-Elysées" city="Grenoble" source="488881131" type="bus" road="Rue des Eaux Claires"/>
+  <station lat="45.1782941" lon="5.7105287" name="Champs-Elysées" city="Grenoble" source="866063" type="bus" road="Rue des Champs Elysées"/>
   <station lat="45.2399287" lon="5.6916252" name="Champy" city="Saint-Égrève" source="302933943" type="bus" road="Rue de Champy"/>
-  <station lat="45.0805077" lon="5.7748587" name="Chantefeuille" city="Vizille" source="2030794083,2028671561" type="bus" road=""/>
+  <station lat="45.0805077" lon="5.7748587" name="Chantefeuille" city="Vizille" source="2028671561,2030794083" type="bus" road=""/>
   <station lat="45.2142512" lon="5.7531884" name="Charles Pajon" city="Corenc" source="1800589796" type="bus" road="Chemin Charles Pajon"/>
   <station lat="45.2131999" lon="5.7524052" name="Charles Pajon" city="Corenc" source="2287025665" type="bus" road="Chemin Charles Pajon"/>
-  <station lat="45.1979261" lon="5.6930405" name="Charmettes" city="Fontaine" source="445963860" type="bus" road="Boulevard Joliot Curie"/>
   <station lat="45.1973597" lon="5.6935151" name="Charmettes" city="Fontaine" source="2935256678" type="bus" road="Boulevard Joliot Curie"/>
+  <station lat="45.1979261" lon="5.6930405" name="Charmettes" city="Fontaine" source="445963860" type="bus" road="Boulevard Joliot Curie"/>
   <station lat="45.1159954" lon="5.6889397" name="Charrières" city="Claix" source="1802058436" type="bus" road="Rue Lesdiguières"/>
-  <station lat="45.2123775" lon="5.7698607" name="Chaumetière" city="Meylan" source="480458804" type="bus" road="Avenue de Chamrousse"/>
   <station lat="45.2125159" lon="5.7712867" name="Chaumetière" city="Meylan" source="480458805" type="bus" road="Avenue de Chamrousse"/>
-  <station lat="45.1854300" lon="5.7313634" name="Chavant" city="Grenoble" source="1829590482,1127873040" type="bus" road="Boulevard Maréchal Lyautey"/>
+  <station lat="45.2123775" lon="5.7698607" name="Chaumetière" city="Meylan" source="480458804" type="bus" road="Avenue de Chamrousse"/>
+  <station lat="45.1854300" lon="5.7313634" name="Chavant" city="Grenoble" source="1127873040,1829590482" type="bus" road="Boulevard Maréchal Lyautey"/>
   <station lat="45.1849225" lon="5.7324034" name="Chavant" city="Grenoble" source="1829590508" type="bus" road="Place Paul Mistral"/>
   <station lat="45.2365434" lon="5.6924118" name="Chemin Vert" city="Saint-Égrève" source="954189400" type="bus" road="Chemin Vert"/>
   <station lat="45.2722724" lon="5.6784946" name="Chemin de Namière" city="Mont-Saint-Martin" source="393525947" type="bus" road="Chemin de Namière"/>
   <station lat="45.1351059" lon="5.6683328" name="Chemin de l'Abbé" city="Claix" source="1803020384,2821192884" type="bus" road="Chemin de l'Abbé"/>
   <station lat="45.2067309" lon="5.8273600" name="Chenevières" city="Domène" source="513946287" type="bus" road=""/>
   <station lat="45.1661747" lon="5.7516463" name="Chopin" city="Saint-Martin-d'Hères" source="515302549,515302546" type="bus" road="Rue Frédéric Chopin"/>
-  <station lat="45.1858984" lon="5.7173429" name="Chorier-Condorcet" city="Grenoble" source="1905719332,1905719334" type="bus" road="Rue Nicolas Chorier"/>
+  <station lat="45.1858984" lon="5.7173429" name="Chorier-Condorcet" city="Grenoble" source="1905719334,1905719332" type="bus" road="Rue Nicolas Chorier"/>
   <station lat="45.1613257" lon="5.7241335" name="Christophe Turc" city="Grenoble" source="482798317" type="bus" road="Rue Aimé Pupin"/>
   <station lat="45.1607486" lon="5.7240590" name="Christophe Turc" city="Grenoble" source="482798318" type="bus" road="Rue Aimé Pupin"/>
   <station lat="45.2646557" lon="5.7775296" name="Churut" city="Le Sappey-en-Chartreuse" source="582762781" type="bus" road="CR 3"/>
@@ -218,114 +222,113 @@
   <station lat="45.2735292" lon="5.6047697" name="Châtelard" city="Veurey-Voroize" source="473851886" type="bus" road="Route de Montaud"/>
   <station lat="45.1697463" lon="5.6835512" name="Cimetière" city="Seyssinet-Pariset" source="445206303" type="bus" road=""/>
   <station lat="45.1452875" lon="5.6768214" name="Cimetière des Garlettes" city="Claix" source="26361365" type="bus" road="Route de Comboire"/>
-  <station lat="45.1924723" lon="5.7454431" name="Cimetière du Grand Sablon" city="La Tronche" source="479738794,479738795" type="bus" road="Avenue du Grand Sablon"/>
+  <station lat="45.1924723" lon="5.7454431" name="Cimetière du Grand Sablon" city="La Tronche" source="479738795,479738794" type="bus" road="Avenue du Grand Sablon"/>
   <station lat="45.1997503" lon="5.7106209" name="Cité Jean-Macé" city="Grenoble" source="457759151" type="bus" road="Rue Henri Tarzé"/>
   <station lat="45.2005231" lon="5.7119504" name="Cité Jean-Macé" city="Grenoble" source="457759157" type="bus" road="Rue Charles Bertier"/>
   <station lat="45.1825480" lon="5.7590883" name="Cité Labeye" city="Saint-Martin-d'Hères" source="451116301" type="bus" road="Avenue Ambroise Croizat"/>
   <station lat="45.1821813" lon="5.7604566" name="Cité Labeye" city="Saint-Martin-d'Hères" source="451116303" type="bus" road="Avenue Ambroise Croizat"/>
   <station lat="45.1686019" lon="5.7048374" name="Cité Paul Mistral" city="Grenoble" source="488881137,488881175" type="bus" road="Avenue Rhin et Danube"/>
-  <station lat="45.0950723" lon="5.6743711" name="Cité Scolaire" city="Varces-Allières-et-Risset" source="1800608920,1800608930" type="bus" road="Rue du Champ Nigat"/>
-  <station lat="45.1205118" lon="5.6733423" name="Claix - Mairie" city="Claix" source="1803020469" type="bus" road="Avenue Bougault"/>
-  <station lat="45.1202395" lon="5.6724769" name="Claix - Mairie" city="Claix" source="473349891" type="bus" road="Avenue de Belledonne"/>
+  <station lat="45.0950723" lon="5.6743711" name="Cité Scolaire" city="Varces-Allières-et-Risset" source="1800608930,1800608920" type="bus" road="Rue du Champ Nigat"/>
   <station lat="45.1197447" lon="5.6725884" name="Claix - Mairie" city="Claix" source="1802088390" type="bus" road="Rue Pasteur"/>
+  <station lat="45.1205118" lon="5.6733423" name="Claix - Mairie" city="Claix" source="1803020469" type="bus" road="Avenue Bougault"/>
   <station lat="45.1202748" lon="5.6732868" name="Claix - Mairie" city="Claix" source="473349890" type="bus" road="Avenue de Belledonne"/>
+  <station lat="45.1202395" lon="5.6724769" name="Claix - Mairie" city="Claix" source="473349891" type="bus" road="Avenue de Belledonne"/>
   <station lat="45.1185884" lon="5.6932469" name="Claix - Pont Rouge" city="Claix" source="1887378558" type="bus" road="Avenue de la Libération"/>
   <station lat="45.1186599" lon="5.6929413" name="Claix - Pont Rouge" city="Claix" source="1887378594" type="bus" road=""/>
+  <station lat="45.1838629" lon="5.7410344" name="Clemenceau" city="Grenoble" source="457759181" type="bus" road="Rue Léon Jouhaux"/>
   <station lat="45.1859848" lon="5.7609020" name="Clinique Belledonne" city="Saint-Martin-d'Hères" source="496601271" type="bus" road=""/>
   <station lat="45.1859544" lon="5.7603442" name="Clinique Belledonne" city="Saint-Martin-d'Hères" source="496601268" type="bus" road="Avenue Gabriel Péri"/>
-  <station lat="45.1356473" lon="5.7014132" name="Clos Dominique" city="Le Pont-de-Claix" source="1893358309,1893358297" type="bus" road="Cours Saint-André"/>
-  <station lat="45.2096506" lon="5.7105264" name="Clos Gérard Gruel" city="Saint-Martin-le-Vinoux" source="568488197" type="bus" road="Clos Gérard Gruel"/>
+  <station lat="45.1356473" lon="5.7014132" name="Clos Dominique" city="Le Pont-de-Claix" source="1893358297,1893358309" type="bus" road="Cours Saint-André"/>
+  <station lat="45.2096506" lon="5.7105264" name="Clos Gérard Gruel" city="Saint-Martin-le-Vinoux" source="568488197" type="bus" road="Chemin du Canet"/>
   <station lat="45.2049499" lon="5.7140927" name="Clos Saint-Martin" city="Saint-Martin-le-Vinoux" source="313507066" type="bus" road="Clos Saint-Martin"/>
-  <station lat="45.1694656" lon="5.7226133" name="Clos d'Or" city="Grenoble" source="479738771,479738770" type="bus" road="Avenue Léon Blum"/>
   <station lat="45.1694689" lon="5.7231667" name="Clos d'Or" city="Grenoble" source="482798312,1988234451" type="bus" road="Rue de Stalingrad"/>
-  <station lat="45.1838629" lon="5.7410344" name="Clémenceau" city="Grenoble" source="457759181" type="bus" road="Rue Léon Jouhaux"/>
+  <station lat="45.1694656" lon="5.7226133" name="Clos d'Or" city="Grenoble" source="479738770,479738771" type="bus" road="Avenue Léon Blum"/>
   <station lat="45.2344450" lon="5.7258397" name="Col de Clémencières" city="Saint-Martin-le-Vinoux" source="2938825601,2938825501" type="bus" road="Route de Clémencières"/>
-  <station lat="45.1400920" lon="5.6731801" name="Col de Comboire" city="Claix" source="473349906,473349908" type="bus" road="Route de Comboire"/>
-  <station lat="45.2899750" lon="5.7669991" name="Col de Porte" city="Sarcenas" source="138757" type="bus" road="Route du Col de Porte"/>
+  <station lat="45.1399848" lon="5.6731454" name="Col de Comboire" city="Claix" source="473349906,473349908" type="bus" road="Route de Comboire"/>
+  <station lat="45.2899750" lon="5.7669991" name="Col de Porte" city="Saint-Pierre-de-Chartreuse" source="138757" type="bus" road="D 512"/>
   <station lat="45.2340958" lon="5.7511073" name="Col de Vence" city="Corenc" source="1271353624,258670908" type="bus" road="Route de la Chartreuse"/>
   <station lat="44.9903499" lon="5.5950010" name="Col de l'Arzelier" city="Le Gua" source="2514234434" type="bus" road="D 8b"/>
-  <station lat="45.1802970" lon="5.7663295" name="Coli" city="Saint-Martin-d'Hères" source="504708699" type="bus" road="Avenue du Bataillon Carmagnole-Liberté"/>
-  <station lat="45.1807316" lon="5.7658221" name="Coli" city="Saint-Martin-d'Hères" source="451116313,451116311" type="bus" road="Avenue Ambroise Croizat"/>
+  <station lat="45.1807316" lon="5.7658221" name="Coli" city="Saint-Martin-d'Hères" source="451116311,451116313" type="bus" road="Avenue Ambroise Croizat"/>
   <station lat="45.1808868" lon="5.7669360" name="Coli" city="Saint-Martin-d'Hères" source="504708695" type="bus" road="Avenue de la Commune de Paris"/>
-  <station lat="45.2309442" lon="5.6919389" name="Collège Barnave" city="Saint-Égrève" source="2977605634" type="bus" road=""/>
+  <station lat="45.1802970" lon="5.7663295" name="Coli" city="Saint-Martin-d'Hères" source="504708699" type="bus" road="Avenue du Bataillon Carmagnole-Liberté"/>
   <station lat="45.2309588" lon="5.6918122" name="Collège Barnave" city="Saint-Égrève" source="2977604690" type="bus" road="Rue des Brieux"/>
+  <station lat="45.2309442" lon="5.6919389" name="Collège Barnave" city="Saint-Égrève" source="2977605634" type="bus" road=""/>
   <station lat="45.2178625" lon="5.6909825" name="Collège Chartreuse" city="Saint-Martin-le-Vinoux" source="2977605635" type="bus" road="Rue de la Maladière"/>
   <station lat="45.1465316" lon="5.7016739" name="Colonel Manhès" city="Échirolles" source="482798354,482798355" type="bus" road="Avenue Colonel Manhès"/>
-  <station lat="45.2725901" lon="5.6759852" name="Colvavière" city="Mont-Saint-Martin" source="2997242318" type="bus" road="Chemin des Combes"/>
-  <station lat="45.1463094" lon="5.6907434" name="Comboire" city="Seyssins" source="1978449792" type="bus" road=""/>
+  <station lat="45.2723201" lon="5.6758629" name="Colvavière" city="Mont-Saint-Martin" source="1768940882" type="bus" road="Chemin de Calavière"/>
   <station lat="45.1458218" lon="5.6908325" name="Comboire" city="Échirolles" source="504708803" type="bus" road=""/>
-  <station lat="45.2032549" lon="5.7455253" name="Commandant Nal" city="La Tronche" source="498507051,498507056" type="bus" road="Avenue des Maquis du Grésivaudan"/>
+  <station lat="45.1463094" lon="5.6907434" name="Comboire" city="Seyssins" source="1978449792" type="bus" road=""/>
+  <station lat="45.2032549" lon="5.7455253" name="Commandant Nal" city="La Tronche" source="498507056,498507051" type="bus" road="Avenue des Maquis du Grésivaudan"/>
   <station lat="45.2113922" lon="5.6726196" name="Complexe Sportif" city="Sassenage" source="457759139" type="bus" road="Rue du 8 Mai 1945"/>
-  <station lat="45.1857782" lon="5.7191280" name="Condorcet" city="Grenoble" source="488881184,488881126" type="bus" road="Rue Condorcet"/>
+  <station lat="45.1857782" lon="5.7191280" name="Condorcet" city="Grenoble" source="488881126,488881184" type="bus" road="Rue Condorcet"/>
   <station lat="45.2065169" lon="5.7088024" name="Conrad Kilian" city="Saint-Martin-le-Vinoux" source="474770738" type="bus" road="Rue Conrad Kilian"/>
-  <station lat="45.2059254" lon="5.7094540" name="Conrad Kilian" city="Saint-Martin-le-Vinoux" source="474770825" type="bus" road="Rue Conrad Kilian"/>
+  <station lat="45.2097232" lon="5.7526850" name="Corenc - Mairie" city="Corenc" source="1800589800,300797430" type="bus" road="Avenue du Cèdre"/>
   <station lat="45.2101783" lon="5.7526901" name="Corenc - Mairie" city="Corenc" source="488881208,488881209" type="bus" road="Avenue de l'Eygala"/>
-  <station lat="45.2097232" lon="5.7526850" name="Corenc - Mairie" city="Corenc" source="300797430,1800589800" type="bus" road="Avenue du Cèdre"/>
   <station lat="45.2198664" lon="5.7625289" name="Corenc Village" city="Corenc" source="1800589820,1800589827" type="bus" road="Route de la Chartreuse"/>
   <station lat="45.1388414" lon="5.6701527" name="Cossey" city="Claix" source="1803020413" type="bus" road=""/>
   <station lat="45.2000380" lon="5.8353329" name="Coubertin" city="Domène" source="513946218" type="bus" road="Rue Émile Blanc"/>
   <station lat="45.1855693" lon="5.7478973" name="Croix Rouge" city="Saint-Martin-d'Hères" source="451116270" type="bus" road="Avenue Ambroise Croizat"/>
-  <station lat="45.2256692" lon="5.7845839" name="Croix de Cibeins" city="Meylan" source="1799557079" type="bus" road="Chemin de l'Église"/>
   <station lat="45.2260204" lon="5.7842055" name="Croix de Cibeins" city="Meylan" source="2287115283" type="bus" road="Chemin de Rochasson"/>
-  <station lat="45.2088262" lon="5.7493148" name="Croix de Montfleury" city="Corenc" source="488881206" type="bus" road="Avenue de l'Eygala"/>
+  <station lat="45.2256692" lon="5.7845839" name="Croix de Cibeins" city="Meylan" source="1799557079" type="bus" road="Chemin de l'Église"/>
   <station lat="45.2090109" lon="5.7498828" name="Croix de Montfleury" city="Corenc" source="488881207" type="bus" road="Avenue de l'Eygala"/>
-  <station lat="45.2582089" lon="5.6594040" name="Croix de la Rochette" city="Fontanil-Cornillon" source="474770789" type="bus" road=""/>
-  <station lat="45.2585137" lon="5.6595433" name="Croix de la Rochette" city="Fontanil-Cornillon" source="1804374990" type="bus" road="Grande Rue"/>
-  <station lat="45.2236451" lon="5.7817721" name="Croix des Rameaux" city="Meylan" source="2287115284,1799557085" type="bus" road="Chemin de l'Église"/>
+  <station lat="45.2088262" lon="5.7493148" name="Croix de Montfleury" city="Corenc" source="488881206" type="bus" road="Avenue de l'Eygala"/>
+  <station lat="45.2236451" lon="5.7817721" name="Croix des Rameaux" city="Meylan" source="1799557085,2287115284" type="bus" road="Chemin de l'Église"/>
   <station lat="45.1681906" lon="5.7617517" name="Croix du Pâtre" city="Saint-Martin-d'Hères" source="451237933" type="bus" road="Avenue Romain Rolland"/>
   <station lat="45.1682700" lon="5.7626485" name="Croix du Pâtre" city="Saint-Martin-d'Hères" source="451237919" type="bus" road="Rue de Malfangeat"/>
   <station lat="45.1700523" lon="5.8085886" name="Cul Froid" city="Venon" source="270132220" type="bus" road="Chemin de Cul Froid"/>
   <station lat="45.1918552" lon="5.6950327" name="Curie - Vercors" city="Fontaine" source="445963854" type="bus" road="Boulevard Joliot Curie"/>
   <station lat="45.2348001" lon="5.6875568" name="Cuvilleux" city="Saint-Égrève" source="474827241,474827259" type="bus" road="Avenue de la Monta"/>
   <station lat="45.1849461" lon="5.7056936" name="Cémoi" city="Grenoble" source="496601165" type="bus" road="Rue Ampère"/>
-  <station lat="45.1440651" lon="5.7005353" name="Danielle Casanova" city="Échirolles" source="482798356" type="bus" road="Avenue Danielle Casanova"/>
   <station lat="45.1444920" lon="5.7006752" name="Danielle Casanova" city="Échirolles" source="482798357" type="bus" road="Avenue Danielle Casanova"/>
-  <station lat="45.1382685" lon="5.7127151" name="Denis Papin" city="Échirolles" source="1916890652" type="bus" road="D 269Z"/>
+  <station lat="45.1440651" lon="5.7005353" name="Danielle Casanova" city="Échirolles" source="482798356" type="bus" road="Avenue Danielle Casanova"/>
   <station lat="45.1388772" lon="5.7132534" name="Denis Papin" city="Échirolles" source="1916890655" type="bus" road="Avenue du Général de Gaulle"/>
-  <station lat="45.1872952" lon="5.7273647" name="Docteur Martin" city="Grenoble" source="1828989865" type="bus" road="Boulevard Agutte Sembat"/>
+  <station lat="45.1382685" lon="5.7127151" name="Denis Papin" city="Échirolles" source="1916890652" type="bus" road="D 269Z"/>
   <station lat="45.1867897" lon="5.7279217" name="Docteur Martin" city="Grenoble" source="1828989885,1828989842" type="bus" road="Boulevard Agutte Sembat"/>
+  <station lat="45.1870337" lon="5.7271735" name="Docteur Martin" city="Grenoble" source="1828989844,1828989766" type="bus" road="Rue Lesdiguières"/>
   <station lat="45.1877812" lon="5.7268303" name="Docteur Martin" city="Grenoble" source="1828989762" type="bus" road="Boulevard Agutte Sembat"/>
-  <station lat="45.1870337" lon="5.7271735" name="Docteur Martin" city="Grenoble" source="1828989766,1828989844" type="bus" road="Rue Lesdiguières"/>
-  <station lat="45.1913949" lon="5.7225167" name="Docteur Mazet" city="Grenoble" source="451237965" type="bus" road="Avenue Félix Viallet"/>
+  <station lat="45.1872952" lon="5.7273647" name="Docteur Martin" city="Grenoble" source="1828989865" type="bus" road="Boulevard Agutte Sembat"/>
   <station lat="45.1912669" lon="5.7216648" name="Docteur Mazet" city="Grenoble" source="457759174" type="bus" road="Avenue Félix Viallet"/>
-  <station lat="45.1724109" lon="5.7065516" name="Docteur Schweitzer" city="Grenoble" source="488881135,488881177" type="bus" road="Rue Anatole France"/>
+  <station lat="45.1913949" lon="5.7225167" name="Docteur Mazet" city="Grenoble" source="451237965" type="bus" road="Avenue Félix Viallet"/>
+  <station lat="45.1724109" lon="5.7065516" name="Docteur Schweitzer" city="Grenoble" source="488881177,488881135" type="bus" road="Rue Anatole France"/>
   <station lat="45.2013798" lon="5.8381461" name="Domène Mairie" city="Domène" source="513946256" type="bus" road="Rue Émile Blanc"/>
   <station lat="45.2014889" lon="5.8381828" name="Domène Mairie" city="Domène" source="513946260" type="bus" road="Avenue de la Gare"/>
   <station lat="45.2013728" lon="5.7529906" name="Doyen Gosse" city="La Tronche" source="480458780" type="bus" road="Rue du Doyen Gosse"/>
-  <station lat="45.1489720" lon="5.6939829" name="Drac" city="Échirolles" source="504708802" type="bus" road="Rue de Comboire"/>
   <station lat="45.1493562" lon="5.6941718" name="Drac" city="Échirolles" source="504708801" type="bus" road="Rue de Comboire"/>
-  <station lat="45.1824334" lon="5.7340917" name="Driant" city="Grenoble" source="457759176,457759175" type="bus" road="Avenue Jean Perrot"/>
+  <station lat="45.1489720" lon="5.6939829" name="Drac" city="Échirolles" source="504708802" type="bus" road="Rue de Comboire"/>
+  <station lat="45.1824334" lon="5.7340917" name="Driant" city="Grenoble" source="457759175,457759176" type="bus" road="Avenue Jean Perrot"/>
   <station lat="45.1436958" lon="5.7041193" name="Ecureuil" city="Échirolles" source="1895414898,1895414937" type="bus" road="Cours Jean Jaurès"/>
   <station lat="45.1811245" lon="5.7883327" name="Edelweiss" city="Gières" source="2603681680,1803051780" type="bus" road="Avenue d'Uriage"/>
-  <station lat="45.1814613" lon="5.7876445" name="Edelweiss" city="Gières" source="451116363,451116358" type="bus" road="Grand' Rue"/>
+  <station lat="45.1814613" lon="5.7876445" name="Edelweiss" city="Gières" source="451116358,451116363" type="bus" road="Grand' Rue"/>
   <station lat="45.1818462" lon="5.7409472" name="Edison" city="Grenoble" source="457759182" type="bus" road="Rue Léon Jouhaux"/>
   <station lat="45.1811140" lon="5.7412540" name="Edison" city="Grenoble" source="457759183" type="bus" road="Rue Léon Jouhaux"/>
   <station lat="45.1592172" lon="5.7266699" name="Edmond Esmonin" city="Grenoble" source="482798320,482798319" type="bus" road="Avenue Edmond Esmonin"/>
   <station lat="45.1744228" lon="5.7543106" name="Edmond Rostand" city="Saint-Martin-d'Hères" source="451237941" type="bus" road="Avenue Potié"/>
   <station lat="45.1795614" lon="5.7701500" name="Elsa Triolet" city="Saint-Martin-d'Hères" source="451116315,451116318" type="bus" road="Avenue Jean Jaurès"/>
   <station lat="45.1948781" lon="5.7136113" name="Emile Gueymard" city="Grenoble" source="457759161,457759156" type="bus" road="Rue Émile Gueymard"/>
-  <station lat="45.1911811" lon="5.7071114" name="Esclangon" city="Grenoble" source="1237282666" type="bus" road="Rue du Vercors"/>
   <station lat="45.1917457" lon="5.7067003" name="Esclangon" city="Grenoble" source="2986748649" type="bus" road="Rue Félix Esclangon"/>
+  <station lat="45.1911811" lon="5.7071114" name="Esclangon" city="Grenoble" source="1237282666" type="bus" road="Rue du Vercors"/>
   <station lat="45.1730116" lon="5.7246197" name="Eugène Sue" city="Grenoble" source="479738773" type="bus" road=""/>
   <station lat="45.1728498" lon="5.7247495" name="Eugène Sue" city="Grenoble" source="479738772" type="bus" road="Rue de Stalingrad"/>
-  <station lat="45.2406558" lon="5.6777844" name="Europe" city="Saint-Égrève" source="474827249" type="bus" road=""/>
   <station lat="45.2401363" lon="5.6782222" name="Europe" city="Saint-Égrève" source="474827248" type="bus" road="Boulevard de Jomardière"/>
-  <station lat="45.2138373" lon="5.7645061" name="Eygala" city="Corenc" source="488881215,488881216" type="bus" road="Avenue de l'Eygala"/>
+  <station lat="45.2406558" lon="5.6777844" name="Europe" city="Saint-Égrève" source="474827249" type="bus" road=""/>
+  <station lat="45.2138373" lon="5.7645061" name="Eygala" city="Corenc" source="488881216,488881215" type="bus" road="Avenue de l'Eygala"/>
   <station lat="45.2118149" lon="5.7744953" name="Faculté de Pharmacie" city="Meylan" source="514050398" type="bus" road="Avenue de Verdun"/>
   <station lat="45.2114998" lon="5.7739093" name="Faculté de Pharmacie" city="Meylan" source="514050401" type="bus" road="Avenue de Verdun"/>
-  <station lat="45.1508452" lon="5.7148122" name="Fernand Pelloutier" city="Échirolles" source="504708784" type="bus" road="Avenue de Grugliasco"/>
   <station lat="45.1507330" lon="5.7156538" name="Fernand Pelloutier" city="Échirolles" source="504708781" type="bus" road="Avenue de Grugliasco"/>
+  <station lat="45.1508452" lon="5.7148122" name="Fernand Pelloutier" city="Échirolles" source="504708784" type="bus" road="Avenue de Grugliasco"/>
+  <station lat="45.2233916" lon="5.6870086" name="Fiancey - Prédieu" city="Saint-Égrève" source="474827288" type="bus" road="Rue Lieutenant Fiancey"/>
+  <station lat="45.2235146" lon="5.6875340" name="Fiancey - Prédieu" city="Saint-Égrève" source="474827266" type="bus" road="Rue Lieutenant Fiancey"/>
   <station lat="45.1865261" lon="5.7443677" name="Flandrin - Valmy" city="Grenoble" source="1829688385,1812413020" type="bus" road="Avenue de Valmy"/>
-  <station lat="45.1706673" lon="5.7272297" name="Flaubert - Clos d'Or" city="Grenoble" source="496601211" type="bus" road="Rue des Alliés"/>
   <station lat="45.1704645" lon="5.7278260" name="Flaubert - Clos d'Or" city="Grenoble" source="496601214" type="bus" road="Rue des Alliés"/>
-  <station lat="45.1378911" lon="5.7021657" name="Flottibulle" city="Le Pont-de-Claix" source="1893382542,1893382620" type="bus" road="Cours Saint-André"/>
-  <station lat="45.1380225" lon="5.7018459" name="Flottibulle" city="Le Pont-de-Claix" source="1893382577" type="bus" road=""/>
+  <station lat="45.1706673" lon="5.7272297" name="Flaubert - Clos d'Or" city="Grenoble" source="496601211" type="bus" road="Rue des Alliés"/>
+  <station lat="45.1378911" lon="5.7021657" name="Flottibulle" city="Le Pont-de-Claix" source="1893382620,1893382542" type="bus" road="Cours Saint-André"/>
   <station lat="45.1380568" lon="5.7029086" name="Flottibulle" city="Le Pont-de-Claix" source="1893382540" type="bus" road="Avenue Général de Gaulle"/>
-  <station lat="45.1803070" lon="5.7234498" name="Foch - Férrié" city="Grenoble" source="482798308,482798309" type="bus" road="Rue du Général Ferrié"/>
+  <station lat="45.1380225" lon="5.7018459" name="Flottibulle" city="Le Pont-de-Claix" source="1893382577" type="bus" road=""/>
+  <station lat="45.1803070" lon="5.7234498" name="Foch - Férrié" city="Grenoble" source="482798309,482798308" type="bus" road="Rue du Général Ferrié"/>
   <station lat="45.2715567" lon="5.6744806" name="Fochaire" city="Mont-Saint-Martin" source="2997242319" type="bus" road=""/>
   <station lat="45.1220768" lon="5.6892403" name="Fond Ratel" city="Claix" source="1803020401" type="bus" road="Rue de l'Europe"/>
   <station lat="45.2591871" lon="5.7449534" name="Fontvieille" city="Quaix-en-Chartreuse" source="2997242320" type="bus" road="Route de Sarcenas"/>
-  <station lat="45.2098062" lon="5.6768791" name="François Blumet" city="Sassenage" source="457759138,457759133" type="bus" road="Rue François Blumet"/>
+  <station lat="45.2098062" lon="5.6768791" name="François Blumet" city="Sassenage" source="457759133,457759138" type="bus" road="Rue François Blumet"/>
   <station lat="45.1479194" lon="5.7350749" name="François Quesnay" city="Échirolles" source="482798328,482798327" type="bus" road="D 269Z"/>
   <station lat="45.1486228" lon="5.7353457" name="François Quesnay" city="Eybens" source="1827777176,1827777177" type="bus" road="D 269A"/>
   <station lat="45.0872334" lon="5.7077965" name="Frontagneux" city="Vif" source="1805431172" type="bus" road="Route de Fontagneux"/>
@@ -333,27 +336,26 @@
   <station lat="45.1906676" lon="5.7177055" name="Félix Vialet" city="Grenoble" source="457759166" type="bus" road="Avenue Félix Viallet"/>
   <station lat="45.1907851" lon="5.7184892" name="Félix Vialet" city="Grenoble" source="457759165" type="bus" road="Avenue Félix Viallet"/>
   <station lat="45.1787396" lon="5.7731807" name="Galochère" city="Saint-Martin-d'Hères" source="451116323" type="bus" road="Avenue Jean Jaurès"/>
-  <station lat="45.1885554" lon="5.7230274" name="Gambetta" city="Grenoble" source="2986748650,1800903104" type="bus" road="Boulevard Gambetta"/>
-  <station lat="45.2516807" lon="5.6949427" name="Garcinière" city="Proveysieux" source="1526057690" type="bus" road=""/>
-  <station lat="45.1849069" lon="5.7853561" name="Gare - Universités &quot;SNCF&quot;" city="Gières" source="1862030764,1862030774" type="bus" road="Rue de la Gare"/>
-  <station lat="45.1855409" lon="5.7855234" name="Gare - Universités &quot;Tramway&quot;" city="Gières" source="1862030797,424072777" type="bus" road="Passage de la Gare"/>
+  <station lat="45.1885554" lon="5.7230274" name="Gambetta" city="Grenoble" source="1800903104,2986748650" type="bus" road="Boulevard Gambetta"/>
+  <station lat="45.2516807" lon="5.6949427" name="Garcinière" city="Proveysieux" source="1526057690" type="bus" road="Route de Proveysieux"/>
+  <station lat="45.1849069" lon="5.7853561" name="Gare - Universités &quot;SNCF&quot;" city="Gières" source="1862030774,1862030764" type="bus" road="Rue de la Gare"/>
+  <station lat="45.1855015" lon="5.7853637" name="Gare - Universités &quot;Tramway&quot;" city="Gières" source="424072777" type="bus" road="Passage de la Gare"/>
   <station lat="45.1475120" lon="5.6777676" name="Garlettes" city="Claix" source="2161547654" type="bus" road="Route de Comboire"/>
   <station lat="45.1473152" lon="5.6776861" name="Garlettes" city="Seyssins" source="923986224" type="bus" road="Rue de Comboire"/>
   <station lat="45.1847714" lon="5.7508744" name="Gay" city="Saint-Martin-d'Hères" source="451116279" type="bus" road="Avenue Ambroise Croizat"/>
   <station lat="45.1845112" lon="5.7518542" name="Gay" city="Saint-Martin-d'Hères" source="451116284" type="bus" road="Avenue Ambroise Croizat"/>
-  <station lat="45.1364411" lon="5.7121469" name="Gay Lussac" city="Échirolles" source="479738736" type="bus" road="Avenue du Général de Gaulle"/>
   <station lat="45.1363682" lon="5.7119603" name="Gay Lussac" city="Échirolles" source="479738734" type="bus" road="D 269Z"/>
+  <station lat="45.1364411" lon="5.7121469" name="Gay Lussac" city="Échirolles" source="479738736" type="bus" road="Avenue du Général de Gaulle"/>
   <station lat="45.1818572" lon="5.7485023" name="Grand Châtelet" city="Grenoble" source="451237947" type="bus" road="Avenue Jules Vallès"/>
   <station lat="45.1368076" lon="5.7082254" name="Grand Galet" city="Le Pont-de-Claix" source="479738733,479738729" type="bus" road="Avenue Général de Gaulle"/>
-  <station lat="45.1708995" lon="5.6946099" name="Grand Pré - Centre Sud" city="La Tour sans Venin" source="445206337,445206335" type="bus" road="Avenue de Grenoble"/>
+  <station lat="45.1708995" lon="5.6946099" name="Grand Pré - Centre Sud" city="Le Haut Seyssin" source="445206335,445206337" type="bus" road="Avenue de Grenoble"/>
   <station lat="45.1988077" lon="5.7503367" name="Grand Sablon" city="La Tronche" source="1920404370" type="bus" road=""/>
   <station lat="45.2070181" lon="5.7454820" name="Grande Tronche" city="La Tronche" source="488881205,488881204" type="bus" road="Grande Rue"/>
   <station lat="45.1169331" lon="5.6734274" name="Grands Champs" city="Claix" source="2282420756,1802088381" type="bus" road="Chemin de Risset"/>
   <station lat="45.1484138" lon="5.7524748" name="Grange du Château" city="Eybens" source="911287965,2098726480" type="bus" road=""/>
   <station lat="45.2102907" lon="5.7845967" name="Granier" city="Meylan" source="498507132" type="bus" road="Avenue du Granier"/>
   <station lat="45.2102409" lon="5.7840592" name="Granier" city="Meylan" source="498507136" type="bus" road="Avenue du Granier"/>
-  <station lat="45.1909656" lon="5.7154262" name="Grenoble - Gares" city="Grenoble" source="1900626638" type="bus" road="Place de la Gare"/>
-  <station lat="45.1916566" lon="5.7152004" name="Grenoble - Gares" city="Grenoble" source="1900632623" type="bus" road="Rue Émile Gueymard"/>
+  <station lat="45.1916126" lon="5.7151686" name="Grenoble - Gares" city="Grenoble" source="1900632623,1900626638" type="bus" road="Rue Émile Gueymard"/>
   <station lat="45.1874975" lon="5.7374554" name="Grenoble - Hôtel de Ville" city="Grenoble" source="1829671093,1829671141" type="bus" road="Boulevard Jean Pain"/>
   <station lat="45.1512230" lon="5.7089351" name="Grugliasco" city="Échirolles" source="504708790,504708787" type="bus" road="Avenue de Honhoué"/>
   <station lat="45.1516900" lon="5.7099894" name="Grugliasco" city="Échirolles" source="479738753,479738751" type="bus" road="Avenue Victor Hugo"/>
@@ -361,56 +363,58 @@
   <station lat="45.2097240" lon="5.7612007" name="Grésivaudan" city="Bouqueron" source="480458796" type="bus" road="Avenue du Grésivaudan"/>
   <station lat="45.1816702" lon="5.7277920" name="Gustave Rivet" city="Grenoble" source="479738780" type="bus" road="Rue Nestor Cornier"/>
   <station lat="45.1812351" lon="5.7280693" name="Gustave Rivet" city="Grenoble" source="479738779" type="bus" road="Rue Nestor Cornier"/>
-  <station lat="45.1450953" lon="5.7251856" name="Guy Môquet" city="Échirolles" source="482798340" type="bus" road="Rue Paul Langevin"/>
   <station lat="45.1454892" lon="5.7258414" name="Guy Môquet" city="Échirolles" source="482798339" type="bus" road="Rue Paul Langevin"/>
+  <station lat="45.1450953" lon="5.7251856" name="Guy Môquet" city="Échirolles" source="482798340" type="bus" road="Rue Paul Langevin"/>
   <station lat="45.2286964" lon="5.7847112" name="Gué du Boutet" city="Meylan" source="1799557059,386005274" type="bus" road="Chemin du Boutet"/>
-  <station lat="45.1618430" lon="5.7450451" name="Général de Gaulle" city="Eybens" source="515302552" type="bus" road="Rue du Vercors"/>
-  <station lat="45.1623516" lon="5.7439951" name="Général de Gaulle" city="Eybens" source="498506942" type="bus" road="Avenue Jean Jaurès"/>
-  <station lat="45.1614782" lon="5.7438239" name="Général de Gaulle" city="Eybens" source="515302554" type="bus" road="Avenue du Général de Gaulle"/>
   <station lat="45.1611501" lon="5.7445162" name="Général de Gaulle" city="Eybens" source="498506937" type="bus" road="D 5"/>
+  <station lat="45.1618430" lon="5.7450451" name="Général de Gaulle" city="Eybens" source="515302552" type="bus" road="Rue du Vercors"/>
+  <station lat="45.1614782" lon="5.7438239" name="Général de Gaulle" city="Eybens" source="515302554" type="bus" road="Avenue du Général de Gaulle"/>
+  <station lat="45.1623516" lon="5.7439951" name="Général de Gaulle" city="Eybens" source="498506942" type="bus" road="Avenue Jean Jaurès"/>
   <station lat="45.1964618" lon="5.6771107" name="Gérard Philippe" city="Fontaine" source="445963861" type="bus" road="Rue Joseph Bertoin"/>
-  <station lat="45.2178950" lon="5.7797430" name="Hauts de Meylan" city="Meylan" source="2431368766,2431368764,2431368765" type="bus" road="Avenue de Chartreuse"/>
   <station lat="45.2183446" lon="5.7791556" name="Hauts de Meylan" city="Meylan" source="1799525912,1799525871" type="bus" road="Chemin de l'Église"/>
-  <station lat="45.2179113" lon="5.7781332" name="Hauts de Meylan" city="Meylan" source="488881224,488881223" type="bus" road="Avenue de l'Eygala"/>
+  <station lat="45.2178950" lon="5.7797430" name="Hauts de Meylan" city="Meylan" source="2431368765,2431368764,2431368766" type="bus" road="Avenue de Chartreuse"/>
+  <station lat="45.2179113" lon="5.7781332" name="Hauts de Meylan" city="Meylan" source="488881223,488881224" type="bus" road="Avenue de l'Eygala"/>
   <station lat="45.1744164" lon="5.7083508" name="Henri Dunant" city="Grenoble" source="488881134" type="bus" road="Rue du Docteur Schweitzer"/>
   <station lat="45.1756091" lon="5.7639509" name="Henri Wallon" city="Saint-Martin-d'Hères" source="504708717" type="bus" road="Rue Henri Wallon"/>
   <station lat="45.1759050" lon="5.7645235" name="Henri Wallon" city="Saint-Martin-d'Hères" source="504708714" type="bus" road="Rue Henri Wallon"/>
   <station lat="45.1389079" lon="5.7931292" name="Herbeys - Le Bourg" city="Herbeys" source="531444891" type="bus" road="Chemin du Villard"/>
-  <station lat="45.1973000" lon="5.7470629" name="Hôpital Michallon" city="La Tronche" source="480444840" type="bus" road="Boulevard de la Chantourne"/>
   <station lat="45.1975894" lon="5.7460216" name="Hôpital Michallon" city="La Tronche" source="480444836" type="bus" road="Boulevard de la Chantourne"/>
-  <station lat="45.1468533" lon="5.7325298" name="Hôpital Sud" city="Échirolles" source="482798330,482798329" type="bus" road="D 269Z"/>
+  <station lat="45.1973000" lon="5.7470629" name="Hôpital Michallon" city="La Tronche" source="480444840" type="bus" road="Boulevard de la Chantourne"/>
+  <station lat="45.1468533" lon="5.7325298" name="Hôpital Sud" city="Échirolles" source="482798329,482798330" type="bus" road="D 269Z"/>
   <station lat="45.1470259" lon="5.7324784" name="Hôpital Sud" city="Échirolles" source="3153267170" type="bus" road=""/>
   <station lat="45.2116530" lon="5.7177388" name="Hôtel Bellevue" city="Saint-Martin-le-Vinoux" source="2938825701,2938825602" type="bus" road="Route de Clémencières"/>
-  <station lat="45.1940533" lon="5.7357138" name="Hôtel de Police" city="Grenoble" source="488881188" type="bus" road="Boulevard Maréchal Leclerc"/>
   <station lat="45.1934061" lon="5.7362002" name="Hôtel de Police" city="Grenoble" source="488881187" type="bus" road="Boulevard Maréchal Leclerc"/>
-  <station lat="45.1297791" lon="5.6993715" name="Iles de Mars" city="Le Pont-de-Claix" source="1892913025" type="bus" road="Cours Saint-André"/>
+  <station lat="45.1940533" lon="5.7357138" name="Hôtel de Police" city="Grenoble" source="488881188" type="bus" road="Boulevard Maréchal Leclerc"/>
   <station lat="45.1303042" lon="5.6996728" name="Iles de Mars" city="Le Pont-de-Claix" source="1892913037" type="bus" road="Cours Saint-André"/>
-  <station lat="45.2078015" lon="5.7895665" name="Innovallée" city="Meylan" source="911300164" type="bus" road="Chemin du Vieux Chêne"/>
-  <station lat="45.1279575" lon="5.6988772" name="Irène Joliot-Curie" city="Le Pont-de-Claix" source="1892905292" type="bus" road="Cours Saint-André"/>
+  <station lat="45.1297791" lon="5.6993715" name="Iles de Mars" city="Le Pont-de-Claix" source="1892913025" type="bus" road="Cours Saint-André"/>
+  <station lat="45.2078015" lon="5.7895665" name="Inovallée" city="Meylan" source="911300164" type="bus" road="Chemin du Vieux Chêne"/>
   <station lat="45.1274290" lon="5.6985680" name="Irène Joliot-Curie" city="Le Pont-de-Claix" source="1892894238" type="bus" road="Cours Saint-André"/>
-  <station lat="45.0645257" lon="5.6913110" name="Jacobins" city="Vif" source="1805431169,521632233" type="bus" road="Rue du Stade"/>
-  <station lat="45.1899841" lon="5.6823410" name="Jean Prévost" city="Fontaine" source="473975836" type="bus" road="Boulevard Paul Langevin"/>
+  <station lat="45.1279575" lon="5.6988772" name="Irène Joliot-Curie" city="Le Pont-de-Claix" source="1892905292" type="bus" road="Cours Saint-André"/>
+  <station lat="45.0644453" lon="5.6912834" name="Jacobins" city="Vif" source="1805431169" type="bus" road="Rue du Stade"/>
+  <station lat="45.0646060" lon="5.6913385" name="Jacobins" city="Vif" source="521632233" type="bus" road="Route de Fontagneux"/>
   <station lat="45.1895526" lon="5.6828009" name="Jean Prévost" city="Fontaine" source="473975850" type="bus" road="Boulevard Paul Langevin"/>
-  <station lat="45.1675212" lon="5.7414570" name="Jean Racine" city="Grenoble" source="498506961" type="bus" road="Avenue Jean Jaurès"/>
+  <station lat="45.1899841" lon="5.6823410" name="Jean Prévost" city="Fontaine" source="473975836" type="bus" road="Boulevard Paul Langevin"/>
   <station lat="45.1668444" lon="5.7417963" name="Jean Racine" city="Grenoble" source="498506955" type="bus" road="Avenue Jean Jaurès"/>
+  <station lat="45.1675212" lon="5.7414570" name="Jean Racine" city="Grenoble" source="498506961" type="bus" road="Avenue Jean Jaurès"/>
   <station lat="45.1817465" lon="5.7452125" name="Jeanne d'Arc" city="Grenoble" source="451237950" type="bus" road="Rue Claude Genin"/>
   <station lat="45.1819374" lon="5.7458029" name="Jeanne d'Arc" city="Grenoble" source="451237948" type="bus" road="Rue Claude Genin"/>
   <station lat="45.2083055" lon="5.7577604" name="Jules Flandrin" city="Corenc" source="480458794" type="bus" road="Avenue du Grésivaudan"/>
   <station lat="45.2087875" lon="5.7590101" name="Jules Flandrin" city="Bouqueron" source="480458795" type="bus" road="Avenue du Grésivaudan"/>
-  <station lat="45.1978858" lon="5.6887449" name="Jules Guesde" city="Fontaine" source="473975714,473975711" type="bus" road="Rue Jean Pain"/>
-  <station lat="45.2065271" lon="5.7425492" name="Jules Rey" city="La Tronche" source="488881203,488881202" type="bus" road="Grande Rue"/>
-  <station lat="45.2422680" lon="5.6711557" name="Karben" city="Saint-Égrève" source="474770809,474770778" type="bus" road="Route de Lyon"/>
+  <station lat="45.1978858" lon="5.6887449" name="Jules Guesde" city="Fontaine" source="473975711,473975714" type="bus" road="Rue Jean Pain"/>
+  <station lat="45.2065271" lon="5.7425492" name="Jules Rey" city="La Tronche" source="488881202,488881203" type="bus" road="Grande Rue"/>
+  <station lat="45.2420750" lon="5.6713220" name="Karben" city="Saint-Égrève" source="474770809,474770778" type="bus" road="Route de Lyon"/>
   <station lat="45.2429452" lon="5.6712757" name="Karben" city="Saint-Égrève" source="474827225,474827226" type="bus" road="Avenue de Karben"/>
-  <station lat="45.1613236" lon="5.6829661" name="L'Agneau" city="Seyssins" source="473349926" type="bus" road="Avenue de Grenoble"/>
   <station lat="45.1619549" lon="5.6827522" name="L'Agneau" city="Seyssins" source="473349932" type="bus" road="Avenue de Grenoble"/>
-  <station lat="45.1782293" lon="5.6970071" name="L'Arche" city="Seyssinet-Pariset" source="445206351,445206350" type="bus" road="Avenue de la République"/>
+  <station lat="45.1613236" lon="5.6829661" name="L'Agneau" city="Seyssins" source="473349926" type="bus" road="Avenue de Grenoble"/>
+  <station lat="45.0820229" lon="5.7681486" name="L'Alliance" city="Vizille" source="496886423,2030838542" type="bus" road="Avenue Maurice Thorez"/>
+  <station lat="45.1782293" lon="5.6970071" name="L'Arche" city="Seyssinet-Pariset" source="445206350,445206351" type="bus" road="Avenue de la République"/>
   <station lat="45.1543551" lon="5.6802694" name="L'Argoud" city="Seyssins" source="473349917" type="bus" road="Avenue de Claix"/>
   <station lat="45.1538544" lon="5.6799891" name="L'Argoud" city="Seyssins" source="473349916" type="bus" road="Avenue de Claix"/>
   <station lat="44.9969189" lon="5.6028072" name="L'Arzelier" city="Le Gua" source="331960788" type="bus" road="D 8b"/>
   <station lat="45.1332941" lon="5.7747633" name="L'Enclos" city="Brié-et-Angonnes" source="1152414448" type="bus" road="Chemin de l'Enclos"/>
   <station lat="45.2146836" lon="5.7045047" name="L'Hermitage" city="Saint-Martin-le-Vinoux" source="109581810" type="bus" road="Route de Narbonne"/>
-  <station lat="45.1466810" lon="5.7448256" name="L'Iliade" city="Eybens" source="559240644" type="bus" road="Avenue d'Échirolles"/>
   <station lat="45.1474422" lon="5.7461813" name="L'Iliade" city="Eybens" source="911287957" type="bus" road="Avenue d'Échirolles"/>
+  <station lat="45.1466810" lon="5.7448256" name="L'Iliade" city="Eybens" source="559240644" type="bus" road="Avenue d'Échirolles"/>
   <station lat="45.1177795" lon="5.7828135" name="L'Olympe" city="Brié-et-Angonnes" source="26681230" type="bus" road="Route Napoléon"/>
   <station lat="45.1981902" lon="5.8341253" name="L'Oratoire" city="Domène" source="513946215" type="bus" road="Rue Jean Jaurès"/>
   <station lat="45.1980142" lon="5.8336290" name="L'Oratoire" city="Domène" source="513946212" type="bus" road="Route de Grenoble"/>
@@ -418,95 +422,91 @@
   <station lat="45.0890483" lon="5.6835919" name="L'Oriel" city="Varces-Allières-et-Risset" source="1882849471" type="bus" road="Avenue Joliot Curie"/>
   <station lat="45.2097188" lon="5.6669419" name="L'Ovalie" city="Sassenage" source="445963882" type="bus" road="Rue Charles de Gaulle"/>
   <station lat="45.0299384" lon="5.6528047" name="L'Usine Nord" city="Vif" source="473281046,473281113" type="bus" road="Avenue du Général de Gaulle"/>
-  <station lat="45.2503617" lon="5.6649235" name="LEP Françoise Dolto" city="Fontanil-Cornillon" source="474770805" type="bus" road="Route de Lyon"/>
-  <station lat="45.2500986" lon="5.6652773" name="LEP Françoise Dolto" city="Fontanil-Cornillon" source="474770785" type="bus" road="Route de Lyon"/>
-  <station lat="45.2104944" lon="5.7028320" name="La Balme" city="Saint-Martin-le-Vinoux" source="474770743,3399607904" type="bus" road="Avenue du Général Leclerc"/>
   <station lat="45.1252325" lon="5.6880811" name="La Balmette" city="Claix" source="1803020404" type="bus" road="Rue du Coteau"/>
   <station lat="45.2165067" lon="5.7121139" name="La Banchardière" city="Saint-Martin-le-Vinoux" source="109581593" type="bus" road="Route de Narbonne"/>
   <station lat="45.0717711" lon="5.6549657" name="La Bascule" city="Saint-Paul-de-Varces" source="1801979643" type="bus" road="Route du Vercors"/>
-  <station lat="45.1605046" lon="5.6899195" name="La Baume" city="Seyssins" source="473349952" type="bus" road="Rue Joseph Moutin"/>
   <station lat="45.1596091" lon="5.6897490" name="La Baume" city="Seyssins" source="473349951" type="bus" road="Rue Joseph Moutin"/>
+  <station lat="45.1605046" lon="5.6899195" name="La Baume" city="Seyssins" source="473349952" type="bus" road="Rue Joseph Moutin"/>
   <station lat="45.2354781" lon="5.6698838" name="La Biole - Gare" city="Saint-Égrève" source="474827212" type="bus" road=""/>
   <station lat="45.2352549" lon="5.6695772" name="La Biole - Gare" city="Saint-Égrève" source="474827213" type="bus" road="Rue de la Biolle"/>
-  <station lat="45.1932961" lon="5.8203775" name="La Briot" city="Murianette" source="513946200" type="bus" road="Rue Charles de Gaulle"/>
   <station lat="45.1929732" lon="5.8194861" name="La Briot" city="Murianette" source="513946199" type="bus" road="Rue Charles de Gaulle"/>
+  <station lat="45.1932961" lon="5.8203775" name="La Briot" city="Murianette" source="513946200" type="bus" road="Rue Charles de Gaulle"/>
   <station lat="45.2231023" lon="5.7177690" name="La Buisseratière" city="Saint-Martin-le-Vinoux" source="109581528" type="bus" road="Chemin Rural de Gatinet"/>
   <station lat="45.1118979" lon="5.6719146" name="La Bâtie" city="Claix" source="2821192885,1802088384" type="bus" road="Chemin de Risset"/>
   <station lat="45.0128109" lon="5.6159107" name="La Charrière" city="Le Gua" source="797661682" type="bus" road="Route du Col de l'Arzelier"/>
   <station lat="45.1102387" lon="5.6654800" name="La Chateraie" city="Claix" source="369809008" type="bus" road="Chemin de Jayères"/>
   <station lat="45.1101332" lon="5.6655181" name="La Chateraie" city="Claix" source="2282420811" type="bus" road=""/>
-  <station lat="45.1212078" lon="5.6825935" name="La Chièze" city="Claix" source="473349887" type="bus" road="Avenue de Belledonne"/>
   <station lat="45.1214746" lon="5.6814289" name="La Chièze" city="Claix" source="473349886" type="bus" road="Avenue de Belledonne"/>
+  <station lat="45.1212078" lon="5.6825935" name="La Chièze" city="Claix" source="473349887" type="bus" road="Avenue de Belledonne"/>
   <station lat="45.1621757" lon="5.7490891" name="La Châtelière" city="Eybens" source="515302551" type="bus" road=""/>
   <station lat="45.1141924" lon="5.6726472" name="La Chênaie" city="Claix" source="1802088386" type="bus" road="Chemin de Risset"/>
   <station lat="45.1705438" lon="5.8074678" name="La Chênaie" city="Venon" source="1803051778" type="bus" road="Route Départementale 164"/>
   <station lat="45.2572514" lon="5.7461178" name="La Cime de Mont-Quaix" city="Quaix-en-Chartreuse" source="1907488690" type="bus" road="Route de Sarcenas"/>
   <station lat="45.0481756" lon="5.6674373" name="La Cime du Bourg" city="Vif" source="473281007" type="bus" road="Avenue du Général de Gaulle"/>
-  <station lat="45.1741599" lon="5.7899755" name="La Combe" city="Gières" source="1812433028" type="bus" road="Avenue de la Combe"/>
   <station lat="45.1727854" lon="5.7899031" name="La Combe" city="Gières" source="1812433042" type="bus" road="Avenue de la Combe"/>
+  <station lat="45.1741599" lon="5.7899755" name="La Combe" city="Gières" source="1812433028" type="bus" road="Avenue de la Combe"/>
   <station lat="45.2181036" lon="5.7604948" name="La Corne d'Or" city="Corenc" source="660862418" type="bus" road="Route de la Chartreuse"/>
   <station lat="45.0705291" lon="5.6449284" name="La Croix" city="Saint-Paul-de-Varces" source="1800639909" type="bus" road="Route du Vercors"/>
   <station lat="45.1293345" lon="5.6712672" name="La Croix Rolland" city="Claix" source="473349904,473349903" type="bus" road="Rue Beyle Stendhal"/>
   <station lat="45.2560437" lon="5.6280932" name="La Cuche" city="Veurey-Voroize" source="473851904" type="bus" road="Route de Valence"/>
-  <station lat="45.2234295" lon="5.7937323" name="La Détourbe" city="Meylan" source="480458822" type="bus" road="D 1090"/>
-  <station lat="45.2231944" lon="5.7932433" name="La Détourbe" city="Meylan" source="480458823" type="bus" road="D 1090"/>
   <station lat="45.2225186" lon="5.7922720" name="La Détourbe" city="Meylan" source="480444833" type="bus" road="D 1090"/>
-  <station lat="45.1753339" lon="5.7948256" name="La Faurie" city="Venon" source="262721766,1803051786" type="bus" road="Route Départementale 164"/>
+  <station lat="45.2231944" lon="5.7932433" name="La Détourbe" city="Meylan" source="480458823" type="bus" road="D 1090"/>
+  <station lat="45.2234295" lon="5.7937323" name="La Détourbe" city="Meylan" source="480458822" type="bus" road="D 1090"/>
+  <station lat="45.1754429" lon="5.7946872" name="La Faurie" city="Venon" source="1803051786" type="bus" road="Route Départementale 164"/>
+  <station lat="45.1752249" lon="5.7949640" name="La Faurie" city="Venon" source="262721766" type="bus" road="Chemin de Charlet"/>
   <station lat="45.2170983" lon="5.7762813" name="La Foy" city="Meylan" source="488881222" type="bus" road="Avenue de l'Eygala"/>
   <station lat="45.2168150" lon="5.7757288" name="La Foy" city="Meylan" source="488881221" type="bus" road="Avenue de l'Eygala"/>
   <station lat="45.1729919" lon="5.7945774" name="La Frênaie" city="Venon" source="262721782" type="bus" road="Route Départementale 164"/>
   <station lat="45.0704454" lon="5.6506380" name="La Garde" city="Saint-Paul-de-Varces" source="345171258" type="bus" road="Route du Vercors"/>
   <station lat="45.2273102" lon="5.7658332" name="La Garenne" city="Corenc" source="1800589805,2287025674" type="bus" road="Route de la Chartreuse"/>
   <station lat="45.0949447" lon="5.6799617" name="La Giraudière" city="Varces-Allières-et-Risset" source="706962061,1800608905" type="bus" road="Rue de la Marjoera"/>
-  <station lat="45.2151951" lon="5.7192745" name="La Gomma" city="Saint-Martin-le-Vinoux" source="485619806,95083583" type="bus" road="Route de Clémencières"/>
+  <station lat="45.2151951" lon="5.7192745" name="La Gomma" city="Saint-Martin-le-Vinoux" source="95083583,485619806" type="bus" road="Route de Clémencières"/>
   <station lat="45.2546862" lon="5.7710690" name="La Gouillat" city="Le Sappey-en-Chartreuse" source="258682752" type="bus" road="D 512"/>
   <station lat="45.0391323" lon="5.6611454" name="La Grange" city="Vif" source="331701743" type="bus" road="Allée de la Grange"/>
   <station lat="45.0393359" lon="5.6613113" name="La Grange" city="Vif" source="473281027" type="bus" road="Avenue du Général de Gaulle"/>
   <station lat="45.1779160" lon="5.7516553" name="La Houille Blanche" city="Saint-Martin-d'Hères" source="451237943" type="bus" road="Avenue Jules Vallès"/>
-  <station lat="45.1412978" lon="5.6989974" name="La Luire" city="Le Pont-de-Claix" source="482798359" type="bus" road=""/>
+  <station lat="45.1399994" lon="5.6986297" name="La Luire" city="Le Pont-de-Claix" source="482798359" type="bus" road="Rue du 19 Mars 1962"/>
+  <station lat="45.1410949" lon="5.7413632" name="La Maritelle" city="Bresson" source="1826463208" type="bus" road="Rue de la République"/>
   <station lat="45.1440845" lon="5.7403309" name="La Maritelle" city="Eybens" source="448287837,911287975" type="bus" road="Avenue d'Échirolles"/>
   <station lat="45.1415649" lon="5.7413327" name="La Maritelle" city="Bresson" source="1826463223" type="bus" road="Rue de la République"/>
-  <station lat="45.1410949" lon="5.7413632" name="La Maritelle" city="Bresson" source="1826463208" type="bus" road="Rue de la République"/>
   <station lat="45.2379340" lon="5.6887628" name="La Monta" city="Saint-Égrève" source="474827258,474827243" type="bus" road="Avenue du Medecin Général Viallet"/>
-  <station lat="45.1897238" lon="5.8117160" name="La Perrière" city="Murianette" source="513946191" type="bus" road="Rue Hector Berlioz"/>
   <station lat="45.1890170" lon="5.8100747" name="La Perrière" city="Gières" source="513946188" type="bus" road="Rue de la Libération"/>
-  <station lat="44.9891283" lon="5.6218013" name="La Pierre" city="Le Gua" source="1939985033" type="bus" road="D 8"/>
+  <station lat="45.1897238" lon="5.8117160" name="La Perrière" city="Murianette" source="513946191" type="bus" road="Rue Hector Berlioz"/>
   <station lat="44.9895079" lon="5.6228388" name="La Pierre" city="Le Gua" source="499537405" type="bus" road="D 8"/>
-  <station lat="45.2353180" lon="5.6760415" name="La Pinéa" city="Saint-Égrève" source="474770774,474770811" type="bus" road="Avenue du Général de Gaulle"/>
-  <station lat="45.0666089" lon="5.6920105" name="La Plaine" city="Vif" source="1805431178" type="bus" road="Route de Fontagneux"/>
-  <station lat="45.0668796" lon="5.6920844" name="La Plaine" city="Vif" source="1184527608" type="bus" road=""/>
+  <station lat="44.9891283" lon="5.6218013" name="La Pierre" city="Le Gua" source="1939985033" type="bus" road="D 8"/>
   <station lat="45.1725005" lon="5.6968545" name="La Plaine" city="Seyssinet-Pariset" source="445206340,445206342" type="bus" road="Avenue de la République"/>
+  <station lat="45.0667442" lon="5.6920475" name="La Plaine" city="Vif" source="1805431178,1184527608" type="bus" road="Route de Fontagneux"/>
   <station lat="45.0876512" lon="5.6721373" name="La Pommeraie" city="Varces-Allières-et-Risset" source="1800608913" type="bus" road=""/>
-  <station lat="45.1970418" lon="5.6725881" name="La Poya" city="Fontaine" source="270165556" type="bus" road="Boulevard Paul Langevin"/>
   <station lat="45.1972993" lon="5.6722064" name="La Poya" city="Fontaine" source="1897930686" type="bus" road="Boulevard Paul Langevin"/>
   <station lat="45.1972355" lon="5.6720043" name="La Poya" city="Fontaine" source="1800435876" type="bus" road=""/>
+  <station lat="45.1970418" lon="5.6725881" name="La Poya" city="Fontaine" source="270165556" type="bus" road="Boulevard Paul Langevin"/>
   <station lat="45.1496561" lon="5.7190516" name="La Rampe - Centre-Ville" city="Échirolles" source="1916826822,1706173914" type="bus" road="D 269Z"/>
-  <station lat="45.2073502" lon="5.7678748" name="La Revirée" city="Meylan" source="514050473,498507091,514050476" type="bus" road="Avenue de Verdun"/>
-  <station lat="45.2697498" lon="5.6181042" name="La Rive" city="Veurey-Voroize" source="473851899,473851867" type="bus" road="D 3"/>
+  <station lat="45.2073502" lon="5.7678748" name="La Revirée" city="Meylan" source="498507091,514050473,514050476" type="bus" road="Avenue de Verdun"/>
+  <station lat="45.2697498" lon="5.6181042" name="La Rive" city="Veurey-Voroize" source="473851867,473851899" type="bus" road="D 3"/>
   <station lat="45.2688430" lon="5.6687981" name="La Rivoire" city="Fontanil-Cornillon" source="343654575" type="bus" road="Route de Mont Saint-Martin"/>
-  <station lat="45.2200643" lon="5.7151183" name="La Rivoire" city="Saint-Martin-le-Vinoux" source="109581557" type="bus" road="Route de Narbonne"/>
+  <station lat="45.2200428" lon="5.7151149" name="La Rivoire" city="Saint-Martin-le-Vinoux" source="109581557" type="bus" road="Route de Narbonne"/>
   <station lat="45.2149302" lon="5.6611766" name="La Rollandière" city="Sassenage" source="445963876,445963877" type="bus" road="D 1532"/>
-  <station lat="45.1209204" lon="5.6760115" name="La Ronzy" city="Claix" source="473349888,473349889" type="bus" road="Avenue de Belledonne"/>
+  <station lat="45.1209204" lon="5.6760115" name="La Ronzy" city="Claix" source="473349889,473349888" type="bus" road="Avenue de Belledonne"/>
   <station lat="45.1729392" lon="5.7981568" name="La Serralière" city="Venon" source="1803051785,2284787591" type="bus" road="Route Départementale 164"/>
   <station lat="45.2027784" lon="5.6858092" name="La Sure" city="Fontaine" source="473975703" type="bus" road="Rue de la Sure"/>
   <station lat="45.2263273" lon="5.7911365" name="La Treille" city="Meylan" source="1799557066,2287115290" type="bus" road="Chemin de la Chicane"/>
-  <station lat="45.2015217" lon="5.7423471" name="La Tronche - Hôpital" city="La Tronche" source="1920434156,1920434219" type="bus" road="Avenue des Maquis du Grésivaudan"/>
-  <station lat="45.1361173" lon="5.8242179" name="La Tuilerie" city="Vaulnaveys-le-Haut" source="1812472987" type="bus" road="D 524"/>
+  <station lat="45.2015845" lon="5.7423961" name="La Tronche - Hôpital" city="La Tronche" source="1920434156,1920434219" type="bus" road="Avenue des Maquis du Grésivaudan"/>
   <station lat="45.1363557" lon="5.8247205" name="La Tuilerie" city="Vaulnaveys-le-Haut" source="1812472978" type="bus" road=""/>
+  <station lat="45.1361173" lon="5.8242179" name="La Tuilerie" city="Vaulnaveys-le-Haut" source="1812472987" type="bus" road="D 524"/>
   <station lat="45.0503214" lon="5.6714718" name="La Valonne" city="Vif" source="2955103332,2883430839" type="bus" road="Boulevard de la Résistance"/>
-  <station lat="45.1739443" lon="5.8026977" name="La Ville" city="Venon" source="1803051782,2284787596" type="bus" road="Route Départementale 164"/>
+  <station lat="45.1739443" lon="5.8026977" name="La Ville" city="Venon" source="2284787596,1803051782" type="bus" road="Route Départementale 164"/>
   <station lat="45.2200190" lon="5.7215761" name="Lachal" city="Saint-Martin-le-Vinoux" source="95083617" type="bus" road="Rue Le Mas Lachal"/>
-  <station lat="45.1408764" lon="5.7499677" name="Lagay" city="Bresson" source="1826463198,2594139020" type="bus" road="Avenue de Bresson"/>
+  <station lat="45.1408764" lon="5.7499677" name="Lagay" city="Bresson" source="2594139020,1826463198" type="bus" road="Avenue de Bresson"/>
   <station lat="45.2580154" lon="5.7080480" name="Le Barbet" city="Quaix-en-Chartreuse" source="2997242321" type="bus" road="Route de Saint-Égrève"/>
-  <station lat="45.2563677" lon="5.7105735" name="Le Bas de Petesset" city="Quaix-en-Chartreuse" source="124164779" type="bus" road="Route du Gua"/>
   <station lat="45.2563478" lon="5.7104145" name="Le Bas de Petesset" city="Quaix-en-Chartreuse" source="124164764" type="bus" road="Route de Saint-Égrève"/>
+  <station lat="45.2563677" lon="5.7105735" name="Le Bas de Petesset" city="Quaix-en-Chartreuse" source="124164779" type="bus" road="Route du Gua"/>
+  <station lat="45.2538546" lon="5.7020741" name="Le Bas de Quaix" city="Quaix-en-Chartreuse" source="124164220" type="bus" road="Route de Saint-Égrève"/>
   <station lat="45.2539394" lon="5.7014654" name="Le Bas de Quaix" city="Quaix-en-Chartreuse" source="124164205" type="bus" road="Route de Saint-Égrève"/>
-  <station lat="45.2538546" lon="5.7020741" name="Le Bas de Quaix" city="Quaix-en-Chartreuse" source="124164220" type="bus" road="Chemin des Vignes"/>
   <station lat="45.1478463" lon="5.7511729" name="Le Bourg" city="Eybens" source="498506905" type="bus" road="Avenue Jean Jaurès"/>
-  <station lat="45.1918749" lon="5.8165460" name="Le Bourg" city="Murianette" source="513946196,513946193" type="bus" road="Rue Hector Berlioz"/>
-  <station lat="45.1576072" lon="5.6898056" name="Le Bournet" city="Seyssins" source="312571547" type="bus" road="Rue du Bournet"/>
+  <station lat="45.1918749" lon="5.8165460" name="Le Bourg" city="Murianette" source="513946193,513946196" type="bus" road="Rue Hector Berlioz"/>
   <station lat="45.1574776" lon="5.6899062" name="Le Bournet" city="Seyssins" source="473349954" type="bus" road="Rue Joseph Moutin"/>
-  <station lat="45.2059429" lon="5.7718025" name="Le Brêt" city="Meylan" source="498507107,498507103" type="bus" road="Avenue du Vercors"/>
+  <station lat="45.1576072" lon="5.6898056" name="Le Bournet" city="Seyssins" source="312571547" type="bus" road="Rue du Bournet"/>
+  <station lat="45.2059429" lon="5.7718025" name="Le Brêt" city="Meylan" source="498507103,498507107" type="bus" road="Avenue du Vercors"/>
   <station lat="45.2748321" lon="5.6127120" name="Le Béryl" city="Veurey-Voroize" source="1598872041,59359136" type="bus" road="Route de Montaud"/>
   <station lat="45.1623860" lon="5.7629966" name="Le Carina" city="Saint-Martin-d'Hères" source="504708738,504708735" type="bus" road="Avenue Jacques Prévert"/>
   <station lat="45.1614375" lon="5.6734618" name="Le Cellier" city="Seyssins" source="1802109401" type="bus" road=""/>
@@ -516,16 +516,16 @@
   <station lat="45.2425410" lon="5.7254365" name="Le Charpen" city="Quaix-en-Chartreuse" source="95103081" type="bus" road="Route de Clémencière"/>
   <station lat="45.1631748" lon="5.8122424" name="Le Chenil" city="Saint-Martin-d'Uriage" source="1812433053" type="bus" road="D 524"/>
   <station lat="45.1630204" lon="5.8130492" name="Le Chenil" city="Saint-Martin-d'Uriage" source="1812433062" type="bus" road="D 524"/>
-  <station lat="45.1402326" lon="5.7836365" name="Le Chollet" city="Brié-et-Angonnes" source="41113374" type="bus" road="Route des Angonnes"/>
-  <station lat="45.2744836" lon="5.6060584" name="Le Château" city="Veurey-Voroize" source="1196895096" type="bus" road="Chemin du Parc"/>
-  <station lat="45.2520993" lon="5.7219965" name="Le Château" city="Quaix-en-Chartreuse" source="95103182" type="bus" road="Chemin du Château"/>
-  <station lat="45.1472778" lon="5.7267248" name="Le Château" city="Échirolles" source="482798334,482798333" type="bus" road="Avenue de Kimberley"/>
+  <station lat="45.1402326" lon="5.7836365" name="Le Chollet" city="Herbeys" source="41113374" type="bus" road="Route de Tavernolles"/>
   <station lat="45.2746549" lon="5.6064653" name="Le Château" city="Veurey-Voroize" source="59358941" type="bus" road="Route de Montaud"/>
+  <station lat="45.2744836" lon="5.6060584" name="Le Château" city="Veurey-Voroize" source="1196895096" type="bus" road="Chemin du Parc"/>
+  <station lat="45.1472778" lon="5.7267248" name="Le Château" city="Échirolles" source="482798334,482798333" type="bus" road="Avenue de Kimberley"/>
+  <station lat="45.2520993" lon="5.7219965" name="Le Château" city="Quaix-en-Chartreuse" source="95103182" type="bus" road="Chemin du Château"/>
   <station lat="45.1279382" lon="5.7850999" name="Le Coin" city="Brié-et-Angonnes" source="1821418430" type="bus" road="Route du Souveyron"/>
   <station lat="45.1267092" lon="5.6866335" name="Le Coteau" city="Claix" source="513056272" type="bus" road="Chemin de Fond Ratel"/>
   <station lat="45.1265051" lon="5.6871777" name="Le Coteau" city="Claix" source="1803020388" type="bus" road="Rue du Coteau"/>
-  <station lat="45.2078927" lon="5.7553811" name="Le Cèdre" city="Corenc" source="1800589793,480458792" type="bus" road="Avenue du Cèdre"/>
   <station lat="45.2078168" lon="5.7567368" name="Le Cèdre" city="Bouqueron" source="480458793" type="bus" road="Avenue du Grésivaudan"/>
+  <station lat="45.2078927" lon="5.7553811" name="Le Cèdre" city="Corenc" source="1800589793,480458792" type="bus" road="Avenue du Cèdre"/>
   <station lat="45.2072425" lon="5.7553293" name="Le Cèdre" city="Bouqueron" source="498507076" type="bus" road="Avenue du Grésivaudan"/>
   <station lat="45.2581912" lon="5.6639885" name="Le Fontanil - Cimetière" city="Fontanil-Cornillon" source="343653247" type="bus" road="Rue Fetola"/>
   <station lat="45.2563388" lon="5.6662820" name="Le Fontanil - Mairie" city="Fontanil-Cornillon" source="343653263" type="bus" road="Rue Fetola"/>
@@ -534,52 +534,51 @@
   <station lat="45.0784942" lon="5.7021886" name="Le Gros Chêne" city="Vif" source="1805431156" type="bus" road="Route de Fontagneux"/>
   <station lat="45.2097091" lon="5.6644073" name="Le Gua" city="Sassenage" source="445963880,445963881" type="bus" road="Rue du Gua"/>
   <station lat="45.0220991" lon="5.6444952" name="Le Gua Mairie" city="Le Gua" source="1805442757" type="bus" road="Avenue du Vercors"/>
-  <station lat="45.1546562" lon="5.6894620" name="Le Hameau des Chaumières" city="Seyssins" source="2306128518,473349956" type="bus" road="Rue des Ciments"/>
+  <station lat="45.1546562" lon="5.6894620" name="Le Hameau des Chaumières" city="Seyssins" source="473349956,2306128518" type="bus" road="Rue des Ciments"/>
   <station lat="45.1878357" lon="5.8077756" name="Le Japin" city="Gières" source="513946185" type="bus" road="Rue de la Libération"/>
   <station lat="45.1874691" lon="5.8070884" name="Le Japin" city="Gières" source="451116409" type="bus" road="Rue de la Libération"/>
-  <station lat="45.1640706" lon="5.7505748" name="Le Marais" city="Saint-Martin-d'Hères" source="457759200,457759201" type="bus" road="Avenue Marcel Cachin"/>
-  <station lat="45.0520888" lon="5.6751820" name="Le Masségu" city="Vif" source="473281137" type="bus" road="Boulevard de la Résistance"/>
+  <station lat="45.1635844" lon="5.7513497" name="Le Marais" city="Saint-Martin-d'Hères" source="3504919105" type="bus" road="Avenue Marcel Cachin"/>
+  <station lat="45.1640021" lon="5.7506838" name="Le Marais" city="Saint-Martin-d'Hères" source="457759201" type="bus" road="Avenue Marcel Cachin"/>
+  <station lat="45.1636268" lon="5.7508276" name="Le Marais" city="Saint-Martin-d'Hères" source="3504919106" type="bus" road="Rue du Vercors"/>
   <station lat="45.0519547" lon="5.6746589" name="Le Masségu" city="Vif" source="473281002" type="bus" road="Boulevard de la Résistance"/>
+  <station lat="45.0520888" lon="5.6751820" name="Le Masségu" city="Vif" source="473281137" type="bus" road="Boulevard de la Résistance"/>
   <station lat="45.0792294" lon="5.6627927" name="Le Meinget" city="Saint-Paul-de-Varces" source="1801979645" type="bus" road="Route du Vercors"/>
   <station lat="45.0796397" lon="5.6629498" name="Le Meinget" city="Saint-Paul-de-Varces" source="1800639901" type="bus" road="Route du Vercors"/>
   <station lat="45.2580441" lon="5.6958162" name="Le Mollard" city="Proveysieux" source="1092258248" type="bus" road="Route de Proveysieux"/>
-  <station lat="45.2262405" lon="5.6861746" name="Le Muret" city="Saint-Égrève" source="474770758" type="bus" road="Route de Grenoble"/>
-  <station lat="45.2258441" lon="5.6863499" name="Le Muret" city="Saint-Égrève" source="474770816" type="bus" road="Route de Grenoble"/>
-  <station lat="45.2149960" lon="5.6960228" name="Le Néron" city="Saint-Martin-le-Vinoux" source="3399607907,474770748" type="bus" road="Avenue du Général Leclerc"/>
+  <station lat="45.2259438" lon="5.6863473" name="Le Muret" city="Saint-Égrève" source="474770758,474770816" type="bus" road="Route de Grenoble"/>
   <station lat="45.1586190" lon="5.6745016" name="Le Parlement" city="Seyssins" source="1800967291" type="bus" road="D 106"/>
-  <station lat="45.1725687" lon="5.8104036" name="Le Perroud" city="Venon" source="2284787601,1803051775" type="bus" road="Route Départementale 164"/>
+  <station lat="45.1725687" lon="5.8104036" name="Le Perroud" city="Venon" source="1803051775,2284787601" type="bus" road="Route Départementale 164"/>
   <station lat="45.0622895" lon="5.6901637" name="Le Petit Brion" city="Vif" source="1805431179" type="bus" road="Rue du Stade"/>
-  <station lat="45.0939147" lon="5.7932762" name="Le Plâtre" city="Vaulnaveys-le-Bas" source="257448984,1812509755" type="bus" road="Avenue des Vaulnaveys"/>
   <station lat="45.1178465" lon="5.7476858" name="Le Plâtre" city="Jarrie" source="3257952566" type="bus" road="Route du Platre"/>
+  <station lat="45.0939147" lon="5.7932762" name="Le Plâtre" city="Vaulnaveys-le-Bas" source="1812509755,257448984" type="bus" road="Avenue des Vaulnaveys"/>
   <station lat="45.1179764" lon="5.7474052" name="Le Plâtre" city="Jarrie" source="2997295973" type="bus" road="Chemin de Champagnier à Jarrie"/>
-  <station lat="45.0279179" lon="5.6511727" name="Le Pont de Genevrey" city="Vif" source="473281110" type="bus" road=""/>
   <station lat="45.0285064" lon="5.6517551" name="Le Pont de Genevrey" city="Vif" source="473281072" type="bus" road="Avenue du Général de Gaulle"/>
+  <station lat="45.0279179" lon="5.6511727" name="Le Pont de Genevrey" city="Vif" source="473281110" type="bus" road=""/>
   <station lat="45.2761296" lon="5.7574713" name="Le Pont du Croz" city="Sarcenas" source="1907476177" type="bus" road="D 57"/>
   <station lat="45.0879362" lon="5.7895992" name="Le Pont du Mas" city="Vizille" source="1812509752" type="bus" road="Route d'Uriage"/>
   <station lat="45.0744195" lon="5.6600894" name="Le Poulat" city="Saint-Paul-de-Varces" source="1801979636" type="bus" road="Route du Vercors"/>
-  <station lat="45.2048997" lon="5.8357715" name="Le Prieuré" city="Domène" source="513946279" type="bus" road="Rue Marius Charles"/>
   <station lat="45.2045441" lon="5.8361175" name="Le Prieuré" city="Domène" source="513946277" type="bus" road="Rue Marius Charles"/>
+  <station lat="45.2048997" lon="5.8357715" name="Le Prieuré" city="Domène" source="513946279" type="bus" road="Rue Marius Charles"/>
   <station lat="45.1569846" lon="5.6787677" name="Le Priou" city="Seyssins" source="1800967299" type="bus" road="D 106"/>
   <station lat="45.1950157" lon="5.7234256" name="Le Rabot" city="Grenoble" source="957256579" type="bus" road="Rue Maurice Gignoux"/>
-  <station lat="45.2512071" lon="5.6672114" name="Le Rafour" city="Fontanil-Cornillon" source="3454875532" type="bus" road="Rue du Rafour"/>
   <station lat="45.0752565" lon="5.7003041" name="Le Refuge" city="Vif" source="1805431141" type="bus" road="Route de Fontagneux"/>
   <station lat="45.1209119" lon="5.7815417" name="Le Replat" city="Brié-et-Angonnes" source="541122541" type="bus" road="Chemin les Métraux"/>
   <station lat="45.1699778" lon="5.8134370" name="Le Reynet" city="Venon" source="1145640160,1145640125" type="bus" road="Voie Communale 164"/>
-  <station lat="45.0324547" lon="5.6556609" name="Le Rif" city="Vif" source="473281032,473281118" type="bus" road="Avenue du Général de Gaulle"/>
+  <station lat="45.0324547" lon="5.6556609" name="Le Rif" city="Vif" source="473281118,473281032" type="bus" road="Avenue du Général de Gaulle"/>
   <station lat="45.1016774" lon="5.6853704" name="Le Rochefort" city="Varces-Allières-et-Risset" source="1884467732" type="bus" road="D 1075"/>
   <station lat="45.1022483" lon="5.6858224" name="Le Rochefort" city="Varces-Allières-et-Risset" source="1884467730" type="bus" road="D 1075"/>
   <station lat="45.1603078" lon="5.7096527" name="Le Rondeau" city="Grenoble" source="1896625868" type="bus" road="Cours de la Libération et du Général de Gaulle"/>
   <station lat="45.1611947" lon="5.7100769" name="Le Rondeau" city="Grenoble" source="1896625852" type="bus" road="Cours de la Libération et du Général de Gaulle"/>
   <station lat="45.2093290" lon="5.7424338" name="Le Rozan" city="La Tronche" source="2241698340" type="bus" road="Route de la Chartreuse"/>
-  <station lat="45.2499384" lon="5.6315813" name="Le Ruisset" city="Noyarey" source="473851905,2274860447" type="bus" road="Avenue Saint-Jean"/>
+  <station lat="45.2497277" lon="5.6316931" name="Le Ruisset" city="Noyarey" source="2274860447,473851905" type="bus" road="Avenue Saint-Jean"/>
   <station lat="45.1816103" lon="5.7827158" name="Le Sonnant" city="Gières" source="513946183" type="bus" road=""/>
   <station lat="45.1814421" lon="5.7815409" name="Le Sonnant" city="Gières" source="2042745906" type="bus" road="Avenue Esclangon"/>
   <station lat="45.1469547" lon="5.7543195" name="Le Verderet" city="Eybens" source="498506887,498506894" type="bus" road="Avenue de la République"/>
   <station lat="44.9700881" lon="5.6086465" name="Le Vernay" city="Miribel-Lanchâtre" source="480740328" type="bus" road="Chemin du Vernay"/>
   <station lat="45.1412577" lon="5.7204276" name="Le Village" city="Échirolles" source="482798343,482798344" type="bus" road="Rue Paul Langevin"/>
   <station lat="45.2594896" lon="5.7771970" name="Le-Sappey-en-Chartreuse - Place" city="Le Sappey-en-Chartreuse" source="1345302504" type="bus" road="D 512"/>
-  <station lat="45.1309164" lon="5.8190117" name="Les Alberges" city="Vaulnaveys-le-Haut" source="249842482" type="bus" road=""/>
   <station lat="45.1314792" lon="5.8191179" name="Les Alberges" city="Vaulnaveys-le-Haut" source="645094052" type="bus" road="D 524"/>
+  <station lat="45.1309164" lon="5.8190117" name="Les Alberges" city="Vaulnaveys-le-Haut" source="249842482" type="bus" road=""/>
   <station lat="45.0754571" lon="5.7785283" name="Les Allas" city="Vizille" source="1812538561,1812538558" type="bus" road="Route d'Uriage"/>
   <station lat="45.1719270" lon="5.7649974" name="Les Alloves" city="Saint-Martin-d'Hères" source="451237925" type="bus" road="Rue de Malfangeat"/>
   <station lat="45.1720236" lon="5.7651684" name="Les Alloves" city="Saint-Martin-d'Hères" source="451237924" type="bus" road=""/>
@@ -588,9 +587,8 @@
   <station lat="45.2068153" lon="5.8479159" name="Les Arnauds" city="Domène" source="513946304" type="bus" road=""/>
   <station lat="45.1787887" lon="5.7424669" name="Les Bains" city="Grenoble" source="457759185" type="bus" road="Rue Léon Jouhaux"/>
   <station lat="45.1782254" lon="5.7426706" name="Les Bains" city="Grenoble" source="457759186" type="bus" road="Rue Léon Jouhaux"/>
-  <station lat="45.1105249" lon="5.6780290" name="Les Bauches" city="Varces-Allières-et-Risset" source="1802058442" type="bus" road="Rue de la Pissarde"/>
   <station lat="45.1108089" lon="5.6786257" name="Les Bauches" city="Varces-Allières-et-Risset" source="1802058433" type="bus" road="Rue de la Pissarde"/>
-  <station lat="45.2400937" lon="5.6727802" name="Les Bonnais" city="Saint-Égrève" source="474770810,2258516538" type="bus" road="Route de Lyon"/>
+  <station lat="45.1105249" lon="5.6780290" name="Les Bauches" city="Varces-Allières-et-Risset" source="1802058442" type="bus" road="Rue de la Pissarde"/>
   <station lat="45.2115535" lon="5.7906949" name="Les Béalières" city="Meylan" source="498507149" type="bus" road="Avenue du Granier"/>
   <station lat="45.2114263" lon="5.7914584" name="Les Béalières" city="Meylan" source="498507156" type="bus" road="Avenue du Granier"/>
   <station lat="45.2364776" lon="5.6380440" name="Les Chaulnes" city="Noyarey" source="473851911" type="bus" road="Avenue Saint-Jean"/>
@@ -600,40 +598,38 @@
   <station lat="45.0817779" lon="5.7876204" name="Les Corniers" city="Vizille" source="1812538565" type="bus" road="Route d'Uriage"/>
   <station lat="45.0814085" lon="5.7874559" name="Les Corniers" city="Vizille" source="1812538592" type="bus" road="Route d'Uriage"/>
   <station lat="45.2100952" lon="5.6475199" name="Les Côtes" city="Sassenage" source="1110419160" type="bus" road="Rue Pierre Dalloz"/>
-  <station lat="45.1556707" lon="5.6715154" name="Les Côtes" city="Seyssins" source="1800967292" type="bus" road="D 106"/>
   <station lat="45.1560284" lon="5.6712566" name="Les Côtes" city="Seyssins" source="1800967294" type="bus" road="D 106"/>
+  <station lat="45.1556707" lon="5.6715154" name="Les Côtes" city="Seyssins" source="1800967292" type="bus" road="D 106"/>
   <station lat="45.2682099" lon="5.6193800" name="Les Echalières" city="Veurey-Voroize" source="473851900" type="bus" road="D 3"/>
   <station lat="45.2196158" lon="5.6602854" name="Les Engenières" city="Sassenage" source="1805369356" type="bus" road="D 1532"/>
-  <station lat="45.1592536" lon="5.7136425" name="Les Essarts" city="Grenoble" source="479738757,479738759" type="bus" road="Avenue Léon Blum"/>
-  <station lat="45.0145440" lon="5.6137732" name="Les Faures" city="Le Gua" source="1805442748,1705910674" type="bus" road="Chemin du Four Sarrat"/>
+  <station lat="45.1592536" lon="5.7136425" name="Les Essarts" city="Grenoble" source="479738759,479738757" type="bus" road="Avenue Léon Blum"/>
+  <station lat="45.0145440" lon="5.6137732" name="Les Faures" city="Le Gua" source="1705910674,1805442748" type="bus" road="Chemin du Four Sarrat"/>
   <station lat="45.2065436" lon="5.7174777" name="Les Fauvettes" city="Saint-Martin-le-Vinoux" source="1302652285" type="bus" road="Route de Clémencières"/>
-  <station lat="45.0773141" lon="5.7685599" name="Les Forges" city="Vizille" source="2030794101,2030794104" type="bus" road=""/>
-  <station lat="45.0632053" lon="5.6694010" name="Les Garcins" city="Vif" source="473280976" type="bus" road="Boulevard Faidherbe"/>
   <station lat="45.0645842" lon="5.6704991" name="Les Garcins" city="Vif" source="473281163" type="bus" road="Boulevard Faidherbe"/>
+  <station lat="45.0632053" lon="5.6694010" name="Les Garcins" city="Vif" source="473280976" type="bus" road="Boulevard Faidherbe"/>
   <station lat="45.1700421" lon="5.7639385" name="Les Glaieuls" city="Saint-Martin-d'Hères" source="451237923" type="bus" road="Rue Émile Combes"/>
   <station lat="45.1696489" lon="5.7636527" name="Les Glaieuls" city="Saint-Martin-d'Hères" source="451237920" type="bus" road="Rue Émile Combes"/>
-  <station lat="45.2185229" lon="5.6798751" name="Les Glairaux" city="Saint-Égrève" source="474827286" type="bus" road="Avenue de l'Île Brune"/>
-  <station lat="45.2194389" lon="5.6796592" name="Les Glairaux" city="Saint-Égrève" source="2988443525" type="bus" road="Rue des Moutonnées"/>
+  <station lat="45.2186489" lon="5.6797382" name="Les Glairaux" city="Saint-Égrève" source="474827286,474827274" type="bus" road="Avenue de l'Île Brune"/>
   <station lat="45.1496599" lon="5.7116319" name="Les Glières" city="Échirolles" source="479738750" type="bus" road="Rue Paul Héroult"/>
   <station lat="45.1257056" lon="5.8169193" name="Les Guichards" city="Vaulnaveys-le-Haut" source="1812472985" type="bus" road="Avenue d'Uriage"/>
   <station lat="45.1275227" lon="5.8168546" name="Les Guichards" city="Vaulnaveys-le-Haut" source="647893465" type="bus" road=""/>
   <station lat="45.2215237" lon="5.7908546" name="Les Jaillières" city="Meylan" source="480458820" type="bus" road="D 1090"/>
   <station lat="45.2206493" lon="5.7892544" name="Les Jaillières" city="Meylan" source="480458819" type="bus" road="D 1090"/>
-  <station lat="45.1504128" lon="5.7499067" name="Les Javaux" city="Eybens" source="498506910" type="bus" road="Avenue Jean Jaurès"/>
-  <station lat="45.1498049" lon="5.7497944" name="Les Javaux" city="Eybens" source="911287963" type="bus" road="Avenue d'Échirolles"/>
   <station lat="45.1510752" lon="5.7495758" name="Les Javaux" city="Eybens" source="498506914" type="bus" road="Avenue Jean Jaurès"/>
+  <station lat="45.1498049" lon="5.7497944" name="Les Javaux" city="Eybens" source="911287963" type="bus" road="Avenue d'Échirolles"/>
+  <station lat="45.1504128" lon="5.7499067" name="Les Javaux" city="Eybens" source="498506910" type="bus" road="Avenue Jean Jaurès"/>
   <station lat="45.1495518" lon="5.7494027" name="Les Javaux" city="Eybens" source="911287915" type="bus" road="Avenue d'Échirolles"/>
   <station lat="45.2646913" lon="5.7742610" name="Les Jonquilles" city="Le Sappey-en-Chartreuse" source="138720" type="bus" road="Chemin Rural du Cret"/>
-  <station lat="45.2051875" lon="5.7585253" name="Les Léchères" city="Meylan" source="566712277" type="bus" road="Impasse des Léchères"/>
   <station lat="45.2045616" lon="5.7593298" name="Les Léchères" city="Meylan" source="480458791" type="bus" road="Avenue de la Plaine Fleurie"/>
-  <station lat="45.2763699" lon="5.6110202" name="Les Marronniers" city="Veurey-Voroize" source="473851893" type="bus" road="Route de Montaud"/>
+  <station lat="45.2051875" lon="5.7585253" name="Les Léchères" city="Meylan" source="566712277" type="bus" road="Impasse des Léchères"/>
   <station lat="45.2759393" lon="5.6100782" name="Les Marronniers" city="Veurey-Voroize" source="59358979" type="bus" road="Chemin du Tracollet"/>
-  <station lat="45.1963647" lon="5.8289959" name="Les Mortes" city="Domène" source="513946209,513946206" type="bus" road="Route de Grenoble"/>
+  <station lat="45.2763699" lon="5.6110202" name="Les Marronniers" city="Veurey-Voroize" source="473851893" type="bus" road="Route de Montaud"/>
+  <station lat="45.1963647" lon="5.8289959" name="Les Mortes" city="Domène" source="513946206,513946209" type="bus" road="Route de Grenoble"/>
   <station lat="45.2160291" lon="5.7795008" name="Les Muriers" city="Meylan" source="480458811" type="bus" road="Chemin de l'Ancienne Mairie"/>
   <station lat="45.2150529" lon="5.7796569" name="Les Muriers" city="Meylan" source="480458810" type="bus" road="Chemin de l'Ancienne Mairie"/>
   <station lat="45.1216584" lon="5.7850004" name="Les Métraux" city="Brié-et-Angonnes" source="312167460" type="bus" road="Chemin les Métraux"/>
   <station lat="45.1521226" lon="5.6890559" name="Les Nalettes" city="Seyssins" source="473349975" type="bus" road=""/>
-  <station lat="45.2150530" lon="5.7686072" name="Les Oiseaux" city="Meylan" source="488881218,488881217" type="bus" road="Avenue de l'Eygala"/>
+  <station lat="45.2150530" lon="5.7686072" name="Les Oiseaux" city="Meylan" source="488881217,488881218" type="bus" road="Avenue de l'Eygala"/>
   <station lat="45.1153036" lon="5.6659498" name="Les Pampres" city="Claix" source="1802109400,1802090359" type="bus" road="Rue Fantin Latour"/>
   <station lat="45.2165600" lon="5.6519885" name="Les Parcs" city="Sassenage" source="1802977980" type="bus" road="Rue des Parcs"/>
   <station lat="45.1995318" lon="5.6699017" name="Les Pies" city="Sassenage" source="445963891" type="bus" road="Avenue de Romans"/>
@@ -642,9 +638,9 @@
   <station lat="45.1948562" lon="5.8247142" name="Les Rivets" city="Murianette" source="513946201,513946203" type="bus" road="Route de Grenoble"/>
   <station lat="45.1178839" lon="5.6673823" name="Les Roses" city="Claix" source="847983210" type="bus" road="Rue Fantin Latour"/>
   <station lat="45.1177656" lon="5.6679164" name="Les Roses" city="Claix" source="847983083" type="bus" road="Rue Fantin Latour"/>
-  <station lat="45.0165862" lon="5.6407642" name="Les Rossets" city="Le Gua" source="1805442745,571149048" type="bus" road="Avenue du Vercors"/>
+  <station lat="45.0165862" lon="5.6407642" name="Les Rossets" city="Le Gua" source="571149048,1805442745" type="bus" road="Avenue du Vercors"/>
   <station lat="45.1493397" lon="5.7411624" name="Les Ruires - Boétie" city="Eybens" source="504708761" type="bus" road="Rue Pierre Mendès France"/>
-  <station lat="45.0228775" lon="5.6450889" name="Les Saillants" city="Le Gua" source="473281105" type="bus" road="Avenue du Vercors"/>
+  <station lat="45.0246327" lon="5.6457614" name="Les Saillants" city="Le Gua" source="473281105" type="bus" road="Avenue du Vercors"/>
   <station lat="45.1629381" lon="5.7411228" name="Les Saules" city="Eybens" source="488881163" type="bus" road="Rue du 8 Mai 1945"/>
   <station lat="45.1161056" lon="5.7577809" name="Les Simanes" city="Jarrie" source="1397394585" type="bus" road=""/>
   <station lat="45.1131678" lon="5.6658345" name="Les Taillis" city="Claix" source="1802109398" type="bus" road="Rue du Château"/>
@@ -652,55 +648,55 @@
   <station lat="45.1687928" lon="5.7936792" name="Les Terrats" city="Gières" source="1812433061" type="bus" road="Avenue de la Combe"/>
   <station lat="45.1156799" lon="5.7510134" name="Les Tevenets" city="Jarrie" source="1826143642" type="bus" road="Route du Mollard"/>
   <station lat="45.0919958" lon="5.6746805" name="Les Tisserands" city="Varces-Allières-et-Risset" source="1142238057" type="bus" road=""/>
-  <station lat="45.0911471" lon="5.7915713" name="Les Travers" city="Vaulnaveys-le-Bas" source="1812509776,1812509783" type="bus" road="Avenue des Vaulnaveys"/>
-  <station lat="45.2072596" lon="5.8339438" name="Les Vernes" city="Domène" source="513946282,513946283" type="bus" road="Rue Marius Charles"/>
+  <station lat="45.0911471" lon="5.7915713" name="Les Travers" city="Vaulnaveys-le-Bas" source="1812509783,1812509776" type="bus" road="Avenue des Vaulnaveys"/>
+  <station lat="45.2072596" lon="5.8339438" name="Les Vernes" city="Domène" source="513946283,513946282" type="bus" road="Rue Marius Charles"/>
   <station lat="45.1380857" lon="5.7456905" name="Les Vignes" city="Bresson" source="1826463232" type="bus" road="Rue de la République"/>
   <station lat="45.1613999" lon="5.7431242" name="Les Écoles" city="Eybens" source="515302557" type="bus" road="Avenue du Général de Gaulle"/>
   <station lat="45.1974731" lon="5.6861693" name="Les Écrins" city="Fontaine" source="278466580" type="bus" road="Rue Jean Pain"/>
   <station lat="45.1181026" lon="5.6730094" name="Les Églantiers" city="Claix" source="1802088387,2282420997" type="bus" road="Chemin de Risset"/>
-  <station lat="45.1841194" lon="5.6971452" name="Les Îles" city="Seyssinet-Pariset" source="445206358,445206359" type="bus" road="Avenue de la République"/>
-  <station lat="45.2096932" lon="5.7662171" name="Lionel Terray" city="Meylan" source="1799525916" type="bus" road="Rue des Peupliers"/>
+  <station lat="45.1841194" lon="5.6971452" name="Les Îles" city="Seyssinet-Pariset" source="445206359,445206358" type="bus" road="Avenue de la République"/>
   <station lat="45.2104189" lon="5.7671760" name="Lionel Terray" city="Meylan" source="1799525872" type="bus" road="Chemin de la Revirée"/>
+  <station lat="45.2096932" lon="5.7662171" name="Lionel Terray" city="Meylan" source="1799525916" type="bus" road="Rue des Peupliers"/>
   <station lat="45.2148582" lon="5.6857180" name="Louis Gagnière" city="Saint-Martin-le-Vinoux" source="474827284" type="bus" road=""/>
   <station lat="45.1699234" lon="5.7370018" name="Louis Jouvet" city="Grenoble" source="496601239,496601242" type="bus" road="Avenue Malherbe"/>
   <station lat="45.1702038" lon="5.7129548" name="Louise Michel" city="Grenoble" source="2935832901" type="bus" road="Cours de la Libération et du Général de Gaulle"/>
   <station lat="45.2133744" lon="5.7809447" name="Lycée du Grésivaudan" city="Meylan" source="488881225,488881226" type="bus" road=""/>
-  <station lat="45.2141132" lon="5.7790988" name="Lycée du Grésivaudan - Bachais" city="Meylan" source="480458809,480458808" type="bus" road="D 1090"/>
+  <station lat="45.2141132" lon="5.7790988" name="Lycée du Grésivaudan - Bachais" city="Meylan" source="480458808,480458809" type="bus" road="D 1090"/>
   <station lat="45.1730866" lon="5.7106306" name="Lys Rouge" city="Grenoble" source="496601191" type="bus" road="Rue Anatole France"/>
   <station lat="45.1691633" lon="5.7445277" name="Léon Jouhaux" city="Grenoble" source="2299999840,457759192" type="bus" road="Rue Léon Jouhaux"/>
-  <station lat="45.2261543" lon="5.7254989" name="Lévetière" city="Saint-Martin-le-Vinoux" source="2938825702" type="bus" road="Route de Clémencières"/>
   <station lat="45.2260699" lon="5.7254789" name="Lévetière" city="Saint-Martin-le-Vinoux" source="530810126" type="bus" road="Chemin de Serlin"/>
-  <station lat="45.1850073" lon="5.7432510" name="Madeleine" city="Grenoble" source="451237953,1812344638" type="bus" road="Avenue Jeanne d'Arc"/>
-  <station lat="45.2110423" lon="5.7503456" name="Mairie Condamine" city="Corenc" source="2287025678" type="bus" road="Avenue de la Condamine"/>
+  <station lat="45.2261543" lon="5.7254989" name="Lévetière" city="Saint-Martin-le-Vinoux" source="2938825702" type="bus" road="Route de Clémencières"/>
+  <station lat="45.1850073" lon="5.7432510" name="Madeleine" city="Grenoble" source="1812344638,451237953" type="bus" road="Avenue Jeanne d'Arc"/>
   <station lat="45.2111077" lon="5.7509137" name="Mairie Condamine" city="Corenc" source="1800589809" type="bus" road="Avenue de la Condamine"/>
-  <station lat="45.1116900" lon="5.8049359" name="Maison Blanche" city="Vaulnaveys-le-Bas" source="1210298435" type="bus" road="Route des Frettes"/>
-  <station lat="45.1118063" lon="5.8050470" name="Maison Blanche" city="Vaulnaveys-le-Bas" source="1812509847" type="bus" road="Avenue des Vaulnaveys"/>
+  <station lat="45.2110423" lon="5.7503456" name="Mairie Condamine" city="Corenc" source="2287025678" type="bus" road="Avenue de la Condamine"/>
+  <station lat="45.1118085" lon="5.8050605" name="Maison Blanche" city="Vaulnaveys-le-Bas" source="1812509847" type="bus" road="Avenue des Vaulnaveys"/>
+  <station lat="45.1116901" lon="5.8049494" name="Maison Blanche" city="Vaulnaveys-le-Bas" source="1210298435" type="bus" road="Route des Frettes"/>
   <station lat="45.1839828" lon="5.7537933" name="Maison Communale" city="Saint-Martin-d'Hères" source="1871592599" type="bus" road="Avenue Ambroise Croizat"/>
-  <station lat="45.1595699" lon="5.7233604" name="Maison des Anciens" city="Grenoble" source="488881171,488881141" type="bus" road="Avenue Edmond Esmonin"/>
+  <station lat="45.1595699" lon="5.7233604" name="Maison des Anciens" city="Grenoble" source="488881141,488881171" type="bus" road="Avenue Edmond Esmonin"/>
   <station lat="45.1661579" lon="5.7645840" name="Maisons Blanches" city="Saint-Martin-d'Hères" source="451237917" type="bus" road="Avenue Romain Rolland"/>
   <station lat="45.1667696" lon="5.7633887" name="Maisons Blanches" city="Saint-Martin-d'Hères" source="451237918" type="bus" road="Avenue Romain Rolland"/>
-  <station lat="45.1647584" lon="5.7423774" name="Maisons Neuves" city="Eybens" source="488881167" type="bus" road="Rue Voltaire"/>
   <station lat="45.1649477" lon="5.7425618" name="Maisons Neuves" city="Eybens" source="498506951" type="bus" road="Square des Maisons Neuves"/>
+  <station lat="45.1647584" lon="5.7423774" name="Maisons Neuves" city="Eybens" source="488881167" type="bus" road="Rue Voltaire"/>
   <station lat="45.1651342" lon="5.7426774" name="Maisons Neuves" city="Eybens" source="498506945" type="bus" road="Avenue Jean Jaurès"/>
   <station lat="45.2112670" lon="5.7872537" name="Malacher" city="Meylan" source="498507141" type="bus" road="Avenue du Granier"/>
-  <station lat="45.2076333" lon="5.6802820" name="Maladière" city="Sassenage" source="2275183284" type="bus" road="Rue de Chamechaude"/>
   <station lat="45.2073812" lon="5.6801668" name="Maladière" city="Sassenage" source="2996290326" type="bus" road="Rue de la Maladière"/>
-  <station lat="45.1689462" lon="5.7330351" name="Malherbe" city="Grenoble" source="1905881629,1905881594" type="bus" road="Avenue Malherbe"/>
+  <station lat="45.2076333" lon="5.6802820" name="Maladière" city="Sassenage" source="2275183284" type="bus" road="Rue de Chamechaude"/>
+  <station lat="45.1689462" lon="5.7330351" name="Malherbe" city="Grenoble" source="1905881594,1905881629" type="bus" road="Avenue Malherbe"/>
   <station lat="45.1321363" lon="5.6667242" name="Malhivert" city="Claix" source="1803020421,1803020431" type="bus" road="Chemin de l'Abbé"/>
   <station lat="45.0838618" lon="5.7046162" name="Malissoles" city="Vif" source="1805431148" type="bus" road="Route de Fontagneux"/>
   <station lat="45.1803425" lon="5.7351386" name="Mallifaud" city="Grenoble" source="498507007" type="bus" road="Avenue Jean Perrot"/>
-  <station lat="45.1991248" lon="5.6828373" name="Marat" city="Fontaine" source="445963867,445963866" type="bus" road="Rue Joseph Bertoin"/>
+  <station lat="45.1991248" lon="5.6828373" name="Marat" city="Fontaine" source="445963866,445963867" type="bus" road="Rue Joseph Bertoin"/>
   <station lat="45.1648901" lon="5.6891719" name="Marc Sangnier" city="Seyssins" source="473349941,473349942" type="bus" road="Rue Joseph Moutin"/>
   <station lat="45.1825047" lon="5.7220715" name="Marceau - Jardin des Vallons" city="Grenoble" source="482798307,482798306" type="bus" road="Rue Marceau"/>
   <station lat="45.1261008" lon="5.6982512" name="Marcelline" city="Le Pont-de-Claix" source="1891298727" type="bus" road="Cours Saint-André"/>
   <station lat="45.1255607" lon="5.6979674" name="Marcelline" city="Le Pont-de-Claix" source="1891298715" type="bus" road="Cours Saint-André"/>
-  <station lat="45.1151498" lon="5.8080152" name="Marchandises" city="Vaulnaveys-le-Haut" source="1812509791" type="bus" road="Avenue d'Uriage"/>
   <station lat="45.1148319" lon="5.8077189" name="Marchandises" city="Vaulnaveys-le-Haut" source="1139811225" type="bus" road="Avenue d'Uriage"/>
+  <station lat="45.1151498" lon="5.8080152" name="Marchandises" city="Vaulnaveys-le-Haut" source="1812509791" type="bus" road="Avenue d'Uriage"/>
   <station lat="45.1734895" lon="5.7180548" name="Marché d'Intérêt National" city="Grenoble" source="2141563286" type="bus" road="Rue des Alliés"/>
-  <station lat="45.1449744" lon="5.7172609" name="Marie Curie" city="Échirolles" source="1916856161" type="bus" road=""/>
   <station lat="45.1446779" lon="5.7164381" name="Marie Curie" city="Échirolles" source="1916856148" type="bus" road="D 269Z"/>
-  <station lat="45.2081422" lon="5.6965331" name="Martyrs-Résistance" city="Grenoble" source="2935257170" type="bus" road="Avenue des Martyrs"/>
+  <station lat="45.1449744" lon="5.7172609" name="Marie Curie" city="Échirolles" source="1916856161" type="bus" road="Rue Lionel Terray"/>
   <station lat="45.2085109" lon="5.6963008" name="Martyrs-Résistance" city="Grenoble" source="457759110" type="bus" road="Avenue des Martyrs"/>
+  <station lat="45.2081422" lon="5.6965331" name="Martyrs-Résistance" city="Grenoble" source="2935257170" type="bus" road="Avenue des Martyrs"/>
   <station lat="45.2175296" lon="5.7219124" name="Mas Caché" city="Saint-Martin-le-Vinoux" source="2938825603,2938805906" type="bus" road="Route de Clémencières"/>
   <station lat="45.0605441" lon="5.6878014" name="Mas Garni" city="Vif" source="1805431159" type="bus" road="Rue du Stade"/>
   <station lat="45.0608032" lon="5.6881818" name="Mas Garni" city="Vif" source="1042049467" type="bus" road="Rue du Stade"/>
@@ -711,72 +707,74 @@
   <station lat="45.2093932" lon="5.7778637" name="Meylan - Mairie" city="Meylan" source="498507122" type="bus" road=""/>
   <station lat="44.9747102" lon="5.6209301" name="Miribel" city="Miribel-Lanchâtre" source="480740202" type="bus" road="D 8"/>
   <station lat="45.2135687" lon="5.6524370" name="Mollard Pichon" city="Sassenage" source="1802977950,1802977971" type="bus" road="Rue Pierre Dalloz"/>
-  <station lat="45.1534238" lon="5.7117064" name="Monmousseau" city="Échirolles" source="479738755,479738754" type="bus" road="Avenue Victor Hugo"/>
+  <station lat="45.1534238" lon="5.7117064" name="Monmousseau" city="Échirolles" source="479738754,479738755" type="bus" road="Avenue Victor Hugo"/>
   <station lat="45.1153186" lon="5.7840086" name="Mont Rolland" city="Brié-et-Angonnes" source="2400420977,2400420974" type="bus" road="Route Napoléon"/>
-  <station lat="45.2557883" lon="5.7428841" name="Mont-Quaix" city="Quaix-en-Chartreuse" source="1907488666" type="bus" road="Route de Sarcenas"/>
   <station lat="45.2551657" lon="5.7430158" name="Mont-Quaix" city="Quaix-en-Chartreuse" source="2997242323" type="bus" road="Route de Sarcenas"/>
-  <station lat="45.0916418" lon="5.7767712" name="Montchaboud Croisement" city="Vizille" source="26681295,26681292" type="bus" road="Avenue Gabriel Péri"/>
+  <station lat="45.2557883" lon="5.7428841" name="Mont-Quaix" city="Quaix-en-Chartreuse" source="1907488666" type="bus" road="Route de Sarcenas"/>
+  <station lat="45.0917150" lon="5.7766244" name="Montchaboud Croisement" city="Montchaboud" source="26681292" type="bus" road="D 5A"/>
+  <station lat="45.0915686" lon="5.7769179" name="Montchaboud Croisement" city="Vizille" source="26681295" type="bus" road="Avenue Gabriel Péri"/>
   <station lat="45.2121542" lon="5.7575324" name="Montfleury" city="Corenc" source="488881213" type="bus" road="Avenue de l'Eygala"/>
   <station lat="45.2118777" lon="5.7563645" name="Montfleury" city="Corenc" source="488881212" type="bus" road="Avenue de l'Eygala"/>
   <station lat="45.2299724" lon="5.7897711" name="Montlivet" city="Meylan" source="1799557070" type="bus" road="Chemin du Boutet"/>
   <station lat="45.2170218" lon="5.7536534" name="Monument" city="Corenc" source="1345303773" type="bus" road="Route de la Chartreuse"/>
   <station lat="45.2163858" lon="5.7538299" name="Monument" city="Corenc" source="1106642" type="bus" road="Chemin Charles Pajon"/>
-  <station lat="45.1257228" lon="5.6809243" name="Moucherotte" city="Claix" source="2821192886,2821192887" type="bus" road="Rue de la Balme"/>
-  <station lat="45.2281851" lon="5.6843147" name="Moutonnées" city="Saint-Égrève" source="474770815,474770761" type="bus" road="Route de Grenoble"/>
+  <station lat="45.1257228" lon="5.6809243" name="Moucherotte" city="Claix" source="2821192887,2821192886" type="bus" road="Rue de la Balme"/>
+  <station lat="45.2280214" lon="5.6843890" name="Moutonnées" city="Saint-Égrève" source="474770815" type="bus" road="Route de Grenoble"/>
+  <station lat="45.2287296" lon="5.6839042" name="Moutonnées" city="Saint-Égrève" source="474770761" type="bus" road="Route de Grenoble"/>
   <station lat="45.1783110" lon="5.6919005" name="Murailles" city="Seyssinet-Pariset" source="20934524" type="bus" road="Avenue de la Houille Blanche"/>
-  <station lat="45.1950217" lon="5.7261105" name="Musée Dauphinois" city="Grenoble" source="2284787622,1799285834" type="bus" road="Rue Maurice Gignoux"/>
+  <station lat="45.1950217" lon="5.7261105" name="Musée Dauphinois" city="Grenoble" source="1799285834,2284787622" type="bus" road="Rue Maurice Gignoux"/>
   <station lat="45.1492086" lon="5.7011486" name="Musée Géo Charles" city="Échirolles" source="504708793" type="bus" road="Avenue Paul Vaillant Couturier"/>
   <station lat="45.1487906" lon="5.7017617" name="Musée Géo Charles" city="Échirolles" source="504708794" type="bus" road="Avenue Danielle Casanova"/>
   <station lat="45.2056404" lon="5.7488892" name="Musée Hébert" city="La Tronche" source="498507060" type="bus" road="Avenue des Maquis du Grésivaudan"/>
-  <station lat="45.1904724" lon="5.7366048" name="Mutualité" city="Grenoble" source="479738785" type="bus" road="Rue Hébert"/>
   <station lat="45.1907019" lon="5.7355463" name="Mutualité" city="Grenoble" source="479738796" type="bus" road="Rue Cornélie Gémond"/>
-  <station lat="45.1226228" lon="5.6910266" name="Mémorial" city="Claix" source="1803020461,1803020454" type="bus" road="Rue du Drac"/>
+  <station lat="45.1904724" lon="5.7366048" name="Mutualité" city="Grenoble" source="479738785" type="bus" road="Rue Hébert"/>
+  <station lat="45.1226228" lon="5.6910266" name="Mémorial" city="Claix" source="1803020454,1803020461" type="bus" road="Rue du Drac"/>
   <station lat="45.2140864" lon="5.7097935" name="Narbonne" city="Saint-Martin-le-Vinoux" source="2938825703" type="bus" road="Route de Narbonne"/>
-  <station lat="45.1858877" lon="5.7574997" name="Neyrpic - Belledonne" city="Saint-Martin-d'Hères" source="1829897037,1829896938" type="bus" road="Rue Marceau Leyssieux"/>
+  <station lat="45.1858877" lon="5.7574997" name="Neyrpic - Belledonne" city="Saint-Martin-d'Hères" source="1829896938,1829897037" type="bus" road="Rue Marceau Leyssieux"/>
   <station lat="45.2090596" lon="5.7951796" name="Norbert Ségard" city="Meylan" source="911300166" type="bus" road="Chemin du Vieux Chêne"/>
   <station lat="45.0873477" lon="5.6901363" name="Notre Dame de Lachal" city="Varces-Allières-et-Risset" source="1805431162" type="bus" road="Rue Notre Dame de Lachal"/>
   <station lat="45.1939819" lon="5.7320677" name="Notre-Dame - Musée" city="Grenoble" source="1920507465,1920507473" type="bus" road="Place de Lavalette"/>
-  <station lat="45.2472733" lon="5.6268696" name="Noyarey Village" city="Noyarey" source="2200331252" type="bus" road=""/>
-  <station lat="45.1528770" lon="5.7490777" name="Odyssée" city="Eybens" source="504708755" type="bus" road="Rue Pierre Mendès France"/>
+  <station lat="45.2472733" lon="5.6268696" name="Noyarey Village" city="Noyarey" source="2200331252" type="bus" road="Place Victor Jat"/>
   <station lat="45.1525024" lon="5.7484491" name="Odyssée" city="Eybens" source="504708758" type="bus" road="Rue Pierre Mendès France"/>
+  <station lat="45.1528770" lon="5.7490777" name="Odyssée" city="Eybens" source="504708755" type="bus" road="Rue Pierre Mendès France"/>
   <station lat="45.1534571" lon="5.7484051" name="Odyssée" city="Eybens" source="498506923,498506919" type="bus" road="Avenue Jean Jaurès"/>
   <station lat="45.1739657" lon="5.7608429" name="Pablo Neruda" city="Saint-Martin-d'Hères" source="504708722" type="bus" road="Rue Henri Wallon"/>
   <station lat="45.1916702" lon="5.7108889" name="Palais de Justice" city="Grenoble" source="2949064584" type="bus" road="Rue Pierre Semard"/>
   <station lat="45.1628410" lon="5.6853230" name="Parc François Mitterrand" city="Seyssins" source="473349937,473349939" type="bus" road="Avenue de Grenoble"/>
-  <station lat="45.1866270" lon="5.6871773" name="Parc Karl Marx" city="Fontaine" source="473975896,473975900" type="bus" road="D 1532"/>
-  <station lat="45.2503243" lon="5.6278641" name="Parc de Biches" city="Noyarey" source="973899095" type="bus" road=""/>
-  <station lat="45.1994064" lon="5.7553704" name="Pascal" city="La Tronche" source="480458782,480458781" type="bus" road="Rue du Doyen Gosse"/>
+  <station lat="45.1866270" lon="5.6871773" name="Parc Karl Marx" city="Fontaine" source="473975900,473975896" type="bus" road="D 1532"/>
+  <station lat="45.2503243" lon="5.6278641" name="Parc de Biches" city="Noyarey" source="973899095" type="bus" road="Rue de l'Eyrard"/>
+  <station lat="45.1994064" lon="5.7553704" name="Pascal" city="La Tronche" source="480458781,480458782" type="bus" road="Rue du Doyen Gosse"/>
   <station lat="45.1733881" lon="5.7385497" name="Paul Claudel" city="Grenoble" source="498506980" type="bus" road="Avenue Jean Perrot"/>
+  <station lat="45.1719260" lon="5.7454783" name="Paul Cocat" city="Grenoble" source="457759191" type="bus" road="Rue Léon Jouhaux"/>
   <station lat="45.1722488" lon="5.7448145" name="Paul Cocat" city="Grenoble" source="496601250" type="bus" road="Avenue Paul Cocat"/>
   <station lat="45.1726310" lon="5.7457185" name="Paul Cocat" city="Grenoble" source="457759189" type="bus" road="Rue Léon Jouhaux"/>
-  <station lat="45.1719260" lon="5.7454783" name="Paul Cocat" city="Grenoble" source="457759191" type="bus" road="Rue Léon Jouhaux"/>
-  <station lat="45.1478266" lon="5.7128780" name="Paul Héroult" city="Échirolles" source="479738748" type="bus" road="Rue Paul Héroult"/>
   <station lat="45.1472608" lon="5.7134405" name="Paul Héroult" city="Échirolles" source="479738747" type="bus" road="Rue Paul Héroult"/>
-  <station lat="45.1433682" lon="5.7229219" name="Paul Langevin" city="Échirolles" source="482798342,482798341" type="bus" road="Rue Paul Langevin"/>
+  <station lat="45.1478266" lon="5.7128780" name="Paul Héroult" city="Échirolles" source="479738748" type="bus" road="Rue Paul Héroult"/>
+  <station lat="45.1433682" lon="5.7229219" name="Paul Langevin" city="Échirolles" source="482798341,482798342" type="bus" road="Rue Paul Langevin"/>
   <station lat="45.1650888" lon="5.7489754" name="Paul Éluard" city="Saint-Martin-d'Hères" source="2055926052,457759199" type="bus" road="Avenue Marcel Cachin"/>
   <station lat="45.1083892" lon="5.6742719" name="Pavillon" city="Varces-Allières-et-Risset" source="1802058437" type="bus" road="Rue de la Pissarde"/>
-  <station lat="45.1702151" lon="5.6866800" name="Percevalière" city="Seyssinet-Pariset" source="445206311,445206309" type="bus" road="Rue de Cartale"/>
-  <station lat="45.2620727" lon="5.6246661" name="Perrières" city="Veurey-Voroize" source="473851858" type="bus" road="Route de Valence"/>
+  <station lat="45.1702151" lon="5.6866800" name="Percevalière" city="Seyssinet-Pariset" source="445206309,445206311" type="bus" road="Rue de Cartale"/>
   <station lat="45.2615610" lon="5.6249615" name="Perrières" city="Veurey-Voroize" source="473851902" type="bus" road="Route de Valence"/>
-  <station lat="45.2765710" lon="5.6123521" name="Petit Châtelard" city="Veurey-Voroize" source="59359052" type="bus" road="Impasse du Solet"/>
+  <station lat="45.2620727" lon="5.6246661" name="Perrières" city="Veurey-Voroize" source="473851858" type="bus" road="Route de Valence"/>
   <station lat="45.2760862" lon="5.6121496" name="Petit Châtelard" city="Veurey-Voroize" source="59359056" type="bus" road="Route de Montaud"/>
+  <station lat="45.2765710" lon="5.6123521" name="Petit Châtelard" city="Veurey-Voroize" source="59359052" type="bus" road="Impasse du Solet"/>
   <station lat="45.2020433" lon="5.7342964" name="Petite Tronche" city="La Tronche" source="488881196,488881195" type="bus" road="Grande Rue"/>
-  <station lat="45.1838439" lon="5.7985187" name="Pied de Gières" city="Gières" source="451116382,451116389" type="bus" road="Rue de la Libération"/>
-  <station lat="45.1795478" lon="5.7637957" name="Pierre Courtade" city="Saint-Martin-d'Hères" source="504708702,504708704" type="bus" road="Avenue du Bataillon Carmagnole-Liberté"/>
+  <station lat="45.1838439" lon="5.7985187" name="Pied de Gières" city="Gières" source="451116389,451116382" type="bus" road="Rue de la Libération"/>
+  <station lat="45.1795478" lon="5.7637957" name="Pierre Courtade" city="Saint-Martin-d'Hères" source="504708704,504708702" type="bus" road="Avenue du Bataillon Carmagnole-Liberté"/>
   <station lat="45.1666492" lon="5.7465036" name="Pierre Loti" city="Saint-Martin-d'Hères" source="457759194" type="bus" road="Avenue Marcel Cachin"/>
   <station lat="45.1813092" lon="5.7571665" name="Pierre Sémard" city="Saint-Martin-d'Hères" source="496601260" type="bus" road="Avenue Pierre Semard"/>
   <station lat="45.2088645" lon="5.7752007" name="Piscine des Buclos" city="Meylan" source="498507116,498507112" type="bus" road="Avenue du Vercors"/>
   <station lat="45.1949714" lon="5.7291819" name="Place Cymaise" city="Grenoble" source="1799285832" type="bus" road="Quai Mounier"/>
   <station lat="45.2067432" lon="5.6627922" name="Place de la Libération" city="Sassenage" source="136597" type="bus" road="Avenue de Romans"/>
   <station lat="45.2087135" lon="5.7631855" name="Place de la Louisiane" city="Meylan" source="498507078" type="bus" road="Rue des Aiguinards"/>
-  <station lat="45.1820868" lon="5.7926586" name="Place de la République" city="Gières" source="451116374,451116379" type="bus" road="D 523"/>
+  <station lat="45.1820868" lon="5.7926586" name="Place de la République" city="Gières" source="451116379,451116374" type="bus" road="D 523"/>
   <station lat="45.1617508" lon="5.7385534" name="Place des Géants" city="Grenoble" source="488881162,488881161" type="bus" road="Rue du 8 Mai 1945"/>
   <station lat="45.1137447" lon="5.7286462" name="Place du Laca" city="Champagnier" source="40931791" type="bus" road=""/>
   <station lat="45.1955576" lon="5.6908785" name="Place du Marché Cachin" city="Fontaine" source="3399647133" type="bus" road="Mail Marcel Cachin"/>
   <station lat="45.1958674" lon="5.6906478" name="Place du Marché Cachin" city="Fontaine" source="496601106" type="bus" road="Rue Yves Farge"/>
-  <station lat="45.1563374" lon="5.6813357" name="Place du Village" city="Seyssins" source="473349919,473349918" type="bus" road="D 106"/>
-  <station lat="45.1558233" lon="5.6808685" name="Place du Village" city="Seyssins" source="2129717336" type="bus" road="D 106"/>
+  <station lat="45.1563374" lon="5.6813357" name="Place du Village" city="Seyssins" source="473349918,473349919" type="bus" road="D 106"/>
   <station lat="45.2036403" lon="5.7168467" name="Place du Village" city="Saint-Martin-le-Vinoux" source="1954731826" type="bus" road="Place du Village"/>
+  <station lat="45.1558233" lon="5.6808685" name="Place du Village" city="Seyssins" source="2129717336" type="bus" road="D 106"/>
   <station lat="45.2027422" lon="5.7608508" name="Plaine Fleurie" city="Meylan" source="480458787" type="bus" road="Boulevard de la Chantourne"/>
   <station lat="45.2026707" lon="5.7609748" name="Plaine Fleurie" city="Meylan" source="480458788" type="bus" road="Avenue de Verdun"/>
   <station lat="45.2033272" lon="5.7620794" name="Plaine Fleurie" city="Meylan" source="514050489" type="bus" road="Avenue de Verdun"/>
@@ -790,130 +788,119 @@
   <station lat="45.1760395" lon="5.7372445" name="Ponsard" city="Grenoble" source="498506988" type="bus" road="Avenue Jean Perrot"/>
   <station lat="45.1229122" lon="5.6977441" name="Pont de Claix - Mairie" city="Le Pont-de-Claix" source="1950684818" type="bus" road="Avenue du Maréchal Juin"/>
   <station lat="45.2302612" lon="5.6834166" name="Pont de Vence" city="Saint-Égrève" source="474827262,474827235" type="bus" road="Avenue de la Monta"/>
-  <station lat="45.2299933" lon="5.6825521" name="Pont de Vence" city="Saint-Égrève" source="474770763,474770814" type="bus" road="Avenue du Général de Gaulle"/>
   <station lat="45.2765163" lon="5.7071458" name="Pont du Gua" city="Proveysieux" source="1092262397" type="bus" road="Route de Proveysieux"/>
-  <station lat="45.1813926" lon="5.7633842" name="Portail Rouge" city="Saint-Martin-d'Hères" source="451116310,451116308" type="bus" road="Avenue Ambroise Croizat"/>
+  <station lat="45.1813926" lon="5.7633842" name="Portail Rouge" city="Saint-Martin-d'Hères" source="451116308,451116310" type="bus" road="Avenue Ambroise Croizat"/>
   <station lat="45.1824108" lon="5.7768043" name="Porte du Grésivaudan" city="Saint-Martin-d'Hères" source="513946151,513946147" type="bus" road="Avenue Gabriel Péri"/>
   <station lat="45.1211001" lon="5.6721067" name="Poste" city="Claix" source="473349894" type="bus" road="Rue Beyle Stendhal"/>
-  <station lat="45.1708852" lon="5.7585267" name="Potié" city="Saint-Martin-d'Hères" source="451237934,451237935" type="bus" road="Avenue Potié"/>
-  <station lat="45.2292792" lon="5.6497210" name="Praparis Usine" city="Sassenage" source="473851914" type="bus" road="D 1532"/>
+  <station lat="45.1708852" lon="5.7585267" name="Potié" city="Saint-Martin-d'Hères" source="451237935,451237934" type="bus" road="Avenue Potié"/>
   <station lat="45.2295517" lon="5.6492688" name="Praparis Usine" city="Sassenage" source="473851830" type="bus" road="D 1532"/>
-  <station lat="45.2321240" lon="5.6451112" name="Praparis les Roses" city="Noyarey" source="473851913,473851835" type="bus" road="Avenue Saint-Jean"/>
+  <station lat="45.2292792" lon="5.6497210" name="Praparis Usine" city="Sassenage" source="473851914" type="bus" road="D 1532"/>
+  <station lat="45.2321240" lon="5.6451112" name="Praparis les Roses" city="Noyarey" source="473851835,473851913" type="bus" road="Avenue Saint-Jean"/>
   <station lat="45.1873222" lon="5.7696217" name="Promotion Sociale" city="Saint-Martin-d'Hères" source="496601281,496601284" type="bus" road="Rue des Universités"/>
   <station lat="45.2626092" lon="5.6994215" name="Proveysieux - Village" city="Proveysieux" source="2997242325" type="bus" road="Route de Proveysieux"/>
   <station lat="45.2210680" lon="5.7645595" name="Providence" city="Corenc" source="1800589791,2241759063" type="bus" road="Route de la Chartreuse"/>
-  <station lat="45.2301262" lon="5.7874758" name="Pré Catlan" city="Meylan" source="2287115294,1799557075" type="bus" road="Chemin du Boutet"/>
-  <station lat="45.2017862" lon="5.6676282" name="Pré Fleury" city="Sassenage" source="445963888" type="bus" road="Avenue de Romans"/>
+  <station lat="45.2301262" lon="5.7874758" name="Pré Catlan" city="Meylan" source="1799557075,2287115294" type="bus" road="Chemin du Boutet"/>
   <station lat="45.2014724" lon="5.6679403" name="Pré Fleury" city="Sassenage" source="445963889" type="bus" road="Avenue de Romans"/>
-  <station lat="45.1514323" lon="5.6803879" name="Pré Nouvel" city="Seyssins" source="2988443527,2988443528" type="bus" road="Avenue de Claix"/>
+  <station lat="45.2017862" lon="5.6676282" name="Pré Fleury" city="Sassenage" source="445963888" type="bus" road="Avenue de Romans"/>
   <station lat="45.1512012" lon="5.6798808" name="Pré Nouvel" city="Seyssins" source="473349914" type="bus" road="D 106d"/>
+  <station lat="45.1514043" lon="5.6803882" name="Pré Nouvel" city="Seyssins" source="2988443527" type="bus" road="Avenue de Claix"/>
   <station lat="45.1089298" lon="5.6880977" name="Pré de l'Orme" city="Varces-Allières-et-Risset" source="1885091428" type="bus" road="D 1075"/>
   <station lat="45.1103705" lon="5.6886381" name="Pré de l'Orme" city="Varces-Allières-et-Risset" source="1885091432" type="bus" road="D 1075"/>
-  <station lat="45.2234592" lon="5.6872996" name="Prédieu" city="Saint-Égrève" source="474827266,474827288" type="bus" road="Rue Lieutenant Fiancey"/>
-  <station lat="45.2236195" lon="5.6885234" name="Prédieu" city="Saint-Égrève" source="474770757" type="bus" road="Route de Grenoble"/>
-  <station lat="45.2229064" lon="5.6889291" name="Prédieu" city="Saint-Égrève" source="474770817" type="bus" road="Route de Grenoble"/>
   <station lat="45.0169343" lon="5.6132989" name="Prélenfrey église" city="Le Gua" source="1805442744" type="bus" road="Place des Justes"/>
-  <station lat="45.1575151" lon="5.7639946" name="Prémol" city="Poisat" source="457759213,457759209" type="bus" road=""/>
+  <station lat="45.1575151" lon="5.7639946" name="Prémol" city="Poisat" source="457759209,457759213" type="bus" road=""/>
   <station lat="45.0704793" lon="5.6750689" name="Pélissière" city="Varces-Allières-et-Risset" source="473281166,473280964" type="bus" road="D 1075"/>
   <station lat="45.1875939" lon="5.7525586" name="Péri - Brossolette" city="Saint-Martin-d'Hères" source="1829874475" type="bus" road="Avenue Gabriel Péri"/>
   <station lat="45.1570960" lon="5.7337722" name="Pôle Sud - Alpexpo" city="Grenoble" source="1906684838,1906684830" type="bus" road="Avenue d'Innsbruck"/>
   <station lat="45.2532144" lon="5.7173349" name="Quaix-en-Chartreuse - Place" city="Quaix-en-Chartreuse" source="1906947723,95103238" type="bus" road="Chemin de Charmeyran"/>
   <station lat="45.2534962" lon="5.7198632" name="Quaix-en-Chartreuse - Écoles" city="Quaix-en-Chartreuse" source="3272712680" type="bus" road="Route de Clémencière"/>
   <station lat="45.1515792" lon="5.7067768" name="Quinzaine" city="Échirolles" source="1896070859,1896070872" type="bus" road="Cours Jean Jaurès"/>
-  <station lat="45.1596676" lon="5.7382891" name="Raymond Chanas" city="Grenoble" source="488881169" type="bus" road="Avenue de l'Europe"/>
+  <station lat="45.2496249" lon="5.6670586" name="Rafour" city="Fontanil-Cornillon" source="3454875532" type="bus" road="Rue du Rafour"/>
   <station lat="45.1594367" lon="5.7376869" name="Raymond Chanas" city="Grenoble" source="488881143" type="bus" road="Avenue de l'Europe"/>
+  <station lat="45.1596676" lon="5.7382891" name="Raymond Chanas" city="Grenoble" source="488881169" type="bus" road="Avenue de l'Europe"/>
   <station lat="45.2042494" lon="5.8437177" name="René Cassin" city="Domène" source="513946316" type="bus" road="Route de Savoie"/>
   <station lat="45.2044964" lon="5.8441857" name="René Cassin" city="Domène" source="513946319" type="bus" road="Route de Savoie"/>
-  <station lat="45.1539750" lon="5.7075132" name="René Thomas" city="Échirolles" source="1896597558" type="bus" road="Cours Jean Jaurès"/>
   <station lat="45.1545268" lon="5.7078372" name="René Thomas" city="Échirolles" source="1896597537" type="bus" road="Cours Jean Jaurès"/>
+  <station lat="45.1539750" lon="5.7075132" name="René Thomas" city="Échirolles" source="1896597558" type="bus" road="Cours Jean Jaurès"/>
   <station lat="45.2120756" lon="5.7663504" name="Revirée - Sayettes" city="Meylan" source="480458803" type="bus" road="Avenue de Chamrousse"/>
   <station lat="45.2121765" lon="5.7672871" name="Revirée - Sayettes" city="Meylan" source="1799525908" type="bus" road="Avenue de Chamrousse"/>
   <station lat="45.1750433" lon="5.7051549" name="Rhin et Danube" city="Grenoble" source="496601188,496601185" type="bus" road="Avenue Rhin et Danube"/>
-  <station lat="45.2464432" lon="5.6677940" name="Rif Tronchard" city="Saint-Égrève" source="474770781,474770808" type="bus" road="Route de Lyon"/>
+  <station lat="45.2465866" lon="5.6677320" name="Rif Tronchard" city="Fontanil-Cornillon" source="474770781,474770808" type="bus" road="Route de Lyon"/>
   <station lat="45.2268701" lon="5.7207836" name="Ripaillère" city="Saint-Martin-le-Vinoux" source="109581476" type="bus" road="Chemin du Replat"/>
   <station lat="45.1071060" lon="5.6730113" name="Risset" city="Varces-Allières-et-Risset" source="492241002,1802088388" type="bus" road="Rue de la Pissarde"/>
   <station lat="45.2149593" lon="5.6516739" name="Rivoire de la Dame" city="Sassenage" source="1802977974" type="bus" road="Rue des Parcs"/>
   <station lat="45.1598224" lon="5.7572748" name="Robespierre" city="Poisat" source="457759204,457759205" type="bus" road="Avenue Hippolyte Lhenry"/>
-  <station lat="45.2237222" lon="5.7678573" name="Rochasson" city="Corenc" source="1800589834,1800589780" type="bus" road="Route de la Chartreuse"/>
+  <station lat="45.2237222" lon="5.7678573" name="Rochasson" city="Corenc" source="1800589780,1800589834" type="bus" road="Route de la Chartreuse"/>
   <station lat="45.1782834" lon="5.7623304" name="Rocheplane" city="Saint-Martin-d'Hères" source="504708707" type="bus" road="Rue Massenet"/>
   <station lat="45.2445627" lon="5.6751384" name="Rochepleine" city="Saint-Égrève" source="474782376" type="bus" road=""/>
   <station lat="45.2443538" lon="5.6749308" name="Rochepleine" city="Saint-Égrève" source="474827255" type="bus" road="Avenue de Karben"/>
-  <station lat="45.2431751" lon="5.6790060" name="Rocher d'Escalade" city="Saint-Égrève" source="474827253,474827252" type="bus" road=""/>
-  <station lat="45.0930736" lon="5.6837112" name="Rond-Point de l'Europe" city="Varces-Allières-et-Risset" source="1884430527,1884430538" type="bus" road="D 1075"/>
+  <station lat="45.2431751" lon="5.6790060" name="Rocher d'Escalade" city="Saint-Égrève" source="474827252,474827253" type="bus" road=""/>
+  <station lat="45.0930736" lon="5.6837112" name="Rond-Point de l'Europe" city="Varces-Allières-et-Risset" source="1884430538,1884430527" type="bus" road="D 1075"/>
   <station lat="45.1789862" lon="5.7810050" name="Roseraie" city="Gières" source="2044511131,451116334" type="bus" road="Rue du Docteur Vallois"/>
-  <station lat="45.2480621" lon="5.7316276" name="Roudier" city="Quaix-en-Chartreuse" source="2997251546,2997242326" type="bus" road="Route de Sarcenas"/>
+  <station lat="45.2480621" lon="5.7316276" name="Roudier" city="Quaix-en-Chartreuse" source="2997242326,2997251546" type="bus" road="Route de Sarcenas"/>
   <station lat="45.0870819" lon="5.7024780" name="Rozatière" city="Varces-Allières-et-Risset" source="1805431137,2992250084" type="bus" road=""/>
   <station lat="45.1941827" lon="5.6946892" name="Rue Pasteur" city="Fontaine" source="445963855" type="bus" road="Boulevard Joliot Curie"/>
   <station lat="45.1946854" lon="5.6945698" name="Rue Pasteur" city="Fontaine" source="445963856" type="bus" road="Boulevard Joliot Curie"/>
   <station lat="45.1943506" lon="5.6943423" name="Rue Pasteur" city="Fontaine" source="3399647134" type="bus" road="Rue Charles Michels"/>
   <station lat="45.0548176" lon="5.6776536" name="Rue de l'Espère" city="Vif" source="1805431149" type="bus" road="Rue de l'Espère"/>
-  <station lat="45.0706097" lon="5.6952148" name="Rue de la Sacristie" city="Vif" source="1805431145" type="bus" road="Route de Fontagneux"/>
-  <station lat="45.0708227" lon="5.6953510" name="Rue de la Sacristie" city="Varces-Allières-et-Risset" source="104003299" type="bus" road="Route de la Sacristie"/>
-  <station lat="45.1983210" lon="5.6814362" name="Rue des Alpes" city="Fontaine" source="445963872" type="bus" road="Rue Joseph Bertoin"/>
+  <station lat="45.0707162" lon="5.6952829" name="Rue de la Sacristie" city="Vif" source="104003299,1805431145" type="bus" road="Route de Fontagneux"/>
   <station lat="45.1977457" lon="5.6802620" name="Rue des Alpes" city="Fontaine" source="1028230616" type="bus" road="Rue Joseph Bertoin"/>
+  <station lat="45.1983210" lon="5.6814362" name="Rue des Alpes" city="Fontaine" source="445963872" type="bus" road="Rue Joseph Bertoin"/>
   <station lat="45.1779154" lon="5.7273924" name="Rue des Déportés" city="Grenoble" source="2148294136" type="bus" road="Rue des Déportés du 11 Novembre 1943"/>
   <station lat="45.1782751" lon="5.7276407" name="Rue des Déportés" city="Grenoble" source="479738777" type="bus" road="Rue des Déportés du 11 Novembre 1943"/>
   <station lat="45.2458722" lon="5.6295138" name="Rue du Maupas" city="Noyarey" source="1805395461" type="bus" road="Rue du Maupas"/>
   <station lat="45.0543114" lon="5.6752850" name="Rue du Nord" city="Vif" source="2992250085,1805431150" type="bus" road="Rue du Nord"/>
-  <station lat="45.2546231" lon="5.6617008" name="Résidence Mutualiste" city="Fontanil-Cornillon" source="474770803" type="bus" road="Route de Lyon"/>
-  <station lat="45.2550513" lon="5.6616119" name="Résidence Mutualiste" city="Fontanil-Cornillon" source="474770787" type="bus" road="Route de Lyon"/>
   <station lat="45.2034818" lon="5.7142277" name="Résistance" city="Saint-Martin-le-Vinoux" source="2938825610" type="bus" road="Rue du 16 Août 1944"/>
-  <station lat="45.1975261" lon="5.7537153" name="Sablons" city="La Tronche" source="514050523" type="bus" road="Avenue de Verdun"/>
   <station lat="45.1967462" lon="5.7528788" name="Sablons" city="La Tronche" source="514050520" type="bus" road="Avenue de Verdun"/>
-  <station lat="45.0975502" lon="5.6839321" name="Saint-Ange" city="Varces-Allières-et-Risset" source="1884436701" type="bus" road="D 1075"/>
+  <station lat="45.1975261" lon="5.7537153" name="Sablons" city="La Tronche" source="514050523" type="bus" road="Avenue de Verdun"/>
   <station lat="45.0968667" lon="5.6836824" name="Saint-Ange" city="Varces-Allières-et-Risset" source="1884436707" type="bus" road="D 1075"/>
-  <station lat="45.1781762" lon="5.7454195" name="Saint-Augustin" city="Grenoble" source="2046031969" type="bus" road="Avenue Jeanne d'Arc"/>
-  <station lat="45.1782413" lon="5.7459567" name="Saint-Augustin" city="Grenoble" source="496601252" type="bus" road="Rue Charles Rivail"/>
+  <station lat="45.0975502" lon="5.6839321" name="Saint-Ange" city="Varces-Allières-et-Risset" source="1884436701" type="bus" road="D 1075"/>
+  <station lat="45.1781787" lon="5.7453394" name="Saint-Augustin" city="Grenoble" source="2046031969" type="bus" road="Rue André Argouges"/>
   <station lat="44.9999270" lon="5.6295565" name="Saint-Barthélémy" city="Le Gua" source="1805442746" type="bus" road="Place de l'Église"/>
   <station lat="45.1858936" lon="5.7138198" name="Saint-Bruno" city="Grenoble" source="488881128,488881182" type="bus" road="Rue Nicolas Chorier"/>
-  <station lat="45.2014211" lon="5.6899136" name="Saint-Eynard" city="Fontaine" source="473975706" type="bus" road="Boulevard Joliot Curie"/>
   <station lat="45.2010980" lon="5.6901986" name="Saint-Eynard" city="Fontaine" source="473975709" type="bus" road="Boulevard Joliot Curie"/>
+  <station lat="45.2014211" lon="5.6899136" name="Saint-Eynard" city="Fontaine" source="473975706" type="bus" road="Boulevard Joliot Curie"/>
   <station lat="45.2492891" lon="5.7654361" name="Saint-Eynard" city="Le Sappey-en-Chartreuse" source="2241766910" type="bus" road="D 512"/>
-  <station lat="45.2100892" lon="5.7440453" name="Saint-Germain" city="La Tronche" source="2241710642,2241710644" type="bus" road="Route de la Chartreuse"/>
-  <station lat="45.2383199" lon="5.6351358" name="Saint-Jean" city="Noyarey" source="473851910" type="bus" road="Avenue Saint-Jean"/>
+  <station lat="45.2100892" lon="5.7440453" name="Saint-Germain" city="La Tronche" source="2241710644,2241710642" type="bus" road="Route de la Chartreuse"/>
   <station lat="45.2388831" lon="5.6342311" name="Saint-Jean" city="Noyarey" source="473851844" type="bus" road="Avenue Saint-Jean"/>
+  <station lat="45.2383199" lon="5.6351358" name="Saint-Jean" city="Noyarey" source="473851910" type="bus" road="Avenue Saint-Jean"/>
   <station lat="45.2127861" lon="5.7730507" name="Saint-Jean Bosco" city="Meylan" source="480458806" type="bus" road="Avenue de Chamrousse"/>
   <station lat="45.2129181" lon="5.7736256" name="Saint-Jean Bosco" city="Meylan" source="480458807" type="bus" road="Avenue de Chamrousse"/>
-  <station lat="45.1979291" lon="5.7325868" name="Saint-Laurent" city="Grenoble" source="488881194,488881192" type="bus" road="Quai des Allobroges"/>
-  <station lat="45.1650269" lon="5.7654059" name="Saint-Martin-d'Hères - Village" city="Saint-Martin-d'Hères" source="451237908,451237910" type="bus" road="Avenue Jacques Prévert"/>
+  <station lat="45.1980037" lon="5.7326159" name="Saint-Laurent" city="Grenoble" source="488881194,488881192" type="bus" road="Quai des Allobroges"/>
+  <station lat="45.1650269" lon="5.7654059" name="Saint-Martin-d'Hères - Village" city="Saint-Martin-d'Hères" source="451237910,451237908" type="bus" road="Avenue Jacques Prévert"/>
   <station lat="45.2081918" lon="5.7069286" name="Saint-Martin-le-Vinoux - Hôtel de Ville" city="Saint-Martin-le-Vinoux" source="2937868101,2258516583" type="bus" road="Rue Conrad Kilian"/>
   <station lat="45.1121181" lon="5.6846321" name="Saint-Michel" city="Claix" source="1802058441,1802058440" type="bus" road="Rue Lesdiguières"/>
   <station lat="45.2194005" lon="5.7860281" name="Saint-Mury" city="Meylan" source="2431368767,35180840" type="bus" road="Avenue de Chartreuse"/>
   <station lat="45.2184323" lon="5.7864737" name="Saint-Mury" city="Meylan" source="1188875968" type="bus" road="D 1090"/>
   <station lat="45.0716420" lon="5.6426233" name="Saint-Paul-de-Varces - Place" city="Saint-Paul-de-Varces" source="1801979638" type="bus" road="Chemin Saint-Ange"/>
   <station lat="45.0716911" lon="5.6429159" name="Saint-Paul-de-Varces - Place" city="Saint-Paul-de-Varces" source="2283127552" type="bus" road=""/>
-  <station lat="45.1915441" lon="5.7397367" name="Saint-Roch" city="Grenoble" source="479738788,479738789" type="bus" road="Rue Saint-Ferjus"/>
-  <station lat="45.1916961" lon="5.7379419" name="Saint-Roch" city="Grenoble" source="488881185,488881186" type="bus" road="Boulevard Maréchal Leclerc"/>
+  <station lat="45.1915441" lon="5.7397367" name="Saint-Roch" city="Grenoble" source="479738789,479738788" type="bus" road="Rue Saint-Ferjus"/>
+  <station lat="45.1916961" lon="5.7379419" name="Saint-Roch" city="Grenoble" source="488881186,488881185" type="bus" road="Boulevard Maréchal Leclerc"/>
   <station lat="45.2285675" lon="5.7891975" name="Saint-Victor" city="Meylan" source="2287115295,1799557062" type="bus" road="Chemin du Boutet"/>
-  <station lat="45.2353360" lon="5.6715645" name="Saint-Égrève - Gare" city="Saint-Égrève" source="1800653206" type="bus" road="Rue des Bonnais"/>
   <station lat="45.2357925" lon="5.6715307" name="Saint-Égrève - Gare" city="Saint-Égrève" source="1800653228" type="bus" road="Rue des Bonnais"/>
-  <station lat="45.2330288" lon="5.6787947" name="Saint-Égrève - Mairie" city="Saint-Égrève" source="474770773,474770813" type="bus" road="Avenue du Général de Gaulle"/>
-  <station lat="45.1756157" lon="5.7088926" name="Salengro" city="Grenoble" source="488881133,488881178" type="bus" road="Rue des Eaux Claires"/>
+  <station lat="45.2353360" lon="5.6715645" name="Saint-Égrève - Gare" city="Saint-Égrève" source="1800653206" type="bus" road="Rue des Bonnais"/>
+  <station lat="45.1756157" lon="5.7088926" name="Salengro" city="Grenoble" source="488881178,488881133" type="bus" road="Rue des Eaux Claires"/>
   <station lat="45.2368049" lon="5.6601898" name="San Marino Barrage" city="Saint-Égrève" source="501609498" type="bus" road="D 105f"/>
   <station lat="45.2734494" lon="5.7585262" name="Sarcenas - Le Village" city="Sarcenas" source="1907476119" type="bus" road="D 57"/>
   <station lat="45.2778187" lon="5.7076266" name="Savoyardière" city="Proveysieux" source="1526058108" type="bus" road=""/>
   <station lat="45.1901140" lon="5.7692577" name="Sciences Sociales" city="Saint-Martin-d'Hères" source="496601290,496601287" type="bus" road=""/>
-  <station lat="45.1809532" lon="5.6970674" name="Seyssinet Pariset - Hôtel de Ville" city="Seyssinet-Pariset" source="445206352,445206354" type="bus" road="Avenue de la République"/>
   <station lat="45.1803490" lon="5.6952335" name="Seyssinet Pariset - Hôtel de Ville" city="Seyssinet-Pariset" source="2988443529" type="bus" road="Boulevard de l'Europe"/>
+  <station lat="45.1809532" lon="5.6970674" name="Seyssinet Pariset - Hôtel de Ville" city="Seyssinet-Pariset" source="445206352,445206354" type="bus" road="Avenue de la République"/>
   <station lat="45.1600514" lon="5.6940281" name="Seyssins Rondeau" city="Seyssins" source="2986748651,2986748652" type="bus" road="Avenue du Général de Gaulle"/>
   <station lat="45.2503568" lon="5.7353348" name="Sous la Frette" city="Quaix-en-Chartreuse" source="2997251547" type="bus" road="Route de Sarcenas"/>
   <station lat="45.1703269" lon="5.8107908" name="Sous-Perroud" city="Venon" source="1803051776" type="bus" road=""/>
   <station lat="45.1305795" lon="5.7782298" name="Souveyron" city="Brié-et-Angonnes" source="1821418422" type="bus" road="Route du Souveyron"/>
+  <station lat="45.1645154" lon="5.7106444" name="Stade Lesdiguières" city="Grenoble" source="1896756345,1896756331" type="bus" road="Rue Albert Reynier"/>
   <station lat="45.1638697" lon="5.7109194" name="Stade Lesdiguières" city="Grenoble" source="1896756285,1896756272" type="bus" road="Cours de la Libération et du Général de Gaulle"/>
-  <station lat="45.1645154" lon="5.7106444" name="Stade Lesdiguières" city="Grenoble" source="1896756331,1896756345" type="bus" road="Rue Albert Reynier"/>
-  <station lat="45.1718536" lon="5.7239483" name="Stalingrad - Alliés" city="Grenoble" source="496601205" type="bus" road="Rue des Alliés"/>
   <station lat="45.1715669" lon="5.7248289" name="Stalingrad - Alliés" city="Grenoble" source="496601208" type="bus" road="Rue des Alliés"/>
+  <station lat="45.1718536" lon="5.7239483" name="Stalingrad - Alliés" city="Grenoble" source="496601205" type="bus" road="Rue des Alliés"/>
   <station lat="45.2070524" lon="5.7849748" name="Taillefer" city="Meylan" source="911300136" type="bus" road="Chemin du Vieux Chêne"/>
-  <station lat="45.1361891" lon="5.7704171" name="Tavernolles" city="Brié-et-Angonnes" source="1821357929,1821357930" type="bus" road="Avenue du Maquis de l'Oisans"/>
   <station lat="45.1360987" lon="5.7703940" name="Tavernolles" city="Brié-et-Angonnes" source="2594139042" type="bus" road=""/>
+  <station lat="45.1361891" lon="5.7704171" name="Tavernolles" city="Brié-et-Angonnes" source="1821357930,1821357929" type="bus" road="Avenue du Maquis de l'Oisans"/>
   <station lat="45.1707869" lon="5.7402494" name="Teisseire" city="Grenoble" source="496601247" type="bus" road="Avenue Paul Cocat"/>
-  <station lat="45.1709656" lon="5.7397595" name="Teisseire" city="Grenoble" source="498506966,498506970" type="bus" road="Avenue Jean Perrot"/>
-  <station lat="45.2044297" lon="5.6649559" name="Trefforine" city="Sassenage" source="445963886" type="bus" road="Avenue de Romans"/>
+  <station lat="45.1709656" lon="5.7397595" name="Teisseire" city="Grenoble" source="498506970,498506966" type="bus" road="Avenue Jean Perrot"/>
   <station lat="45.2041296" lon="5.6652778" name="Trefforine" city="Sassenage" source="445963887" type="bus" road="Avenue de Romans"/>
-  <station lat="45.2194777" lon="5.6920580" name="Trois Ponts" city="Saint-Martin-le-Vinoux" source="474770755" type="bus" road="Avenue du Général Leclerc"/>
-  <station lat="45.2198223" lon="5.6916266" name="Trois Ponts" city="Saint-Martin-le-Vinoux" source="474770818" type="bus" road="Avenue du Général Leclerc"/>
-  <station lat="45.1690390" lon="5.6921151" name="Tuillerie" city="La Tour sans Venin" source="445206279" type="bus" road="Avenue de Grenoble"/>
-  <station lat="45.0759219" lon="5.7743247" name="Tunnel Château" city="Vizille" source="1812538551,257448906" type="bus" road="Route d'Uriage"/>
+  <station lat="45.2044297" lon="5.6649559" name="Trefforine" city="Sassenage" source="445963886" type="bus" road="Avenue de Romans"/>
+  <station lat="45.1690390" lon="5.6921151" name="Tuillerie" city="Le Haut Seyssin" source="445206279" type="bus" road="Avenue de Grenoble"/>
   <station lat="45.1919630" lon="5.7749794" name="Universités - Biologie" city="Gières" source="496601293,496601295" type="bus" road="Avenue Centrale"/>
   <station lat="45.1975264" lon="5.7760919" name="Universités - IUT - UFRAPS" city="Gières" source="504708681,135296" type="bus" road="Rue de la Piscine"/>
   <station lat="45.1439359" lon="5.8293350" name="Uriage - Gare" city="Saint-Martin-d'Uriage" source="1157938380,1157938086" type="bus" road=""/>
@@ -921,59 +908,59 @@
   <station lat="45.1482350" lon="5.7055824" name="Vaillant-Couturier" city="Échirolles" source="1896055873" type="bus" road="Cours Jean Jaurès"/>
   <station lat="45.1487753" lon="5.7059054" name="Vaillant-Couturier" city="Échirolles" source="1896055872" type="bus" road="Cours Jean Jaurès"/>
   <station lat="45.1069064" lon="5.6652715" name="Val d'Allières" city="Claix" source="1802109397" type="bus" road=""/>
-  <station lat="45.1591602" lon="5.7455709" name="Val d'Eybens" city="Eybens" source="498506933,498506928" type="bus" road="Avenue Jean Jaurès"/>
-  <station lat="45.1796923" lon="5.7054024" name="Vallier - Catane" city="Grenoble" source="496601178,496601182" type="bus" road="Avenue Rhin et Danube"/>
-  <station lat="45.1804278" lon="5.7102019" name="Vallier - Docteur Calmette" city="Grenoble" source="488881130" type="bus" road="Rue Léon Drivier"/>
+  <station lat="45.1591602" lon="5.7455709" name="Val d'Eybens" city="Eybens" source="498506928,498506933" type="bus" road="Avenue Jean Jaurès"/>
+  <station lat="45.1796923" lon="5.7054024" name="Vallier - Catane" city="Grenoble" source="496601182,496601178" type="bus" road="Avenue Rhin et Danube"/>
   <station lat="45.1805452" lon="5.7113115" name="Vallier - Docteur Calmette" city="Grenoble" source="488881180" type="bus" road="Rue Abbé Grégoire"/>
-  <station lat="45.1788284" lon="5.7159426" name="Vallier - Libération" city="Grenoble" source="474855278,2065454967" type="bus" road="Cours de la Libération et du Général de Gaulle"/>
+  <station lat="45.1804278" lon="5.7102019" name="Vallier - Docteur Calmette" city="Grenoble" source="488881130" type="bus" road="Rue Léon Drivier"/>
+  <station lat="45.1788284" lon="5.7159426" name="Vallier - Libération" city="Grenoble" source="2065454967,474855278" type="bus" road="Cours de la Libération et du Général de Gaulle"/>
   <station lat="45.0863753" lon="5.6829499" name="Varces - République" city="Varces-Allières-et-Risset" source="103925968" type="bus" road="Place de la République"/>
-  <station lat="45.0868471" lon="5.6831895" name="Varces - République" city="Varces-Allières-et-Risset" source="103925967" type="bus" road="Avenue Joliot Curie"/>
   <station lat="45.0861279" lon="5.6824663" name="Varces - République" city="Varces-Allières-et-Risset" source="1799124314" type="bus" road=""/>
+  <station lat="45.0868471" lon="5.6831895" name="Varces - République" city="Varces-Allières-et-Risset" source="103925967" type="bus" road="Avenue Joliot Curie"/>
   <station lat="45.1430209" lon="5.7000456" name="Vassieux" city="Échirolles" source="482798358" type="bus" road="Avenue Danielle Casanova"/>
   <station lat="45.1054169" lon="5.8004120" name="Vaulnaveys Le Bas - Le Village" city="Vaulnaveys-le-Bas" source="1812509842,1812509846" type="bus" road="Avenue des Vaulnaveys"/>
   <station lat="45.1193256" lon="5.8110387" name="Vaulnaveys Le Haut - Le Village" city="Vaulnaveys-le-Haut" source="1812509838" type="bus" road="Avenue d'Uriage"/>
   <station lat="45.2275821" lon="5.6684755" name="Vence Ecoparc" city="Saint-Égrève" source="1939773158,2274860459" type="bus" road="Avenue de l'Île Brune"/>
-  <station lat="45.1716836" lon="5.8048240" name="Venon Mairie" city="Venon" source="270132156" type="bus" road="L'Adret"/>
-  <station lat="45.1717870" lon="5.8046814" name="Venon Mairie" city="Venon" source="1803051788" type="bus" road="Route Départementale 164"/>
+  <station lat="45.1717353" lon="5.8047527" name="Venon Mairie" city="Venon" source="1803051788,270132156" type="bus" road="Route Départementale 164"/>
   <station lat="45.2006470" lon="5.7510662" name="Vercors" city="La Tronche" source="480458776" type="bus" road="Rue du Vercors"/>
   <station lat="45.1883867" lon="5.7309035" name="Verdun-Préfecture" city="Grenoble" source="1829656104,1829656128" type="bus" road="Rue Lesdiguières"/>
+  <station lat="45.1617868" lon="5.7160898" name="Verlaine" city="Grenoble" source="488881172,488881140" type="bus" road="Avenue Paul Verlaine"/>
   <station lat="45.1623596" lon="5.7161903" name="Verlaine" city="Grenoble" source="479738761" type="bus" road="Avenue Léon Blum"/>
-  <station lat="45.1617868" lon="5.7160898" name="Verlaine" city="Grenoble" source="488881140,488881172" type="bus" road="Avenue Paul Verlaine"/>
   <station lat="45.1621466" lon="5.7160679" name="Verlaine" city="Grenoble" source="479738760" type="bus" road=""/>
-  <station lat="45.2729130" lon="5.6130053" name="Veurey - Mairie" city="Veurey-Voroize" source="2194070588" type="bus" road=""/>
   <station lat="45.2730917" lon="5.6127615" name="Veurey - Mairie" city="Veurey-Voroize" source="59359164" type="bus" road="Route de Montaud"/>
-  <station lat="45.2723261" lon="5.6154645" name="Veurey - Église" city="Veurey-Voroize" source="473851898,473851871" type="bus" road="Route de Montaud"/>
+  <station lat="45.2729130" lon="5.6130053" name="Veurey - Mairie" city="Veurey-Voroize" source="2194070588" type="bus" road=""/>
+  <station lat="45.2723261" lon="5.6154645" name="Veurey - Église" city="Veurey-Voroize" source="473851871,473851898" type="bus" road="Route de Montaud"/>
   <station lat="45.1948172" lon="5.7248056" name="Veyret" city="Grenoble" source="1051838960" type="bus" road="Rue Maurice Gignoux"/>
-  <station lat="45.1890811" lon="5.7254047" name="Victor Hugo" city="Grenoble" source="2068724578" type="bus" road="Place Victor Hugo"/>
-  <station lat="45.1880968" lon="5.7242536" name="Victor Hugo" city="Grenoble" source="2986748653" type="bus" road="Rue Béranger"/>
   <station lat="45.1905739" lon="5.7245991" name="Victor Hugo" city="Grenoble" source="21669811" type="bus" road="Rue de Palanka"/>
   <station lat="45.1894877" lon="5.7249516" name="Victor Hugo" city="Grenoble" source="1829038636" type="bus" road="Place Victor Hugo"/>
+  <station lat="45.1880968" lon="5.7242536" name="Victor Hugo" city="Grenoble" source="2986748653" type="bus" road="Rue Béranger"/>
+  <station lat="45.1890811" lon="5.7254047" name="Victor Hugo" city="Grenoble" source="2068724578" type="bus" road="Place Victor Hugo"/>
   <station lat="45.2113880" lon="5.6497282" name="Vieux Donjon" city="Sassenage" source="1802977960" type="bus" road="Rue Pierre Dalloz"/>
   <station lat="45.0530266" lon="5.6765625" name="Vif Gendarmerie" city="Vif" source="473281000" type="bus" road="D 1075"/>
-  <station lat="45.0559066" lon="5.6687871" name="Vif Mairie" city="Vif" source="473281143,473280994" type="bus" road="Place de la Libération"/>
+  <station lat="45.0559066" lon="5.6687871" name="Vif Mairie" city="Vif" source="473280994,473281143" type="bus" road="Place de la Libération"/>
   <station lat="45.0558849" lon="5.6700209" name="Vif Mairie" city="Vif" source="1975596886" type="bus" road="Rue Antoine et Suzanne Buisson"/>
-  <station lat="45.1893080" lon="5.7781087" name="Vignate" city="Gières" source="1807058172,1807058177" type="bus" road="Avenue de Vignate"/>
+  <station lat="45.1893080" lon="5.7781087" name="Vignate" city="Gières" source="1807058177,1807058172" type="bus" road="Avenue de Vignate"/>
   <station lat="45.1673584" lon="5.7233858" name="Vigny" city="Grenoble" source="482798313" type="bus" road="Rue de Stalingrad"/>
   <station lat="45.1681636" lon="5.6788467" name="Village" city="Seyssinet-Pariset" source="473976039" type="bus" road=""/>
-  <station lat="45.1640737" lon="5.7240037" name="Village Olympique" city="Grenoble" source="482798315" type="bus" road="Rue Aimé Pupin"/>
   <station lat="45.1635342" lon="5.7239452" name="Village Olympique" city="Grenoble" source="482798316" type="bus" road="Rue Aimé Pupin"/>
-  <station lat="45.2330755" lon="5.6859202" name="Visancourt" city="Saint-Égrève" source="474827261,474827239" type="bus" road="Avenue de la Monta"/>
-  <station lat="45.1578770" lon="5.7089962" name="Viscose" city="Échirolles" source="1896621366" type="bus" road="Cours Jean Jaurès"/>
+  <station lat="45.1640737" lon="5.7240037" name="Village Olympique" city="Grenoble" source="482798315" type="bus" road="Rue Aimé Pupin"/>
+  <station lat="45.2330755" lon="5.6859202" name="Visancourt" city="Saint-Égrève" source="474827239,474827261" type="bus" road="Avenue de la Monta"/>
   <station lat="45.1574155" lon="5.7086830" name="Viscose" city="Échirolles" source="1896621359" type="bus" road="Cours Jean Jaurès"/>
+  <station lat="45.1578770" lon="5.7089962" name="Viscose" city="Échirolles" source="1896621366" type="bus" road="Cours Jean Jaurès"/>
+  <station lat="45.0755618" lon="5.7721794" name="Vizille - Château" city="Vizille" source="1678435995,257448892" type="bus" road="Place du Château"/>
   <station lat="45.1955674" lon="5.7301244" name="Xavier Jouvin" city="Grenoble" source="2025433527" type="bus" road="Quai Xavier Jouvin"/>
   <station lat="45.0568936" lon="5.6817801" name="Z.A. des Speyres" city="Vif" source="2992250089,1805431185" type="bus" road="Avenue d'Argenson"/>
-  <station lat="45.1675557" lon="5.7541915" name="Zella Melhis" city="Saint-Martin-d'Hères" source="515302528" type="bus" road="Avenue de Zella Mehlis"/>
   <station lat="45.1670817" lon="5.7535998" name="Zella Melhis" city="Saint-Martin-d'Hères" source="515302532" type="bus" road="Avenue de Zella Mehlis"/>
-  <station lat="45.1213844" lon="5.8141267" name="École Jules Bruant" city="Vaulnaveys-le-Haut" source="1812509691" type="bus" road="Avenue d'Uriage"/>
+  <station lat="45.1675557" lon="5.7541915" name="Zella Melhis" city="Saint-Martin-d'Hères" source="515302528" type="bus" road="Avenue de Zella Mehlis"/>
   <station lat="45.1217404" lon="5.8144411" name="École Jules Bruant" city="Vaulnaveys-le-Haut" source="1812509801" type="bus" road=""/>
+  <station lat="45.1213844" lon="5.8141267" name="École Jules Bruant" city="Vaulnaveys-le-Haut" source="1812509691" type="bus" road="Avenue d'Uriage"/>
   <station lat="45.0691090" lon="5.6933281" name="École Reymure" city="Vif" source="1805431165" type="bus" road="Route de Fontagneux"/>
   <station lat="45.1407260" lon="5.7030518" name="École de Musique Jean Wiener" city="Échirolles" source="1895397406" type="bus" road="Cours Jean Jaurès"/>
   <station lat="45.1411751" lon="5.7033316" name="École de Musique Jean Wiener" city="Échirolles" source="1895397341" type="bus" road="Cours Jean Jaurès"/>
-  <station lat="45.1463313" lon="5.7297631" name="Écoles Hospitalières" city="Échirolles" source="482798331,482798332" type="bus" road="Avenue de Kimberley"/>
+  <station lat="45.1463313" lon="5.7297631" name="Écoles Hospitalières" city="Échirolles" source="482798332,482798331" type="bus" road="Avenue de Kimberley"/>
   <station lat="45.1790245" lon="5.7549975" name="Édouard Vaillant" city="Saint-Martin-d'Hères" source="14566552" type="bus" road="Rue Paul Langevin"/>
-  <station lat="45.2400795" lon="5.6839615" name="Église" city="Saint-Égrève" source="474827245,474827256" type="bus" road="Avenue du Medecin Général Viallet"/>
+  <station lat="45.2400794" lon="5.6839614" name="Église" city="Saint-Égrève" source="474827256,474827245" type="bus" road="Avenue du Medecin Général Viallet"/>
   <station lat="45.1945399" lon="5.7759079" name="Épicéa" city="Gières" source="504708689" type="bus" road="Rue de la Piscine"/>
   <station lat="45.1958665" lon="5.7746808" name="Épicéa" city="Gières" source="504708686" type="bus" road="Rue de la Papeterie"/>
   <station lat="45.1720964" lon="5.7571198" name="Étienne Grappe" city="Saint-Martin-d'Hères" source="1865479751" type="bus" road="Avenue Potié"/>
-  <station lat="45.2595994" lon="5.6260618" name="Îles Cordées" city="Veurey-Voroize" source="473851856,473851903" type="bus" road="Route de Valence"/>
+  <station lat="45.2595994" lon="5.6260618" name="Îles Cordées" city="Veurey-Voroize" source="473851903,473851856" type="bus" road="Route de Valence"/>
 </stations>
