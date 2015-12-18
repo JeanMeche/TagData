@@ -856,7 +856,7 @@
     </sens2>
   </line>
   <line name="Proximo 17" osmId="3922813" mbtId="33" picto="17">
-    <sens1>
+    <sens1> 
       <station osmId="2986748653" mbtId="4253" uid="17victhugo">Victor Hugo</station>
       <station osmId="904382059" mbtId="1986" uid="17caseonne">Caserne de Bonne</station>
       <station osmId="1985750388" mbtId="3997" uid="17fochrrié">Foch - Ferrié</station>
